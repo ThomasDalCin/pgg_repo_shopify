@@ -1,0 +1,8 @@
+{
+    "section": {
+        "template": {
+            "type" : "podere-template"
+        }
+    },
+    "order": ["template"]
+}
