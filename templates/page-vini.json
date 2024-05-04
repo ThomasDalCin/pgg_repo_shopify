@@ -1,8 +1,0 @@
-{
-    "section": {
-        "template": {
-            "type" : "vini-template"
-        }
-    },
-    "order": ["template"]
-}
