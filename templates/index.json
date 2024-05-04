@@ -21,8 +21,9 @@
         "column_image_text_h7FLUe": {
           "type": "column-image-text",
           "settings": {
-            "text_content": "",
-            "text_area_content": ""
+            "text_content": "Nella vigna, l’attenzione, la cura e la capacità di riconoscere il bello e di mantenerlo, sono elementi di una qualità diffusa.",
+            "text_area_content": "Il blu lucente del mare, in contrasto al rosso ferroso delle rocce basaltiche, si permea con il profumo intenso delle piante aromatiche che tappezzano il terreno. Qui è facile chiudere gli occhi e immaginare l'uva maturare mentre il tramonto invade di luce il Podere.",
+            "img_content": "shopify:\/\/shop_images\/home-fiori.png"
           }
         }
       },
