@@ -3,6 +3,44 @@
     "hero-section": {
       "type": "hero",
       "settings": {
+        "hero-heading": "Qui la bellezza è travolgente: ciascuno può immergersi nella natura incontaminata e nel proprio tempo",
+        "hero-cover": "shopify:\/\/shop_images\/A0A6828.jpg"
+      }
+    },
+    "column-textwimage": {
+      "type": "column-textwimage",
+      "blocks": {
+        "column_text_image_fNdz7r": {
+          "type": "column-text-image",
+          "settings": {
+            "text_content": "La Sardegna è una terra di rara bellezza. Il Podere Guardia Grande è il luogo perfetto per esplorarne l'essenza.",
+            "text_area_content": "Produciamo vino su uno dei rari promontori da cui è possibile godere della vista emozionante di Capo Caccia, di Porto Conte e della Costa d'Alghero, in Sardegna. Al Podere Guardia Grande, è come se l’uva, sospinta da un'energia alchemica e misteriosa, rispondesse al richiamo della bellezza che la circonda, trasformandosi in vino di qualità.",
+            "img_content": "shopify:\/\/shop_images\/home-vasi.png"
+          }
+        },
+        "column_image_text_h7FLUe": {
+          "type": "column-image-text",
+          "settings": {
+            "text_content": "Nella vigna, l’attenzione, la cura e la capacità di riconoscere il bello e di mantenerlo, sono elementi di una qualità diffusa.",
+            "text_area_content": "Il blu lucente del mare, in contrasto al rosso ferroso delle rocce basaltiche, si permea con il profumo intenso delle piante aromatiche che tappezzano il terreno. Qui è facile chiudere gli occhi e immaginare l'uva maturare mentre il tramonto invade di luce il Podere.",
+            "img_content": "shopify:\/\/shop_images\/home-fiori.png"
+          }
+        }
+      },
+      "block_order": [
+        "column_text_image_fNdz7r",
+        "column_image_text_h7FLUe"
+      ],
+      "settings": {
+      }
+    },
+    "slider": {
+      "type": "slider",
+      "settings": {
+  "sections": {
+    "hero-section": {
+      "type": "hero",
+      "settings": {
         "hero-heading": "La Sardegna è una terra di rara bellezza. Il Podere Guardia Grande è il luogo perfetto per esplorarne l'essenza.",
         "hero-cover": "shopify:\/\/shop_images\/A0A6828.jpg"
       }
@@ -38,11 +76,7 @@
       "type": "slider",
       "settings": {
       }
-    }
-  },
-  "order": [
-    "hero-section",
-    "column-textwimage",
-    "slider"
-  ]
-}
+    },
+    "order": ["hero-section","column-textwimage", "slider"]
+  }
+  
