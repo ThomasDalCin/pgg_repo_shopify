@@ -1,0 +1,18 @@
+{
+    "sections": {
+      "hero-section": {
+        "type": "hero",
+        "settings": {}
+      },
+      "column-textwimage": {
+        "type": "column-textwimage",
+        "settings": {}
+      },
+      "slider": {
+        "type": "slider",
+        "settings": {}
+      }
+    },
+    "order": ["hero-section","column-textwimage", "slider"]
+  }
+  

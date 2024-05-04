@@ -1,0 +1,31 @@
+<!-- hero wrapper -->
+<div class="hero-wrapper">
+  <div class="hero-wrapper-background">
+    <img src="{{ section.settings.hero-cover | img_url: 'master'}}" alt="alghero">
+  </div>
+  <div class="hero-wrapper-content">
+    <div class="hero-heading-content">
+      <h1 class="hero-heading">{{ section.settings.hero-heading }}</h1>
+    </div>
+  </div>
+</div>
+<!-- hero wrapper -->
+
+
+{% schema %}
+  {
+    "name": "hero",
+    "settings": [
+      {
+        "type": "text",
+        "id": "hero-heading",
+        "label": "hero-heading-here",
+        "default": "type your hero heading here"
+      }, {
+        "type": "image_picker",
+        "id": "hero-cover",
+        "label": "hero-cover-here"
+      }
+    ]
+  }
+{% endschema %}
