@@ -9,6 +9,27 @@
     },
     "column-textwimage": {
       "type": "column-textwimage",
+      "blocks": {
+        "column_text_image_fNdz7r": {
+          "type": "column-text-image",
+          "settings": {
+            "text_content": "La Sardegna è una terra di rara bellezza. Il Podere Guardia Grande è il luogo perfetto per esplorarne l'essenza.",
+            "text_area_content": "Produciamo vino su uno dei rari promontori da cui è possibile godere della vista emozionante di Capo Caccia, di Porto Conte e della Costa d'Alghero, in Sardegna. Al Podere Guardia Grande, è come se l’uva, sospinta da un'energia alchemica e misteriosa, rispondesse al richiamo della bellezza che la circonda, trasformandosi in vino di qualità.",
+            "img_content": "shopify:\/\/shop_images\/home-vasi.png"
+          }
+        },
+        "column_image_text_h7FLUe": {
+          "type": "column-image-text",
+          "settings": {
+            "text_content": "",
+            "text_area_content": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_text_image_fNdz7r",
+        "column_image_text_h7FLUe"
+      ],
       "settings": {
       }
     },
