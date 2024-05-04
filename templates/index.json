@@ -1,18 +1,26 @@
 {
-    "sections": {
-      "hero-section": {
-        "type": "hero",
-        "settings": {}
-      },
-      "column-textwimage": {
-        "type": "column-textwimage",
-        "settings": {}
-      },
-      "slider": {
-        "type": "slider",
-        "settings": {}
+  "sections": {
+    "hero-section": {
+      "type": "hero",
+      "settings": {
+        "hero-heading": "Qui la bellezza è travolgente: ciascuno può immergersi nella natura incontaminata e nel proprio tempo",
+        "hero-cover": "shopify:\/\/shop_images\/A0A6828.jpg"
       }
     },
-    "order": ["hero-section","column-textwimage", "slider"]
-  }
-  
+    "column-textwimage": {
+      "type": "column-textwimage",
+      "settings": {
+      }
+    },
+    "slider": {
+      "type": "slider",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "hero-section",
+    "column-textwimage",
+    "slider"
+  ]
+}
