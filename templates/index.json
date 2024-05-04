@@ -3,14 +3,14 @@
     "hero-section": {
       "type": "hero",
       "settings": {
-        "hero-heading": "Qui la bellezza è travolgente: ciascuno può immergersi nella natura incontaminata e nel proprio tempo",
+        "hero-heading": "La Sardegna è una terra di rara bellezza. Il Podere Guardia Grande è il luogo perfetto per esplorarne l'essenza.",
         "hero-cover": "shopify:\/\/shop_images\/A0A6828.jpg"
       }
     },
     "column-textwimage": {
       "type": "column-textwimage",
       "blocks": {
-        "column_text_image_fNdz7r": {
+        "column_text_image_xiYJww": {
           "type": "column-text-image",
           "settings": {
             "text_content": "La Sardegna è una terra di rara bellezza. Il Podere Guardia Grande è il luogo perfetto per esplorarne l'essenza.",
@@ -18,7 +18,7 @@
             "img_content": "shopify:\/\/shop_images\/home-vasi.png"
           }
         },
-        "column_image_text_h7FLUe": {
+        "column_image_text_Xz4tbV": {
           "type": "column-image-text",
           "settings": {
             "text_content": "Nella vigna, l’attenzione, la cura e la capacità di riconoscere il bello e di mantenerlo, sono elementi di una qualità diffusa.",
@@ -28,13 +28,20 @@
         }
       },
       "block_order": [
-        "column_text_image_fNdz7r",
-        "column_image_text_h7FLUe"
+        "column_text_image_xiYJww",
+        "column_image_text_Xz4tbV"
       ],
       "settings": {
       }
     },
-    "order": ["hero-section","column-textwimage"]
-  }
+    "slider": {
+      "type": "slider",
+      "settings": {}
+    }
+  },
+  "order": [
+    "hero-section",
+    "column-textwimage",
+    "slider"
+  ]
 }
-  
