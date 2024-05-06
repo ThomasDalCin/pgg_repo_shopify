@@ -38,11 +38,60 @@
       "type": "slider",
       "settings": {
       }
+    },
+    "quote": {
+      "type": "quote",
+      "settings": {
+        "quote-text": "your quote text here",
+        "text-button": "your text button here",
+        "visibility-button": true
+      }
+    },
+    "wine": {
+      "type": "wines",
+      "blocks": {
+        "wine_section_XbyCBx": {
+          "type": "wine-section",
+          "settings": {
+            "wine_image": "shopify:\/\/shop_images\/home-bottiglia-saldenia.jpg",
+            "wine_image_logo": "shopify:\/\/shop_images\/logo-saldenia-2.svg",
+            "wine_type": "Vermentino",
+            "wine_name": "Sardegna DOC"
+          }
+        },
+        "wine_section_gbVxhN": {
+          "type": "wine-section",
+          "settings": {
+            "wine_image": "shopify:\/\/shop_images\/home-bottiglia-nascimento.jpg",
+            "wine_image_logo": "shopify:\/\/shop_images\/logo-nascimento-2.svg",
+            "wine_type": "Cannonau",
+            "wine_name": "Sardegna DOC"
+          }
+        },
+        "wine_section_fN6nni": {
+          "type": "wine-section",
+          "settings": {
+            "wine_image": "shopify:\/\/shop_images\/home-bottiglia-alghe.jpg",
+            "wine_image_logo": "shopify:\/\/shop_images\/logo-lalghe-2.svg",
+            "wine_type": "Cagnulari",
+            "wine_name": "Sardegna DOC"
+          }
+        }
+      },
+      "block_order": [
+        "wine_section_XbyCBx",
+        "wine_section_gbVxhN",
+        "wine_section_fN6nni"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "hero-section",
     "column-textwimage",
-    "slider"
+    "slider",
+    "quote",
+    "wine"
   ]
 }

@@ -1,0 +1,59 @@
+<!-- section wrapper wine rendering -->
+<div class="wrapper-section">
+  <div class="wrapper-contents">
+    <div class="content wine-content" id="wine-section">
+      <div class="wrap-wine-content">
+        {% for block in section.blocks %}
+          {% if block.type == 'wine-section' %}
+            <div class="wine container">
+              <img
+                src="{{ block.settings.wine_image | img_url: 'master' }}"
+                alt="wine-img"
+                class="wine-img">
+              <img
+                src="{{ block.settings.wine_image_logo | img_url: 'master' }}"
+                alt=""
+                class="wine-logo">
+              <p class="wine-heading">{{ block.settings.wine_type }}</p>
+              <p>{{ block.settings.wine_name }}</p>
+            </div>
+          {% endif %}
+
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- section wrapper wine rendering -->
+
+{% schema %}
+  {
+    "name": "wines",
+    "max_blocks": 6,
+    "blocks": [
+      {
+        "type": "wine-section",
+        "name": "wine-section",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "wine_image",
+            "label": "wine image"
+          }, {
+            "type": "image_picker",
+            "id": "wine_image_logo",
+            "label": "wine image logo"
+          }, {
+            "type": "text",
+            "id": "wine_type",
+            "label": "your wine details"
+          }, {
+            "type": "text",
+            "id": "wine_name",
+            "label": "your wine name"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

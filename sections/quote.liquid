@@ -1,0 +1,55 @@
+<!-- section wrapper center text -->
+<div class="wrapper-section">
+  <div class="wrapper-contents">
+    <div class="content">
+      <div class="container-center-text">
+        <h2 class="heading-h2">{{ section.settings.quote-text }}</h2>
+        {% if section.settings.visibility-button == true %}
+          <div class="content-primary-button">
+            <div class="content-button-text">
+              <a class="button-link-text" href="podere.html">{{ section.settings.text-button }}</a>
+            </div>
+            <div class="content-button-icon">
+              <div class="container-icon">
+                <img
+                  src="./icons/free-left-arrow-437-1174845.png"
+                  alt=""
+                  class="arrow-icon rotate">
+                <img
+                  src="./icons/free-left-arrow-437-1174845.png"
+                  alt=""
+                  class="arrow-icon rotate">
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- section wrapper center text -->
+
+
+{% schema %}
+  {
+    "name": "quote",
+    "settings": [
+      {
+        "type": "text",
+        "id": "quote-text",
+        "label": "your quote text",
+        "default": "your quote text here"
+      }, {
+        "type": "text",
+        "id": "text-button",
+        "label": "your text button",
+        "default": "your text button here"
+      }, {
+        "type": "checkbox",
+        "id": "visibility-button",
+        "label": "hide/show button",
+        "default": true
+      }
+    ]
+  }
+{% endschema %}
