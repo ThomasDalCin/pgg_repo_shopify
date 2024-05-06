@@ -1,5 +1,5 @@
 <!-- section wrapper center text -->
-<div class="wrapper-section">
+<div class="wrapper-section quote-section-margin">
   <div class="wrapper-contents">
     <div class="content">
       <div class="container-center-text">
@@ -7,7 +7,7 @@
         {% if section.settings.visibility-button == true %}
           <div class="content-primary-button">
             <div class="content-button-text">
-                <a class="button-link-text" href="/pages/vini">{{ section.settings.text-button }}</a>
+              <a class="button-link-text" href="/pages/vini">{{ section.settings.text-button }}</a>
             </div>
             <div class="content-button-icon">
               <div class="container-icon">
@@ -29,11 +29,64 @@
 </div>
 <!-- section wrapper center text -->
 
+{% style %}
+  .quote-section-margin {
+    margin-bottom: {{ section.settings.section_margin }}px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .quote-section-margin {
+      margin-bottom: {{ section.settings.section_margin_tablet }}px
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .quote-section-margin {
+      margin-bottom: {{ section.settings.section_margin_mobile }}px
+    }
+  }
+{% endstyle %}
 
 {% schema %}
   {
     "name": "quote",
     "settings": [
+      {
+
+        "type": "range",
+        "id": "section_margin",
+        "label": "margin section",
+        "default": 0,
+        "unit": "px",
+        "min": 0,
+        "max": 100,
+        "step": 1
+
+      },
+      {
+
+        "type": "range",
+        "id": "section_margin_tablet",
+        "label": "margin section tablet",
+        "default": 0,
+        "unit": "px",
+        "min": 0,
+        "max": 100,
+        "step": 1
+
+      },
+      {
+
+        "type": "range",
+        "id": "section_margin_mobile",
+        "label": "margin section mobile",
+        "default": 0,
+        "unit": "px",
+        "min": 0,
+        "max": 100,
+        "step": 1
+
+      },
       {
         "type": "text",
         "id": "quote-text",
@@ -44,8 +97,7 @@
         "id": "text-button",
         "label": "your text button",
         "default": "your text button here"
-      },
-       {
+      }, {
         "type": "checkbox",
         "id": "visibility-button",
         "label": "hide/show button",

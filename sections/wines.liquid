@@ -1,5 +1,5 @@
 <!-- section wrapper wine rendering -->
-<div class="wrapper-section">
+<div class="wrapper-section wine-section-margin">
   <div class="wrapper-contents">
     <div class="content wine-content" id="wine-section">
       <div class="wrap-wine-content">
@@ -26,9 +26,63 @@
 </div>
 <!-- section wrapper wine rendering -->
 
+{% style %}
+  .wine-section-margin {
+    margin-bottom: {{ section.settings.section_margin }}px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .wine-section-margin {
+      margin-bottom: {{ section.settings.section_margin_tablet }}px
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .wine-section-margin {
+      margin-bottom: {{ section.settings.section_margin_mobile }}px
+    }
+  }
+{% endstyle %}
+
 {% schema %}
   {
     "name": "wines",
+    "settings": [
+      {
+
+        "type": "range",
+        "id": "section_margin",
+        "label": "margin section",
+        "default": 0,
+        "unit": "px",
+        "min": 0,
+        "max": 100,
+        "step": 1
+
+      }, {
+
+        "type": "range",
+        "id": "section_margin_tablet",
+        "label": "margin section tablet",
+        "default": 0,
+        "unit": "px",
+        "min": 0,
+        "max": 100,
+        "step": 1
+
+      }, {
+
+        "type": "range",
+        "id": "section_margin_mobile",
+        "label": "margin section mobile",
+        "default": 0,
+        "unit": "px",
+        "min": 0,
+        "max": 100,
+        "step": 1
+
+      }
+    ],
     "max_blocks": 6,
     "blocks": [
       {

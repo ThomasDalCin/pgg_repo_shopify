@@ -37,11 +37,17 @@
     "slider": {
       "type": "slider",
       "settings": {
+        "section_margin": 100,
+        "section_margin_tablet": 70,
+        "section_margin_mobile": 50
       }
     },
     "quote": {
       "type": "quote",
       "settings": {
+        "section_margin": 100,
+        "section_margin_tablet": 70,
+        "section_margin_mobile": 50,
         "quote-text": "your quote text here",
         "text-button": "your text button here",
         "visibility-button": true
@@ -84,11 +90,17 @@
         "wine_section_fN6nni"
       ],
       "settings": {
+        "section_margin": 100,
+        "section_margin_tablet": 70,
+        "section_margin_mobile": 50
       }
     },
     "center-text": {
       "type": "center-text",
       "settings": {
+        "section_margin": 100,
+        "section_margin_tablet": 70,
+        "section_margin_mobile": 50
       }
     },
     "footer": {
