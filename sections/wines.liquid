@@ -5,7 +5,7 @@
       <div class="wrap-wine-content">
         {% for block in section.blocks %}
           {% if block.type == 'wine-section' %}
-            <div class="wine container">
+            <div class="wine-container">
               <img
                 src="{{ block.settings.wine_image | img_url: 'master' }}"
                 alt="wine-img"

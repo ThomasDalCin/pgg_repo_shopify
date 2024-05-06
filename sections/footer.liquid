@@ -1,0 +1,99 @@
+<footer class="wrapper-section">
+  <div class="wrapper-contents">
+    <div class="content w-border">
+      {% for block in section.blocks %}
+        {% if block.type == 'column-first-info' %}
+          <div class="content-block">
+            <p class="footer-text">{{ block.settings.brand_name }}</p>
+            <a class="footer-link" href="mailto:{{ block.settings.brand_email }}">{{ block.settings.brand_email }}</a>
+          </div>
+        {% elsif block.type == 'column-second-info' %}
+          <div class="content-block">
+            <p class="footer-text">{{ block.settings.address_info }}</p>
+            <p class="footer-text">{{ block.settings.second_address_info }}</p>
+          </div>
+        {% elsif block.type == 'column-third-info' %}
+          <div class="content-block">
+            <p class="footer-text">FOLLOW</p>
+            <div class="content-social-icon">
+              <a href="#" class="social-link">
+                <img src="{{ block.settings.ig_img | img_url: 'master' }}" alt="fb" class="social-icon">
+              </a>
+              <a href="https://www.instagram.com/podere.guardia.grande/" class="social-link">
+                <img src="{{ block.settings.fb_img | img_url: 'master' }}" alt="ig" class="social-icon">
+              </a>
+            </div>
+          </div>
+        {% elsif block.type == 'column-fourth-info' %}
+          <div class="content-block">
+            <p class="footer-text">©2024</p>
+            <p class="footer-text">{{ block.settings.P_iva }}</p>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</footer>
+
+
+{% schema %}
+  {
+    "name": "footer",
+    "max_blocks": 4,
+    "blocks": [
+      {
+        "type": "column-first-info",
+        "name": "column-first-info",
+        "settings": [
+          {
+            "type": "text",
+            "id": "brand_name",
+            "label": "Podere guardia grande"
+          }, {
+            "type": "text",
+            "id": "brand_email",
+            "label": "brand email"
+          }
+        ]
+      }, {
+        "type": "column-second-info",
+        "name": "column-second-info",
+        "settings": [
+          {
+            "type": "text",
+            "id": "address_info",
+            "label": "info address here"
+          }, {
+            "type": "text",
+            "id": "second_address_info",
+            "label": "info address here"
+          }
+        ]
+      }, {
+        "type": "column-third-info",
+        "name": "column-third-info",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "ig_img",
+            "label": "social_img"
+          }, {
+            "type": "image_picker",
+            "id": "fb_img",
+            "label": "social img"
+          }
+        ]
+      }, {
+        "type": "column-fourth-info",
+        "name": "column-fourth-info",
+        "settings": [
+          {
+            "type": "text",
+            "id": "P_iva",
+            "label": "Your p.iva"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

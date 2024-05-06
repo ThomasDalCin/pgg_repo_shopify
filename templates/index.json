@@ -85,6 +85,51 @@
       ],
       "settings": {
       }
+    },
+    "center-text": {
+      "type": "center-text",
+      "settings": {
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "column_first_info_w7zQxY": {
+          "type": "column-first-info",
+          "settings": {
+            "brand_name": "PODERE GUARDIA GRANDE",
+            "brand_email": "info@podereguardiagrande.it"
+          }
+        },
+        "column_second_info_bfJrcd": {
+          "type": "column-second-info",
+          "settings": {
+            "address_info": "SASSARI (SS) SARDEGNA, ITALIA",
+            "second_address_info": "St. Vicinale Baratz Monte-Pedrosu"
+          }
+        },
+        "column_third_info_6M389E": {
+          "type": "column-third-info",
+          "settings": {
+            "ig_img": "shopify:\/\/shop_images\/Platform_Instagram_Color_Original_2.svg",
+            "fb_img": "shopify:\/\/shop_images\/Platform_Facebook_Color_Original_1.svg"
+          }
+        },
+        "column_fourth_info_YGUEqj": {
+          "type": "column-fourth-info",
+          "settings": {
+            "P_iva": "P.IVA 03922530237"
+          }
+        }
+      },
+      "block_order": [
+        "column_first_info_w7zQxY",
+        "column_second_info_bfJrcd",
+        "column_third_info_6M389E",
+        "column_fourth_info_YGUEqj"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -92,6 +137,8 @@
     "column-textwimage",
     "slider",
     "quote",
-    "wine"
+    "wine",
+    "center-text",
+    "footer"
   ]
 }
