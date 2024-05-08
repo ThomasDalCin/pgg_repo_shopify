@@ -1,5 +1,55 @@
 {
   "current": {
+    "sections": {
+      "podere-template": {
+        "type": "podere-template",
+        "settings": {
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "column-first-info",
+            "settings": {
+              "brand_name": "PODERE GUARDIA GRANDE",
+              "brand_email": "info@podereguardiagrande.it"
+            }
+          },
+          "footer-1": {
+            "type": "column-second-info",
+            "settings": {
+              "address_info": "SASSARI (SS) SARDEGNA, ITALIA",
+              "second_address_info": "St. Vicinale Baratz Monte-Pedrosu"
+            }
+          },
+          "footer-2": {
+            "type": "column-third-info",
+            "settings": {
+              "ig_img": "shopify:\/\/shop_images\/Platform_Instagram_Color_Original_2.svg",
+              "fb_img": "shopify:\/\/shop_images\/Platform_Facebook_Color_Original_1.svg"
+            }
+          },
+          "footer-3": {
+            "type": "column-fourth-info",
+            "settings": {
+              "P_iva": "P.IVA 03922530237"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "footer-1",
+          "footer-2",
+          "footer-3"
+        ],
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {

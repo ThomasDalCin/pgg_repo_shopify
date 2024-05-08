@@ -17,10 +17,16 @@
             <p class="footer-text">FOLLOW</p>
             <div class="content-social-icon">
               <a href="#" class="social-link">
-                <img src="{{ block.settings.ig_img | img_url: 'master' }}" alt="fb" class="social-icon">
+                <img
+                  src="{{ block.settings.ig_img | img_url: 'master' }}"
+                  alt="fb"
+                  class="social-icon">
               </a>
               <a href="https://www.instagram.com/podere.guardia.grande/" class="social-link">
-                <img src="{{ block.settings.fb_img | img_url: 'master' }}" alt="ig" class="social-icon">
+                <img
+                  src="{{ block.settings.fb_img | img_url: 'master' }}"
+                  alt="ig"
+                  class="social-icon">
               </a>
             </div>
           </div>
@@ -48,11 +54,13 @@
           {
             "type": "text",
             "id": "brand_name",
-            "label": "Podere guardia grande"
+            "label": "Podere guardia grande",
+            "default": "PODERE GUARDIA GRANDE"
           }, {
             "type": "text",
             "id": "brand_email",
-            "label": "brand email"
+            "label": "brand email",
+            "default": "info@podereguardiagrande.it"
           }
         ]
       }, {
@@ -62,11 +70,13 @@
           {
             "type": "text",
             "id": "address_info",
-            "label": "info address here"
+            "label": "info address here",
+            "default": "SASSARI (SS) SARDEGNA, ITALIA"
           }, {
             "type": "text",
             "id": "second_address_info",
-            "label": "info address here"
+            "label": "info address here",
+            "default": "St. Vicinale Baratz Monte-Pedrosu"
           }
         ]
       }, {
@@ -90,10 +100,27 @@
           {
             "type": "text",
             "id": "P_iva",
-            "label": "Your p.iva"
+            "label": "Your p.iva",
+            "default": "P.IVA 03922530237"
           }
         ]
       }
-    ]
+    ],
+    "default": {
+      "blocks" : [
+        {
+          "type" : "column-first-info"
+        },
+        {
+          "type" : "column-second-info"
+        },
+        {
+          "type" : "column-third-info"
+        },
+        {
+          "type" : "column-fourth-info"
+        }
+      ]  
+    } 
   }
 {% endschema %}
