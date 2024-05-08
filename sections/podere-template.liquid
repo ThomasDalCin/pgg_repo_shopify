@@ -1,0 +1,124 @@
+<!-- wrapper section image & text -->
+<div class="wrapper-section">
+  <div class="wrapper-contents w-space">
+    {% for block in section.blocks %}
+      {% if block.type == 'column-text-image' %}
+        <div class="content is-revert" id="translate-effect">
+          <div class="content-text">
+            <h2 class="heading-h2">{{ block.settings.text_content }}</h2>
+            <p class="paragraph">{{ block.settings.text_area_content }}</p>
+          </div>
+          <div class="container-img">
+            <img
+              src="{{ block.settings.img_content | img_url : 'master' }}"
+              alt="giardino"
+              class="content-img small-img full-width"
+              id="translate-img">
+          </div>
+        </div>
+      {% elsif block.type == 'column-image-text' %}
+        <div class="content" id="translate-second-effect">
+          <div class="container-img">
+            <img
+              src="{{ block.settings.img_content | img_url : 'master' }}"
+              alt="rami"
+              class="content-img contain"
+              id="translate-second-img">
+          </div>
+          <div class="content-text">
+            <h2 class="heading-h2">{{ block.settings.text_content }}</h2>
+            <p class="paragraph">{{ block.settings.text_first_area }}</p>
+            <p class="paragraph">{{ block.settings.text-second_area }}</p>
+            {% if block.settings.visibility_button == true %}
+              <div class="content-primary-button">
+                <div class="content-button-text">
+                  <a class="button-link-text" href="pages/vini">{{ block.settings.button_text }}</a>
+                </div>
+                <div class="content-button-icon">
+                  <div class="container-icon">
+                    <img
+                      src="./icons/free-left-arrow-437-1174845.png"
+                      alt=""
+                      class="arrow-icon rotate">
+                    <img
+                      src="./icons/free-left-arrow-437-1174845.png"
+                      alt=""
+                      class="arrow-icon rotate">
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+<!-- wrapper section image & text -->
+
+{% schema %}
+  {
+    "name": "column-w-text-image",
+    "max_blocks": 2,
+    "blocks": [
+      {
+        "type": "column-image-text",
+        "name": "from-image-to-text",
+
+        "settings": [
+          {
+            "type": "text",
+            "id": "text_content",
+            "label": "your text content here"
+          },
+          {
+            "type": "textarea",
+            "id": "text_first_area",
+            "label": "your text area content here"
+          },
+          {
+            "type": "textarea",
+            "id": "text_second_area",
+            "label": "your text area content here"
+          },
+          {
+            "type": "image_picker",
+            "id": "img_content",
+            "label": "Your image here"
+          }, {
+            "type": "text",
+            "id": "button_text",
+            "label": "button text",
+            "default": "Type your button text"
+          }, {
+            "type": "checkbox",
+            "id": "visibility_button",
+            "label": "hide or show your button",
+            "default": true
+          }
+        ]
+
+      }, {
+        "type": "column-text-image",
+        "name": "from-text-to-image",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text_content",
+            "label": "your text content here"
+          }, {
+            "type": "textarea",
+            "id": "text_area_content",
+            "label": "your text area content here"
+          }, {
+            "type": "image_picker",
+            "id": "img_content",
+            "label": "Your image here"
+          }
+        ]
+      }
+    ]
+
+
+  }
+{% endschema %}

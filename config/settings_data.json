@@ -3,6 +3,31 @@
     "sections": {
       "podere-template": {
         "type": "podere-template",
+        "blocks": {
+          "column_text_image_eHwX4B": {
+            "type": "column-text-image",
+            "settings": {
+              "text_content": "Il rispetto della natura sarda è un atto dovuto verso un territorio la cui straordinaria autenticità emoziona",
+              "text_area_content": "Salvaguardare l’integrità e la vitalità dei vigneti è importante non solo per la qualità dei vini che si producono o per l’interesse paesaggistico, bensì perché esse rappresentano un’importante riserva per la biodiversità.",
+              "img_content": "shopify:\/\/shop_images\/podere-vigna.jpg"
+            }
+          },
+          "column_image_text_tE9mrT": {
+            "type": "column-image-text",
+            "settings": {
+              "text_content": "Le colline sono caratterizzate da una geologia “prepotente” e il vento di Maestrale le taglia trasversalmente.",
+              "text_first_area": "Le viti maturano su un terreno a base sabbioso\/argilloso, asciutto, magro e ciottoloso, cosparso di pietre di quarzite. Tutto attorno ritroviamo gli elementi paesaggistici tipici della macchia mediterranea e una natura incontaminata costellata di vecchie querce, mirto e altre specie arboree tipiche dell’isola.",
+              "text_second_area": "Puntiamo sul valore della natura che ci circonda. Crediamo in un’agricoltura sostenibile nella pratica, non solo nelle dichiarazioni. Ad oggi i nostri vigneti sono in conversione biologica.",
+              "img_content": "shopify:\/\/shop_images\/pgg_podere_viti.png",
+              "button_text": "Scopri i vini del podere",
+              "visibility_button": true
+            }
+          }
+        },
+        "block_order": [
+          "column_text_image_eHwX4B",
+          "column_image_text_tE9mrT"
+        ],
         "settings": {
         }
       },
