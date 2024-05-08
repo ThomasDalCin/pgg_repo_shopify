@@ -356,9 +356,19 @@ body {
     object-fit: cover;
 }
 
+.static-img {
+    width: 250px;
+    height: 134px;
+    object-fit: contain;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
 
-
-
+.container-img.relative.flex-top {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
 /*footer settings*/
 .content-block {
