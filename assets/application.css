@@ -333,6 +333,32 @@ body {
     object-fit: contain;
 }
 
+
+/*wrapper section parallax img settings*/
+.container-img.relative {
+    align-items: center;
+    position: relative;
+}
+
+.content-img.small-img {
+    width: 500px;
+    min-width: 500px;
+    height: 600px;
+}
+
+.absolute-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 350px;
+    height: 234px;
+    object-fit: cover;
+}
+
+
+
+
+
 /*footer settings*/
 .content-block {
     flex: 1;
