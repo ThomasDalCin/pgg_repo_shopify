@@ -22,23 +22,35 @@
               "button_text": "Scopri i vini del podere",
               "visibility_button": true
             }
+          },
+          "slider_pTeCyR": {
+            "type": "slider",
+            "settings": {
+            }
+          },
+          "section_MV8E34": {
+            "type": "section",
+            "settings": {
+              "heading_section_bottom": "Ogni roccia su cui la macchia mediterranea attecchisce vigorosa ha una arcana schiettezza.",
+              "first_paragraph_section_bottom": "È il mosaico di palme nane, asfodeli, ginestre, cisto a dare la misura della biodiversità del luogo.",
+              "second_paragraph_section_bottom": "Il paesaggio circostante è spettacolare e profuma delle piante aromatiche endemiche.La vigna è accarezzata dalle luci che invadono il promontorio. L’uva cresce ricca beneficiando delle peculiarità del suolo, asciutto e soleggiato.",
+              "button_text": "Scopri i vini del podere",
+              "visibility_button": true,
+              "first_image": "shopify:\/\/shop_images\/podere-cespuglio.jpg",
+              "simbol_image": "shopify:\/\/shop_images\/podere-icone.png"
+            }
           }
         },
         "block_order": [
           "column_text_image_eHwX4B",
-          "column_image_text_tE9mrT"
+          "column_image_text_tE9mrT",
+          "slider_pTeCyR",
+          "section_MV8E34"
         ],
         "settings": {
           "section_margin": 100,
           "section_margin_tablet": 70,
-          "section_margin_mobile": 60,
-          "heading_section_bottom": "Ogni roccia su cui la macchia mediterranea attecchisce vigorosa ha una arcana schiettezza.",
-          "first_paragraph_section_bottom": "È il mosaico di palme nane, asfodeli, ginestre, cisto a dare la misura della biodiversità del luogo.",
-          "second_paragraph_section_bottom": "Il paesaggio circostante è spettacolare e profuma delle piante aromatiche endemiche.La vigna è accarezzata dalle luci che invadono il promontorio. L’uva cresce ricca beneficiando delle peculiarità del suolo, asciutto e soleggiato.",
-          "button_text": "Scopri i vini del podere",
-          "visibility_button": true,
-          "first_image": "shopify:\/\/shop_images\/podere-cespuglio.jpg",
-          "simbol_image": "shopify:\/\/shop_images\/podere-icone.png"
+          "section_margin_mobile": 60
         }
       },
       "footer": {
