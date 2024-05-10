@@ -56,127 +56,136 @@
 </div>
 <!-- wrapper section image & text -->
 
-<!-- section wrap slider -->
-<div class="wrapper-section w-slider section-bottom-margin">
-  <div class="swiper mySwiper" id="slider-section">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide variant">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podere-slide-01.jpg?v=1714828146"
-          alt=""
-          class="slider-img">
-      </div>
-      <div class="swiper-slide variant">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podere-slide-02.jpg?v=1714828146"
-          alt=""
-          class="slider-img">
-      </div>
-      <div class="swiper-slide variant">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podere-slide-03.png?v=1714828147"
-          alt=""
-          class="slider-img">
-      </div>
-      <div class="swiper-slide variant">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podere-slide-04.jpg?v=1714828148"
-          alt=""
-          class="slider-img">
-      </div>
-      <div class="swiper-slide variant">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podere-slide-04.jpg?v=1714828148"
-          alt=""
-          class="slider-img">
-      </div>
-      <div class="swiper-slide variant">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/home-slider-5.jpg?v=1714828148"
-          alt=""
-          class="slider-img">
-      </div>
-      <div class="swiper-slide variant">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podere-slide-07.png?v=1714828145"
-          alt=""
-          class="slider-img">
-      </div>
-      <div class="swiper-slide variant">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podere_slide_08.jpg?v=1714828146"
-          alt=""
-          class="slider-img">
-      </div>
-      <div class="swiper-slide variant">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podere-slide-09.jpg?v=1714828152"
-          alt=""
-          class="slider-img">
-      </div>
-      <div class="swiper-slide variant">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podere-slide-10.png?v=1714828147"
-          alt=""
-          class="slider-img">
-      </div>
-      <div class="swiper-slide variant">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podere-slide-11.jpg?v=1714828149"
-          alt=""
-          class="slider-img">
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-</div>
-<!-- section wrap slider -->
-
-<!-- section wrap contente text & image -->
-<div class="wrapper-section section-bottom-margin">
-  <div class="wrapper-content">
-    <div class="content" id="translate-effect-absolute">
-      <div class="content-text relative-position">
-        <h2 class="heading-h2">{{ section.settings.heading_section_bottom }}</h2>
-        <p class="paragraph">{{ section.settings.first_paragraph_section_bottom }}</p>
-        <p class="paragraph">{{ section.settings.second_paragraph_section_bottom }}</p>
-        {% if section.settings.visibility_button == true %}
-          <div class="content-primary-button">
-            <div class="content-button-text">
-              <a class="button-link-text" href="vini.html">{{ section.settings.button_text }}</a>
-            </div>
-            <div class="content-button-icon">
-              <div class="container-icon">
-                <img
-                  src=""
-                  alt=""
-                  class="arrow-icon rotate">
-                <img
-                  src=""
-                  alt=""
-                  class="arrow-icon rotate">
-              </div>
-            </div>
+{% for block in section.blocks %}
+  {% if block.type == 'slider' %}
+    <!-- section wrap slider -->
+    <div class="wrapper-section w-slider section-bottom-margin">
+      <div class="swiper mySwiper" id="slider-section">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide variant">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podere-slide-01.jpg?v=1714828146"
+              alt=""
+              class="slider-img">
           </div>
-        {% endif %}
-        <img
-          src="{{ section.settings.simbol_image |  img_url: 'master'}}"
-          alt="icone"
-          class="static-img"
-          id="translate-effect-img-absolute">
-      </div>
-      <div class="container-img relative flex-top">
-        <img
-          src="{{ section.settings.first_image |  img_url: 'master'}}"
-          alt="cespuglio"
-          class="content-img small-img">
+          <div class="swiper-slide variant">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podere-slide-02.jpg?v=1714828146"
+              alt=""
+              class="slider-img">
+          </div>
+          <div class="swiper-slide variant">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podere-slide-03.png?v=1714828147"
+              alt=""
+              class="slider-img">
+          </div>
+          <div class="swiper-slide variant">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podere-slide-04.jpg?v=1714828148"
+              alt=""
+              class="slider-img">
+          </div>
+          <div class="swiper-slide variant">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podere-slide-04.jpg?v=1714828148"
+              alt=""
+              class="slider-img">
+          </div>
+          <div class="swiper-slide variant">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/home-slider-5.jpg?v=1714828148"
+              alt=""
+              class="slider-img">
+          </div>
+          <div class="swiper-slide variant">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podere-slide-07.png?v=1714828145"
+              alt=""
+              class="slider-img">
+          </div>
+          <div class="swiper-slide variant">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podere_slide_08.jpg?v=1714828146"
+              alt=""
+              class="slider-img">
+          </div>
+          <div class="swiper-slide variant">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podere-slide-09.jpg?v=1714828152"
+              alt=""
+              class="slider-img">
+          </div>
+          <div class="swiper-slide variant">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podere-slide-10.png?v=1714828147"
+              alt=""
+              class="slider-img">
+          </div>
+          <div class="swiper-slide variant">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podere-slide-11.jpg?v=1714828149"
+              alt=""
+              class="slider-img">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
-  </div>
-</div>
-<!-- section wrap contente text & image -->
+    <!-- section wrap slider -->
+  {% endif %}
+{% endfor %}
+
+{% for block in section.blocks %}
+  {% if block.type == 'section' %}
+    <!-- section wrap contente text & image -->
+    <div class="wrapper-section section-bottom-margin">
+      <div class="wrapper-content">
+        <div class="content" id="translate-effect-absolute">
+          <div class="content-text relative-position">
+            <h2 class="heading-h2">{{ block.settings.heading_section_bottom }}</h2>
+            <p class="paragraph">{{ block.settings.first_paragraph_section_bottom }}</p>
+            <p class="paragraph">{{ block.settings.second_paragraph_section_bottom }}</p>
+            {% if block.settings.visibility_button == true %}
+              <div class="content-primary-button">
+                <div class="content-button-text">
+                  <a class="button-link-text" href="vini.html">{{ block.settings.button_text }}</a>
+                </div>
+                <div class="content-button-icon">
+                  <div class="container-icon">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/free-left-arrow-437-1174845.png?v=1715325754"
+                      alt=""
+                      class="arrow-icon rotate">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/free-left-arrow-437-1174845.png?v=1715325754"
+                      alt=""
+                      class="arrow-icon rotate">
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+            <img
+              src="{{ block.settings.simbol_image |  img_url: 'master'}}"
+              alt="icone"
+              class="static-img"
+              id="translate-effect-img-absolute">
+          </div>
+          <div class="container-img relative flex-top">
+            <img
+              src="{{ block.settings.first_image |  img_url: 'master'}}"
+              alt="cespuglio"
+              class="content-img small-img">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section wrap contente text & image -->
+  {% endif %}
+{% endfor %}
 
 {% style %}
+
   .section-bottom-margin {
     margin-bottom: {{ section.settings.section_margin }}px;
   }
@@ -197,7 +206,7 @@
 {% schema %}
   {
     "name": "podere-template",
-    "max_blocks": 2,
+    "max_blocks": 4,
     "blocks": [
       {
         "type": "column-image-text",
@@ -254,6 +263,51 @@
             "label": "Your image here"
           }
         ]
+      }, {
+        "type": "slider",
+        "name": "slider-section"
+      }, {
+        "type": "section",
+        "name": "section-scroll-img",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading_section_bottom",
+            "label": "Your heading here",
+            "default": "Type your heading here"
+          },
+          {
+            "type": "textarea",
+            "id": "first_paragraph_section_bottom",
+            "label": "your text area content here",
+            "default": "Type your text here"
+          },
+          {
+            "type": "textarea",
+            "id": "second_paragraph_section_bottom",
+            "label": "your text area content here",
+            "default": "Type your text here"
+          },
+          {
+            "type": "text",
+            "id": "button_text",
+            "label": "button text",
+            "default": "Type your button text"
+          }, {
+            "type": "checkbox",
+            "id": "visibility_button",
+            "label": "hide or show your button",
+            "default": true
+          }, {
+            "type": "image_picker",
+            "id": "first_image",
+            "label": "Set your image"
+          }, {
+            "type": "image_picker",
+            "id": "simbol_image",
+            "label": "Set your image"
+          }
+        ]
       }
     ],
     "settings": [
@@ -268,8 +322,7 @@
         "max": 100,
         "step": 1
 
-      },
-      {
+      }, {
 
         "type": "range",
         "id": "section_margin_tablet",
@@ -280,8 +333,7 @@
         "max": 100,
         "step": 1
 
-      },
-      {
+      }, {
 
         "type": "range",
         "id": "section_margin_mobile",
@@ -292,42 +344,7 @@
         "max": 100,
         "step": 1
 
-      },
-      {
-        "type": "text",
-        "id": "heading_section_bottom",
-        "label": "Your heading here",
-        "default": "Type your heading here"
-      }, {
-        "type": "textarea",
-        "id": "first_paragraph_section_bottom",
-        "label": "your text area content here",
-        "default": "Type your text here"
-      }, {
-        "type": "textarea",
-        "id": "second_paragraph_section_bottom",
-        "label": "your text area content here",
-        "default": "Type your text here"
-      }, {
-        "type": "text",
-        "id": "button_text",
-        "label": "button text",
-        "default": "Type your button text"
-      }, {
-        "type": "checkbox",
-        "id": "visibility_button",
-        "label": "hide or show your button",
-        "default": true
-      }, {
-        "type": "image_picker",
-        "id": "first_image",
-        "label": "Set your image"
-      }, {
-        "type": "image_picker",
-        "id": "simbol_image",
-        "label": "Set your image"
       }
-
     ]
 
 
