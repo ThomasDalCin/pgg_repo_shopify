@@ -90,6 +90,19 @@ body {
     font-family: 'Fulmar-Light';
 }
 
+.heading-h3 {
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
+    font-weight: 300;
+}
+
+.heading-h4 {
+    font-size: calc(var(--base-font-size) - 3);
+    line-height: calc(var(--base-font-size) - 3);
+    color: #CECCC6;
+    font-weight: 300;
+}
+
 .hero-heading {
     font-family: 'Fulmar-Reg';
     font-size: var(--h1-font-size);
@@ -315,6 +328,34 @@ body {
     row-gap: .8rem;
 }
 
+.w-margin {
+    margin: .8rem;
+    align-items: flex-start;
+}
+
+.wine-container-img {
+    width: 100%;
+    height: 600px;
+    min-height: 600px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.image-wine {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease .3s;
+}
+
+.wine-container-img:hover .image-wine {
+    scale: 1.2;
+}
+
+.wine-simbol {
+    width: 200px;
+    height: 240px;
+}
 
 .wine-heading {
     font-weight: 700;
@@ -369,6 +410,37 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
 }
+
+/*section top page settings */
+.top-page-wrap {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-text.absolute {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 60ch;
+    min-width: 60ch;
+    height: auto;
+    height: 100%;
+}
+
+.top-page-img {
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    transform: translateX(20%);
+    object-fit: cover;
+}
+
 
 /*footer settings*/
 .content-block {
@@ -450,7 +522,7 @@ body {
         padding: var(--base-mobile-wrap-padd);
     }
 
-    .wrapper-contents{
+    .wrapper-contents {
         row-gap: var(--base-mobile-row-gap);
     }
 
@@ -549,6 +621,28 @@ body {
         width: 170px;
         height: 120px;
     }
+
+    /*section top page settings*/
+    
+    .top-page-wrap {
+        margin-top: 4rem;
+
+    }
+
+    .top-page-img {
+        display: none;
+    }
+
+    .content-text.absolute {
+        width: 100%;
+        min-width: 100%;
+        position: static;
+    }
+
+    .top-page-img.vini {
+        display: none;
+    }
+
 
     /* footer settings */
     .content.w-border {

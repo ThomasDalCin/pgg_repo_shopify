@@ -1,0 +1,203 @@
+{% for block in section.blocks %}
+  <!-- section top page wrap -->
+  {% if block.type == 'top-section' %}
+    <div class="wrapper-section section-bottom-margin">
+      <div class="wrapper-contents">
+        <div class="top-page-wrap">
+          <div class="content-text absolute">
+            <h2 class="heading-h2">{{ block.settings.section_heading }}</h2>
+            <p class="paragraph">{{ block.settings.section_paragraph }}</p>
+          </div>
+          <img
+            src="{{ block.settings.section_image |  img_url: 'master' }}"
+            alt="alberi"
+            class="top-page-img vini">
+        </div>
+      </div>
+    </div>
+    <!-- section top page wrap -->
+  {% endif %}
+{% endfor %}
+
+
+<div class="wrapper-section section-bottom-margin">
+  <div class="wrapper-contents">
+    <div class="content wine-content">
+      <div class="wrap-wine-content" id="transition-effect">
+        {% for collection in collections %}
+          {% for product in collection.products %}
+            <div class="wine-container w-margin">
+              <div class="wine-container-img">
+                <a href="{{ product.url }}"><img
+                    src="{{ product.featured_image | img_url: 'master' }}"
+                    alt=""
+                    class="image-wine"></a>
+              </div>
+              <h3 class="heading-h3">{{ product.title }}</h3>
+              {% if product.title == "Saldenya" %}
+                <h4 class="heading-h4">Vermentino di Sardegna DOC</h4>
+              {% elsif product.title == "Nascimento" %}
+                <h4 class="heading-h4">Cannonau di Sardegna DOC</h4>
+              {% elsif product.title == "L'Alghè" %}
+                <h4 class="heading-h4">Alghero Cagnulari DOC</h4>
+              {% endif %}
+              <div class="divider"></div>
+              <p class="paragraph">{{ product.description }}</p>
+              {% if product.title == "Saldenya" %}
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/vini-saldenya-icone.png?v=1714828152"
+                  alt=""
+                  class="wine-simbol">
+              {% elsif product.title == "Nascimento" %}
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/vini-nascimento-icone.png?v=1714828153"
+                  alt=""
+                  class="wine-simbol">
+              {% elsif product.title == "L'Alghè" %}
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/vini-lalghe-icone.png?v=1714828147"
+                  alt=""
+                  class="wine-simbol">
+              {% endif %}
+              <div class="content-primary-button">
+                <div class="content-button-text">
+                  <a class="button-link-text" href="{{ product.url }}">Scopri i vini del podere</a>
+                </div>
+                <div class="content-button-icon">
+                  <div class="container-icon">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/free-left-arrow-437-1174845.png?v=1715325754"
+                      alt=""
+                      class="arrow-icon rotate">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/free-left-arrow-437-1174845.png?v=1715325754"
+                      alt=""
+                      class="arrow-icon rotate">
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% for block in section.blocks %}
+  {% if block.type == 'center-text-section' %}
+    <!-- section wrapper center text -->
+    <div class="wrapper-section section-bottom-margin">
+      <div class="wrapper-contents">
+        <div class="content">
+          <div class="container-center-text">
+            <h2 class="heading-h2 light">
+              <i>{{ block.settings.center_text }}</i>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section wrapper center text -->
+  {% endif %}
+{% endfor %}
+
+{% style %}
+
+  .section-bottom-margin {
+    margin-bottom: {{ section.settings.section_margin }}px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .section-bottom-margin {
+      margin-bottom: {{ section.settings.section_margin_tablet }}px
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .section-bottom-margin {
+      margin-bottom: {{ section.settings.section_margin_mobile }}px
+    }
+  }
+{% endstyle %}
+
+
+{% schema %}
+  {
+    "name": "vini-template",
+    "max_blocks": 3,
+    "blocks": [
+      {
+        "type": "top-section",
+        "name": "top-page-section",
+        "settings": [
+          {
+            "type": "text",
+            "id": "section_heading",
+            "label": "section heading",
+            "default": "section text heading here"
+          }, {
+            "type": "textarea",
+            "id": "section_paragraph",
+            "label": "section paragraph",
+            "default": "section text paragraph here "
+          }, {
+            "type": "image_picker",
+            "id": "section_image",
+            "label": "section image"
+          }
+        ]
+      }, {
+        "type": "center-text-section",
+        "name": "center-text-section",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "center_text",
+            "label": "center quote text",
+            "default": "center quote text here"
+          }
+        ]
+      }
+
+
+    ],
+    "settings": [
+      {
+
+        "type": "range",
+        "id": "section_margin",
+        "label": "margin bottom section",
+        "default": 0,
+        "unit": "px",
+        "min": 0,
+        "max": 100,
+        "step": 1
+
+      }, {
+
+        "type": "range",
+        "id": "section_margin_tablet",
+        "label": "margin bottom section tablet",
+        "default": 0,
+        "unit": "px",
+        "min": 0,
+        "max": 100,
+        "step": 1
+
+      }, {
+
+        "type": "range",
+        "id": "section_margin_mobile",
+        "label": "margin bottom section mobile",
+        "default": 0,
+        "unit": "px",
+        "min": 0,
+        "max": 100,
+        "step": 1
+
+      }
+    ]
+  }
+{% endschema %}
