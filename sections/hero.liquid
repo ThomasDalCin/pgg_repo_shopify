@@ -1,7 +1,7 @@
 <!-- hero wrapper -->
 <div class="hero-wrapper">
   <div class="hero-wrapper-background">
-    <img src="{{ section.settings.hero_cover | img_url: 'master'}}" alt="alghero">
+    <img src="{{ section.settings.hero_background_img | img_url: 'master'}}" alt="alghero">
   </div>
   <div class="hero-wrapper-content">
     <div class="hero-heading-content">
@@ -23,8 +23,8 @@
         "default": "type your hero heading here"
       }, {
         "type": "image_picker",
-        "id": "hero_cover",
-        "label": "hero cover here"
+        "id": "hero_background_img",
+        "label": "hero background here"
       }
     ]
   }

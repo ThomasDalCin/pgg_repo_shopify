@@ -4,7 +4,7 @@
       "type": "hero",
       "settings": {
         "hero_heading": "Qui la bellezza è travolgente: ciascuno può immergersi nella natura incontaminata e nel proprio tempo",
-        "hero_cover": "shopify:\/\/shop_images\/A0A6828.jpg"
+        "hero_background_img": "shopify:\/\/shop_images\/A0A6828.jpg"
       }
     },
     "column-textwimage": {
