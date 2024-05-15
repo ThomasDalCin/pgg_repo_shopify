@@ -1,11 +1,11 @@
 <!-- hero wrapper -->
 <div class="hero-wrapper">
   <div class="hero-wrapper-background">
-    <img src="{{ section.settings.hero-cover | img_url: 'master'}}" alt="alghero">
+    <img src="{{ section.settings.hero_cover | img_url: 'master'}}" alt="alghero">
   </div>
   <div class="hero-wrapper-content">
     <div class="hero-heading-content">
-      <h1 class="hero-heading">{{ section.settings.hero-heading }}</h1>
+      <h1 class="hero-heading">{{ section.settings.hero_heading }}</h1>
     </div>
   </div>
 </div>
@@ -18,13 +18,13 @@
     "settings": [
       {
         "type": "text",
-        "id": "hero-heading",
-        "label": "hero-heading-here",
+        "id": "hero_heading",
+        "label": "hero heading here",
         "default": "type your hero heading here"
       }, {
         "type": "image_picker",
-        "id": "hero-cover",
-        "label": "hero-cover-here"
+        "id": "hero_cover",
+        "label": "hero cover here"
       }
     ]
   }

@@ -3,8 +3,8 @@
     "hero-section": {
       "type": "hero",
       "settings": {
-        "hero-heading": "Qui la bellezza è travolgente: ciascuno può immergersi nella natura incontaminata e nel proprio tempo",
-        "hero-cover": "shopify:\/\/shop_images\/A0A6828.jpg"
+        "hero_heading": "Qui la bellezza è travolgente: ciascuno può immergersi nella natura incontaminata e nel proprio tempo",
+        "hero_cover": "shopify:\/\/shop_images\/A0A6828.jpg"
       }
     },
     "column-textwimage": {
@@ -111,7 +111,7 @@
         "section_margin_mobile": 60,
         "main_img": "shopify:\/\/shop_images\/home-podere-etichetta.jpg",
         "absolute_img": "shopify:\/\/shop_images\/home-simboli.png",
-        "heading": "La terra è madre",
+        "heading_section": "Type your heading here",
         "first_paragraph": "La bontà del vino si lega saldamente alle qualità intrinseche del promontorio di Guardia Grande, alla natura del luogo, alla sua terra, alle sue pietre, alla particolarità climatica. Fertile e creativa, la terra racchiude in sé le caratteristiche del grembo materno che accoglie la vita e la nutre, con costanza, pazienza e forza. La terra è dotata di potenza magica, la stessa energia che serve nella produzione del vino.",
         "second_paragraph": "Al valore generativo della terra, alla fertilità e alla ciclicità si legano i ritrovamenti delle statuette di Dea Madre nelle Domus de Janas, archetipi che vanno oltre il tempo e lo spazio."
       }
