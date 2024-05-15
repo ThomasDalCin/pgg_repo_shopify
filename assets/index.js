@@ -20,6 +20,7 @@ const openIcon = document.querySelector('.menu-icon');
 const closeIcon = document.querySelector('.menu-icon-mobile');
 const menu = document.querySelector('.nav-overlay-wrap');
 const navMenu = document.querySelectorAll('.nav-link-special');
+
 function handleMenu() {
     openIcon.addEventListener('click', function () {
         menu.style.top = '0%';

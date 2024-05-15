@@ -674,7 +674,30 @@ li {
         font-size: var(--h2-mobile-font-size);
         line-height: var(--h2-mobile-line-height);
     }
+    
+    /*navigation wrap settings*/
+    .navbar {
+        padding: 0.3rem 1rem;
+    }
 
+    .show-menu {
+        display: flex;
+    }
+
+    .nav-text,
+    .nav-menu {
+        display: none;
+    }
+
+    .logo-mobile {
+        width: 100px;
+        height: 100px;
+    }
+
+    .icon-menu {
+        width: 25px;
+        height: 25px;
+    }
 
     /* hero wrapper settings */
     .hero-wrapper-content {
