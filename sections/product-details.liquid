@@ -1,0 +1,88 @@
+{% assign productImgLogo = product.images[4] | default: product.featured_image %}
+{% assign productMainImg = product.featured_image %}
+{% assign productTitle = product.title %}
+
+{% for collection in collections %}
+{% for product in collection.products %}
+{% assign zona_di_produzione = product.metafields.custom.zona_di_produzione %}
+{% assign suolo = product.metafields.custom.suolo %}
+{% assign altitudine_del_vigneto = product.metafields.custom.altitudine_del_vigneto_%}
+{% assign forma_di_allevamento = product.metafields.custom.forma_di_allevamento %}
+{% assign densita_di_impianto = product.metafields.custom.forma_di_allevamento %}
+{% assign resa_per_ettaro = product.metafields.custom.resa_per_ettaro %}
+{% assign alcool_svolto = product.metafields.custom.alcool_svolto %}
+{% endfor %}
+{% endfor %}
+
+{% if productTitle == 'Saldenya' %}
+{% assign productComposition = '100% Vermentino' %}
+{% elsif productTitle == 'Nascimento' %}
+{% assign productComposition = '100% Cagnaluri' %}
+{% elsif productTitle == "L'Alghè" %}
+{% assign productComposition = '100% Cagnaluri' %}
+{% endif %}
+
+
+
+
+
+
+<!--section rendering item -->
+<div class="wrapper-section">
+    <div class="wrapper-content">
+        <div class="content" id="translate-effect">
+            <div class="content-text w-flex-start">
+                <img src="{{ productImgLogo |  img_url: 'master' }}"
+                    alt="{{ productImgLogo.alt | default: product.title }}" class="wine-logo">
+                <div class="block-content-text">
+                    <p>{{ productComposition }}</p>
+                </div>
+                <div class="block-content-text w-margin-top">
+                    <div class="content-block-text">
+                        <h2 class="heading-h2 secondary-family">Zona di produzione</h2>
+                        <p class="paragraph-wine">{{ zona_di_produzione }}</p>
+                    </div>
+                    <div class="content-block-text">
+                        <h2 class="heading-h2 secondary-family">Suolo</h2>
+                        <p class="paragraph-wine">{{ suolo }}</p>
+                    </div>
+                    <div class="content-block-text">
+                        <h2 class="heading-h2 secondary-family">Altitudine del vigneto</h2>
+                        <p class="paragraph-wine">{{ altitudine_del_vigneto }}</p>
+                    </div>
+                    <div class="content-block-text">
+                        <h2 class="heading-h2 secondary-family">Forma di allevamento</h2>
+                        <p class="paragraph-wine">{{ forma_di_allevamento }}</p>
+                    </div>
+                    <div class="content-block-text">
+                        <h2 class="heading-h2 secondary-family">Densità di impianto</h2>
+                        <p class="paragraph-wine">{{ densita_di_impianto }}</p>
+                    </div>
+                    <div class="content-block-text">
+                        <h2 class="heading-h2 secondary-family">Resa per ettaro</h2>
+                        <p class="paragraph-wine"> {{ resa_per_ettaro }}</p>
+                    </div>
+                    <div class="content-block-text">
+                        <h2 class="heading-h2 secondary-family">Alcool svolto</h2>
+                        <p class="paragraph-wine">{{ alcool_svolto }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-img-wine" id="translate-effect-section">
+                <img src="{{ productMainImg |  img_url: 'master' }}"
+                    alt="{{ productMainImg.alt | default: product.title }}" class="content-img-wine">
+                <div class="container-wine-overview">
+                    <h2 class="heading-h2 secondary-family">Scopri i vini del podere</h2>
+                    <p class="paragraph-wine">Produciamo vini non in regime convenzionale, amiamo sperimentare
+                        con i
+                        vitigni autoctoni, crediamo nell’unicità del territorio.</p>
+                    <div class="content-link-block">
+                        <a class="link-to-wine"></a>
+                        <a class="link-to-wine"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--section rendering item -->

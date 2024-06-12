@@ -620,6 +620,76 @@ li {
     object-fit: cover;
 }
 
+/*page product settings*/
+.no-padd{
+    padding: 0;
+}
+
+.top-page-wrap-product {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-page-img-product {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    object-fit: cover;
+}
+
+.w-flex-start{
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.block-content-text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: .8rem; 
+}
+
+.paragraph-wine{
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
+}
+
+.w-margin-top{
+    margin-top: 2rem;
+}
+
+.container-img-wine{
+    flex: 1;
+    padding: var(--base-wrap-padd);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: var(--base-gap);
+}
+
+.content-img-wine{
+    width: 100%;
+    height: auto;
+}
+
+.container-wine-overview{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: var(--base-gap);
+}
+
 
 /*footer settings*/
 .content-block {
@@ -673,6 +743,10 @@ li {
     .heading-h2 {
         font-size: var(--h2-mobile-font-size);
         line-height: var(--h2-mobile-line-height);
+    }
+
+    .secondary-family{
+        font-family: 'SempioneGrotesk-Medium';
     }
     
     /*navigation wrap settings*/

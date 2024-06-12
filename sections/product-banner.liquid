@@ -1,0 +1,9 @@
+{% assign productImgBanner = product.images[1] |  default: product.featured_image %}
+
+<!-- section top page product wrap -->
+<div class="wrapper-section no-padd">
+    <div class="top-page-wrap-product">
+      <img src="{{ productImgBanner |  img_url: 'master' }}" alt="{{ productImgBanner.alt | default: product.title }}" class="top-page-img-product">
+    </div>
+</div>
+<!-- section top page product wrap -->
