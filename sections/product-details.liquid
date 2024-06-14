@@ -1,88 +1,226 @@
 {% assign productImgLogo = product.images[4] | default: product.featured_image %}
-{% assign productMainImg = product.featured_image %}
+{% assign productMainImg = product.images[2] | default: product.featured_image  %}
 {% assign productTitle = product.title %}
 
 {% for collection in collections %}
-{% for product in collection.products %}
-{% assign zona_di_produzione = product.metafields.custom.zona_di_produzione %}
-{% assign suolo = product.metafields.custom.suolo %}
-{% assign altitudine_del_vigneto = product.metafields.custom.altitudine_del_vigneto_%}
-{% assign forma_di_allevamento = product.metafields.custom.forma_di_allevamento %}
-{% assign densita_di_impianto = product.metafields.custom.forma_di_allevamento %}
-{% assign resa_per_ettaro = product.metafields.custom.resa_per_ettaro %}
-{% assign alcool_svolto = product.metafields.custom.alcool_svolto %}
+  {% for product in collection.products %}
+    {% assign zona_di_produzione = product.metafields.custom.zona_di_produzione %}
+    {% assign suolo = product.metafields.custom.suolo %}
+    {% assign altitudine_del_vigneto = product.metafields.custom.altitudine_del_vigneto_ %}
+    {% assign forma_di_allevamento = product.metafields.custom.forma_di_allevamento %}
+    {% assign densita_di_impianto = product.metafields.custom.forma_di_allevamento %}
+    {% assign resa_per_ettaro = product.metafields.custom.resa_per_ettaro %}
+    {% assign alcool_svolto = product.metafields.custom.alcool_svolto %}
+  {% endfor %}
 {% endfor %}
-{% endfor %}
-
-{% if productTitle == 'Saldenya' %}
-{% assign productComposition = '100% Vermentino' %}
-{% elsif productTitle == 'Nascimento' %}
-{% assign productComposition = '100% Cagnaluri' %}
-{% elsif productTitle == "L'Alghè" %}
-{% assign productComposition = '100% Cagnaluri' %}
-{% endif %}
 
 
-
-
-
-
-<!--section rendering item -->
+<!-- section rendering item -->
 <div class="wrapper-section">
-    <div class="wrapper-content">
-        <div class="content" id="translate-effect">
-            <div class="content-text w-flex-start">
-                <img src="{{ productImgLogo |  img_url: 'master' }}"
-                    alt="{{ productImgLogo.alt | default: product.title }}" class="wine-logo">
-                <div class="block-content-text">
-                    <p>{{ productComposition }}</p>
-                </div>
-                <div class="block-content-text w-margin-top">
-                    <div class="content-block-text">
-                        <h2 class="heading-h2 secondary-family">Zona di produzione</h2>
-                        <p class="paragraph-wine">{{ zona_di_produzione }}</p>
-                    </div>
-                    <div class="content-block-text">
-                        <h2 class="heading-h2 secondary-family">Suolo</h2>
-                        <p class="paragraph-wine">{{ suolo }}</p>
-                    </div>
-                    <div class="content-block-text">
-                        <h2 class="heading-h2 secondary-family">Altitudine del vigneto</h2>
-                        <p class="paragraph-wine">{{ altitudine_del_vigneto }}</p>
-                    </div>
-                    <div class="content-block-text">
-                        <h2 class="heading-h2 secondary-family">Forma di allevamento</h2>
-                        <p class="paragraph-wine">{{ forma_di_allevamento }}</p>
-                    </div>
-                    <div class="content-block-text">
-                        <h2 class="heading-h2 secondary-family">Densità di impianto</h2>
-                        <p class="paragraph-wine">{{ densita_di_impianto }}</p>
-                    </div>
-                    <div class="content-block-text">
-                        <h2 class="heading-h2 secondary-family">Resa per ettaro</h2>
-                        <p class="paragraph-wine"> {{ resa_per_ettaro }}</p>
-                    </div>
-                    <div class="content-block-text">
-                        <h2 class="heading-h2 secondary-family">Alcool svolto</h2>
-                        <p class="paragraph-wine">{{ alcool_svolto }}</p>
-                    </div>
-                </div>
+  <div class="wrapper-content">
+    <div class="content" id="translate-effect">
+      <div class="content-text w-flex-start">
+        <img
+          src="{{ productImgLogo |  img_url: 'master' }}"
+          alt="{{ productImgLogo.alt | default: product.title }}"
+          class="wine-logo">
+        <div class="block-content-text">
+          {% if productTitle == 'Saldenya' %}
+            <p class="paragraph-wine">{{ section.settings.product-one-origin }}</p>
+            <p class="paragraph-wine">{{ section.settings.product-one-name-origin }}</p>
+            <p class="paragraph-wine bold">{{ section.settings.product-three-composition }}</p>
+            <p class="paragraph-wine">{{ section.settings.product-one-overview }}</p>
+            <div class="content-primary-button">
+              <div class="content-button-text">
+                <a class="button-link-text" href="{{ section.settings.product-one-sheet }}">Scarica la scheda tecnica</a>
+              </div>
+              <div class="content-button-icon">
+                <div class="container-icon"><img
+                    src="./icons/free-left-arrow-437-1174845.png"
+                    alt=""
+                    class="arrow-icon rotate"><img
+                    src="./icons/free-left-arrow-437-1174845.png"
+                    alt=""
+                    class="arrow-icon rotate"></div>
+              </div>
             </div>
-            <div class="container-img-wine" id="translate-effect-section">
-                <img src="{{ productMainImg |  img_url: 'master' }}"
-                    alt="{{ productMainImg.alt | default: product.title }}" class="content-img-wine">
-                <div class="container-wine-overview">
-                    <h2 class="heading-h2 secondary-family">Scopri i vini del podere</h2>
-                    <p class="paragraph-wine">Produciamo vini non in regime convenzionale, amiamo sperimentare
-                        con i
-                        vitigni autoctoni, crediamo nell’unicità del territorio.</p>
-                    <div class="content-link-block">
-                        <a class="link-to-wine"></a>
-                        <a class="link-to-wine"></a>
-                    </div>
-                </div>
+          {% elsif productTitle == 'Nascimento' %}
+            <p class="paragraph-wine">{{ section.settings.product-two-origin }}</p>
+            <p class="paragraph-wine">{{ section.settings.product-two-name-origin }}</p>
+            <p class="paragraph-wine bold">{{ section.settings.product-two-composition }}</p>
+            <p class="paragraph-wine">{{ section.settings.product-two-overview }}</p>
+            <div class="content-primary-button">
+              <div class="content-button-text">
+                <a class="button-link-text" href="{{ section.settings.product-two-sheet }}">Scarica la scheda tecnica</a>
+              </div>
+              <div class="content-button-icon">
+                <div class="container-icon"><img
+                    src="./icons/free-left-arrow-437-1174845.png"
+                    alt=""
+                    class="arrow-icon rotate"><img
+                    src="./icons/free-left-arrow-437-1174845.png"
+                    alt=""
+                    class="arrow-icon rotate"></div>
+              </div>
             </div>
+          {% elsif productTitle == "L'Alghè" %}
+            <p class="paragraph-wine">{{ section.settings.product-three-origin }}</p>
+            <p class="paragraph-wine">{{ section.settings.product-three-name-origin }}</p>
+            <p class="paragraph-wine bold">{{ section.settings.product-three-composition }}</p>
+            <p class="paragraph-wine">{{ section.settings.product-three-overview }}</p>
+            <div class="content-primary-button">
+              <div class="content-button-text">
+                <a class="button-link-text" href="{{ section.settings.product-three-sheet }}">Scarica la scheda tecnica</a>
+              </div>
+              <div class="content-button-icon">
+                <div class="container-icon"><img
+                    src="./icons/free-left-arrow-437-1174845.png"
+                    alt=""
+                    class="arrow-icon rotate"><img
+                    src="./icons/free-left-arrow-437-1174845.png"
+                    alt=""
+                    class="arrow-icon rotate"></div>
+              </div>
+            </div>
+          {% endif %}
         </div>
+        <div class="block-content-text w-margin-top">
+          <div class="content-block-text">
+            <h2 class="secondary-family-medium">Zona di produzione</h2>
+            <p class="paragraph-wine">{{ zona_di_produzione }}</p>
+          </div>
+          <div class="content-block-text">
+            <h2 class="secondary-family-medium">Suolo</h2>
+            <p class="paragraph-wine">{{ suolo }}</p>
+          </div>
+          <div class="content-block-text">
+            <h2 class="secondary-family-medium">Altitudine del vigneto</h2>
+            <p class="paragraph-wine">{{ altitudine_del_vigneto }}</p>
+          </div>
+          <div class="content-block-text">
+            <h2 class="secondary-family-medium">Forma di allevamento</h2>
+            <p class="paragraph-wine">{{ forma_di_allevamento }}</p>
+          </div>
+          <div class="content-block-text">
+            <h2 class="secondary-family-medium">Densità di impianto</h2>
+            <p class="paragraph-wine">{{ densita_di_impianto }}</p>
+          </div>
+          <div class="content-block-text">
+            <h2 class="secondary-family-medium">Resa per ettaro</h2>
+            <p class="paragraph-wine">
+              {{ resa_per_ettaro }}</p>
+          </div>
+          <div class="content-block-text">
+            <h2 class="secondary-family-medium">Alcool svolto</h2>
+            <p class="paragraph-wine">{{ alcool_svolto }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-img-wine" id="translate-effect-section">
+        <img
+          src="{{ productMainImg |  img_url: 'master' }}"
+          alt="{{ productMainImg.alt | default: product.title }}"
+          class="content-img-wine">
+        <div class="container-wine-overview">
+          <h2 class="secondary-family-medium">Scopri i vini del podere</h2>
+          <p class="paragraph-wine">Produciamo vini non in regime convenzionale, amiamo sperimentare con i vitigni autoctoni, crediamo nell’unicità del territorio.</p>
+          <div class="content-link-block">
+            {% for collection in collections %}
+                {% for product in collection.products %}
+                    {% if product.title != productTitle %}
+                        <a href="{{ product.url }}" class="link-to-wine">{{ product.title }}</a> 
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
-<!--section rendering item -->
+<!-- section rendering item -->
+
+
+{% schema %}
+  {
+    "name": "product-details",
+    "settings": [
+      {
+        "type": "text",
+        "id": "product-one-origin",
+        "label": "product-saldenya-origin",
+        "default": "Vermentino Di Sardegna"
+      },
+      {
+        "type": "text",
+        "id": "product-two-origin",
+        "label": "product-nascimento-origin",
+        "default": "Cannonau di Sardegna"
+      },
+      {
+        "type": "text",
+        "id": "product-three-origin",
+        "label": "product-alghe-origin",
+        "default": "Alghero Cagnulari"
+      },
+      {
+        "type": "text",
+        "id": "product-one-composition",
+        "label": "product-saldenya-composition",
+        "default": "100% Vermentino"
+      }, {
+        "type": "text",
+        "id": "product-two-composition",
+        "label": "product-nascimento-composition",
+        "default": "100% Cagnulari"
+      }, {
+        "type": "text",
+        "id": "product-three-composition",
+        "label": "product-alghe-composition",
+        "default": "100% Cagnaluri"
+      }, {
+        "type": "text",
+        "id": "product-one-name-origin",
+        "label": "product-saledenya-denominazione",
+        "default": "Denominazione di Origine Controllata"
+      }, {
+        "type": "text",
+        "id": "product-two-name-origin",
+        "label": "product-nascimento-denominazione",
+        "default": "Denominazione di Origine Controllata"
+      }, {
+        "type": "text",
+        "id": "product-three-name-origin",
+        "label": "product-alghe-denominazione",
+        "default": "Denominazione di Origine Controllata"
+      }, {
+        "type": "textarea",
+        "id": "product-one-overview",
+        "label": "product-saldenya-overview",
+        "default": "Il colore è paglierino, dai riflessi verdolini. Al naso profumi tropicali di ananas e litchi, pompelmo, camomilla, in una ventata di mineralità espressa su percezioni idrocarburiche e saline. Il sorso si mostra elegante, decisamente fresco e agile, con esibizione di morbidezza alcol-glicerica e finale persistente."
+      }, {
+        "type": "textarea",
+        "id": "product-two-overview",
+        "label": "product-nascimento-overview",
+        "default": "Il colore è rosso rubino vivace. Al naso fruttato, con sentori di more di rovo, mirtilli e ribes nero, su un sottofondo floreale di rose, viole e bacche di ginepro. Il sorso è caldo e avvolgente, ma con buona freschezza a restituire equilibrio."
+      }, {
+        "type": "textarea",
+        "id": "product-three-overview",
+        "label": "product-alghe-overview",
+        "default": "Il colore è rosso rubino. Al naso nitide percezioni di piccoli frutti rossi, ciliegia sotto spirito, macis, cannella ed eucalipto. Il sorso è voluminoso ma terso ed agile. In successione si rivela sapido, chiudendo su un finale di bacche rosse ammantate di spezie."
+      }, {
+        "type": "url",
+        "id": "product-one-sheet",
+        "label": "product-saldenya-sheet"
+      }, {
+        "type": "url",
+        "id": "product-two-sheet",
+        "label": "product-nascimento-sheet"
+      }, {
+        "type": "url",
+        "id": "product-three-sheet",
+        "label": "product-alghe-sheet"
+      }
+    ]
+  }
+{% endschema %}

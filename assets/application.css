@@ -657,8 +657,12 @@ li {
 }
 
 .paragraph-wine{
-    font-size: var(--base-font-size);
-    line-height: var(--base-line-height);
+    font-size: 17px;
+    line-height: 27px;  
+}
+
+.bold{
+  font-weight: 700; 
 }
 
 .w-margin-top{
@@ -672,7 +676,7 @@ li {
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    row-gap: var(--base-gap);
+    row-gap: var(--base-row-gap);
 }
 
 .content-img-wine{
@@ -687,7 +691,7 @@ li {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    row-gap: var(--base-gap);
+    row-gap: var(--base-row-gap);
 }
 
 
@@ -745,8 +749,9 @@ li {
         line-height: var(--h2-mobile-line-height);
     }
 
-    .secondary-family{
-        font-family: 'SempioneGrotesk-Medium';
+    .secondary-family-medium{
+        font-size: 15px;
+        line-height: 25px;
     }
     
     /*navigation wrap settings*/
