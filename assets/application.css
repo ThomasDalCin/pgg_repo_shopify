@@ -748,11 +748,6 @@ li {
         font-size: var(--h2-mobile-font-size);
         line-height: var(--h2-mobile-line-height);
     }
-
-    .secondary-family-medium{
-        font-size: 15px;
-        line-height: 25px;
-    }
     
     /*navigation wrap settings*/
     .navbar {
