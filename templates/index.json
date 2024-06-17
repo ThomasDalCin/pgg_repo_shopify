@@ -47,7 +47,10 @@
       "settings": {
         "section_margin": 100,
         "section_margin_tablet": 70,
-        "section_margin_mobile": 60
+        "section_margin_mobile": 60,
+        "Quote_text": "A Guardia Grande coltiviamo uve Vermentino, Cannonau e Cagnulari, un vitigno autoctono tipico proprio di questa zona",
+        "Button_text": "Scopri i vini del podere",
+        "Visibility_button": true
       }
     },
     "featured-items": {
@@ -106,11 +109,11 @@
         "section_margin": 100,
         "section_margin_tablet": 70,
         "section_margin_mobile": 60,
-        "main_img": "shopify:\/\/shop_images\/home-podere-etichetta.jpg",
-        "absolute_img": "shopify:\/\/shop_images\/home-simboli.png",
-        "heading_section": "Type your heading here",
-        "first_paragraph": "La bontà del vino si lega saldamente alle qualità intrinseche del promontorio di Guardia Grande, alla natura del luogo, alla sua terra, alle sue pietre, alla particolarità climatica. Fertile e creativa, la terra racchiude in sé le caratteristiche del grembo materno che accoglie la vita e la nutre, con costanza, pazienza e forza. La terra è dotata di potenza magica, la stessa energia che serve nella produzione del vino.",
-        "second_paragraph": "Al valore generativo della terra, alla fertilità e alla ciclicità si legano i ritrovamenti delle statuette di Dea Madre nelle Domus de Janas, archetipi che vanno oltre il tempo e lo spazio."
+        "Main_img": "shopify:\/\/shop_images\/home-podere-etichetta.jpg",
+        "Absolute_img": "shopify:\/\/shop_images\/home-simboli.png",
+        "Heading_section": "La terra è madre",
+        "First_paragraph": "La bontà del vino si lega saldamente alle qualità intrinseche del promontorio di Guardia Grande, alla natura del luogo, alla sua terra, alle sue pietre, alla particolarità climatica. Fertile e creativa, la terra racchiude in sé le caratteristiche del grembo materno che accoglie la vita e la nutre, con costanza, pazienza e forza. La terra è dotata di potenza magica, la stessa energia che serve nella produzione del vino.",
+        "Second_paragraph": "Al valore generativo della terra, alla fertilità e alla ciclicità si legano i ritrovamenti delle statuette di Dea Madre nelle Domus de Janas, archetipi che vanno oltre il tempo e lo spazio."
       }
     }
   },
