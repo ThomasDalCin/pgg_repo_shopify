@@ -47,10 +47,7 @@
       "settings": {
         "section_margin": 100,
         "section_margin_tablet": 70,
-        "section_margin_mobile": 60,
-        "quote-text": "A Guardia Grande coltiviamo uve Vermentino, Cannonau e Cagnulari, un vitigno autoctono tipico proprio di questa zona",
-        "text-button": "Scopri i vini del podere",
-        "visibility-button": true
+        "section_margin_mobile": 60
       }
     },
     "featured-items": {
@@ -103,8 +100,8 @@
         "section_margin_mobile": 60
       }
     },
-    "column-images-text": {
-      "type": "column-imageswtext",
+    "scrolling-feature-columns": {
+      "type": "scrolling-feature-columns",
       "settings": {
         "section_margin": 100,
         "section_margin_tablet": 70,
@@ -124,6 +121,6 @@
     "quote-highlights",
     "featured-items",
     "text-core",
-    "column-images-text"
+    "scrolling-feature-columns"
   ]
 }

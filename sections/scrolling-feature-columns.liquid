@@ -5,19 +5,19 @@
       <div class="content">
         <div class="container-img relative">
           <img
-            src="{{ section.settings.main_img | img_url: 'master'}}"
+            src="{{ section.settings.Main_img | img_url: 'master'}}"
             alt="etichetta"
             class="content-img small-img">
           <img
-            src="{{ section.settings.absolute_img | img_url: 'master'}}"
+            src="{{ section.settings.Absolute_img | img_url: 'master'}}"
             alt="simboli"
             class="absolute-img"
             id="absolute-img">
         </div>
         <div class="content-text">
-          <h2 class="heading-h2">{{ section.settings.heading_section }}</h2>
-          <p class="paragraph">{{ section.settings.first_paragraph }}</p>
-          <p class="paragraph">{{ section.settings.second_paragraph }}</p>
+          <h2 class="heading-h2">{{ section.settings.Heading_section }}</h2>
+          <p class="paragraph">{{ section.settings.First_paragraph }}</p>
+          <p class="paragraph">{{ section.settings.Second_paragraph }}</p>
         </div>
       </div>
     </div>
@@ -79,27 +79,27 @@
       },
       {
         "type": "image_picker",
-        "id": "main_img",
+        "id": "Main_img",
         "label": "Main img"
       }, {
         "type": "image_picker",
-        "id": "absolute_img",
-        "label": "Parallax img"
+        "id": "Absolute_img",
+        "label": "Scroll img"
       }, {
         "type": "text",
-        "id": "heading_section",
+        "id": "Heading_section",
         "label": "Heading section",
-        "default": "Type your heading here"
+        "default": "La terra è madre"
       }, {
         "type": "textarea",
-        "id": "first_paragraph",
-        "label": "Your first paragraph here",
-        "default": "Type your first paragraph here"
+        "id": "First_paragraph",
+        "label": "Paragraph",
+        "default": "La bontà del vino si lega saldamente alle qualità intrinseche del promontorio di Guardia Grande, alla natura del luogo, alla sua terra, alle sue pietre, alla particolarità climatica. Fertile e creativa, la terra racchiude in sé le caratteristiche del grembo materno che accoglie la vita e la nutre, con costanza, pazienza e forza. La terra è dotata di potenza magica, la stessa energia che serve nella produzione del vino."
       }, {
         "type": "textarea",
-        "id": "second_paragraph",
-        "label": "Your second paragraph here",
-        "default": "Type your second paragraph here"
+        "id": "Second_paragraph",
+        "label": "Paragraph",
+        "default": "Al valore generativo della terra, alla fertilità e alla ciclicità si legano i ritrovamenti delle statuette di Dea Madre nelle Domus de Janas, archetipi che vanno oltre il tempo e lo spazio."
       }
 
     ]
