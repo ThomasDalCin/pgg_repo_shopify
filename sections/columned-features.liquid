@@ -1,0 +1,90 @@
+<!-- section wrap -->
+<div class="wrapper-section">
+  <div class="wrapper-contents">
+    {% for block in section.blocks %}
+      {% if block.type == 'columned-features-first' %}
+        <div class="content" id="translate-effect">
+          <div class="content-text">
+            <h2 class="heading-h2">{{ block.settings.Heading_column }}</h2>
+            <p class="paragraph">{{ block.settings.Paragraph_column }}</p>
+          </div>
+          <div class="container-img">
+            <img
+              src="{{ block.settings.Image_column | img_url: 'master' }}"
+              alt="fiori"
+              class="content-img"
+              id="translate-second-img">
+          </div>
+        </div>
+      {% elsif block.type == 'columned-features-second' %}
+        <div class="content is-revert" id="translate-second-effect">
+          <div class="container-img">
+            <img
+              src="{{ block.settings.Image_column  | img_url: 'master' }}"
+              alt="fiori"
+              class="content-img"
+              id="translate-second-img">
+          </div>
+          <div class="content-text">
+            <h2 class="heading-h2">{{ block.settings.Heading_column }}</h2>
+            <p class="paragraph">{{ block.settings.Paragraph_column }}</p>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+<!-- section wrap -->
+
+
+{% schema %}
+  {
+    "name": "columned-features",
+    "max_blocks": 2,
+    "blocks": [
+      {
+        "type": "columned-features-first",
+        "name": "From-text-to-image",
+        "settings": [
+          {
+            "type": "text",
+            "id": "Heading_column",
+            "label": "Heading",
+            "default": "La Sardegna è una terra di rara bellezza. Il Podere Guardia Grande è il luogo perfetto per esplorarne l'essenza."
+          }, {
+            "type": "textarea",
+            "id": "Paragraph_column",
+            "label": "Paragraph",
+            "default": "Produciamo vino su uno dei rari promontori da cui è possibile godere della vista emozionante di Capo Caccia, di Porto Conte e della Costa d'Alghero, in Sardegna. Al Podere Guardia Grande, è come se l’uva, sospinta da un'energia alchemica e misteriosa, rispondesse al richiamo della bellezza che la circonda, trasformandosi in vino di qualità."
+          }, {
+            "type": "image_picker",
+            "id": "Image_column",
+            "label": "Image"
+          }
+        ]
+      }, {
+        "type": "columned-features-second",
+        "name": "From-image-to-text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "Heading_column",
+            "label": "Heading",
+            "default": "Nella vigna, l’attenzione, la cura e la capacità di riconoscere il bello e di mantenerlo, sono elementi di una qualità diffusa."
+          }, {
+            "type": "textarea",
+            "id": "Paragraph_column",
+            "label": "Paragraph",
+            "default": "Il blu lucente del mare, in contrasto al rosso ferroso delle rocce basaltiche, si permea con il profumo intenso delle piante aromatiche che tappezzano il terreno. Qui è facile chiudere gli occhi e immaginare l'uva maturare mentre il tramonto invade di luce il Podere."
+          }, {
+            "type": "image_picker",
+            "id": "Image_column",
+            "label": "Image"
+          }
+        ]
+      }
+    ]
+
+
+  }
+{% endschema %}

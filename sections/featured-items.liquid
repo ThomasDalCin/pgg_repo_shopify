@@ -7,18 +7,17 @@
           {% if block.type == 'wine-section' %}
             <div class="wine-container">
               <img
-                src="{{ block.settings.wine_image | img_url: 'master' }}"
+                src="{{ block.settings.Item_image | img_url: 'master' }}"
                 alt="wine-img"
                 class="wine-img">
               <img
-                src="{{ block.settings.wine_image_logo | img_url: 'master' }}"
+                src="{{ block.settings.Item_logo | img_url: 'master' }}"
                 alt=""
                 class="wine-logo">
-              <p class="wine-heading">{{ block.settings.wine_type }}</p>
-              <p>{{ block.settings.wine_name }}</p>
+              <p class="wine-heading">{{ block.settings.Item_type }}</p>
+              <p>{{ block.settings.Item_name }}</p>
             </div>
           {% endif %}
-
         {% endfor %}
       </div>
     </div>
@@ -46,7 +45,7 @@
 
 {% schema %}
   {
-    "name": "wines",
+    "name": "featured-items",
     "settings": [
       {
 
@@ -91,20 +90,20 @@
         "settings": [
           {
             "type": "image_picker",
-            "id": "wine_image",
-            "label": "wine image"
+            "id": "Item_image",
+            "label": "Image"
           }, {
             "type": "image_picker",
-            "id": "wine_image_logo",
-            "label": "wine image logo"
+            "id": "Item_logo",
+            "label": "Item logo"
           }, {
             "type": "text",
-            "id": "wine_type",
-            "label": "your wine details"
+            "id": "Item_type",
+            "label": "Item details"
           }, {
             "type": "text",
-            "id": "wine_name",
-            "label": "your wine name"
+            "id": "Item_name",
+            "label": "Item name"
           }
         ]
       }
