@@ -19,19 +19,11 @@
         </div>
     </div>
     <div class="nav-center-menu">
-        <div class="content-nav-link">
-            <div class="nav-link-special-content"><a href="" class="nav-link-special">HOME</a></div>
-        </div>
-        <div class="content-nav-link">
-            <div class="nav-link-special-content"><a href="{{ pages['podere'].url }}" class="nav-link-special">PODERE</a></div>
-        </div>
-        <div class="content-nav-link">
-            <div class="nav-link-special-content"><a href="{{ pages['vini'].url }}" class="nav-link-special">VINI</a></div>
-        </div>
-        <div class="content-nav-link">
-            <div class="nav-link-special-content"><a href="{{ pages['contatti'].url }}" class="nav-link-special">CONTATTI</a>
+        {% for link  in linklists.main-menu.links %}
+            <div class="nav-link-container">
+                <div class="nav-link-special-content"><a href="{{ link.url }}" class="nav-link-special">{{ link.title | upcase }}</a></div>
             </div>
-        </div>
+        {% endfor %}
     </div>
     <div class="nav-bottom">
         <a class="nav-email-link" href="mailto:info@podereguardiagrande.it">info@podereguardiagrande.it</a>
@@ -49,17 +41,15 @@
         </a>
         <p class="nav-text">Cantine in Alghero</p>
         <ul class="nav-menu">
-            <li><a href="" class="nav-link">HOME</a></li>
-            <li><a href="{{ pages['podere'].url }}" class="nav-link">PODERE</a></li>
-            <li><a href="{{ pages['vini'].url }}" class="nav-link">VINI</a></li>
-            <li><a href="{{ pages['contatti'].url }}" class="nav-link">CONTATTI</a></li>
+            {% for link in linklists.main-menu.links %}
+                <li><a href="{{ link.url }}" class="nav-link">{{ link.title | upcase }}</a></li>
+            {% endfor %}
         </ul>
         <div class="menu-icon show-menu">
             <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                 stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
             </svg>
-
         </div>
     </div>
 </header>
