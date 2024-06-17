@@ -4,7 +4,7 @@
     <div class="content wine-content" id="wine-section">
       <div class="wrap-wine-content">
         {% for block in section.blocks %}
-          {% if block.type == 'wine-section' %}
+          {% if block.type == 'item-section' %}
             <div class="wine-container">
               <img
                 src="{{ block.settings.Item_image | img_url: 'master' }}"
@@ -85,8 +85,8 @@
     "max_blocks": 6,
     "blocks": [
       {
-        "type": "wine-section",
-        "name": "wine-section",
+        "type": "item-section",
+        "name": "item-section",
         "settings": [
           {
             "type": "image_picker",
@@ -99,11 +99,13 @@
           }, {
             "type": "text",
             "id": "Item_type",
-            "label": "Item details"
+            "label": "Item details",
+            "default": "Product details"
           }, {
             "type": "text",
             "id": "Item_name",
-            "label": "Item name"
+            "label": "Item name",
+            "default": "Product name"
           }
         ]
       }

@@ -10,29 +10,28 @@
     "columned-features": {
       "type": "columned-features",
       "blocks": {
-        "column_text_image_xiYJww": {
-          "type": "column-text-image",
+        "columned_features_first_mWDCgC": {
+          "type": "columned-features-first",
           "settings": {
-            "text_content": "La Sardegna è una terra di rara bellezza. Il Podere Guardia Grande è il luogo perfetto per esplorarne l'essenza.",
-            "text_area_content": "Produciamo vino su uno dei rari promontori da cui è possibile godere della vista emozionante di Capo Caccia, di Porto Conte e della Costa d'Alghero, in Sardegna. Al Podere Guardia Grande, è come se l’uva, sospinta da un'energia alchemica e misteriosa, rispondesse al richiamo della bellezza che la circonda, trasformandosi in vino di qualità.",
-            "img_content": "shopify:\/\/shop_images\/home-vasi.png"
+            "Heading_column": "La Sardegna è una terra di rara bellezza. Il Podere Guardia Grande è il luogo perfetto per esplorarne l'essenza.",
+            "Paragraph_column": "Produciamo vino su uno dei rari promontori da cui è possibile godere della vista emozionante di Capo Caccia, di Porto Conte e della Costa d'Alghero, in Sardegna. Al Podere Guardia Grande, è come se l’uva, sospinta da un'energia alchemica e misteriosa, rispondesse al richiamo della bellezza che la circonda, trasformandosi in vino di qualità.",
+            "Image_column": "shopify:\/\/shop_images\/home-vasi.png"
           }
         },
-        "column_image_text_Xz4tbV": {
-          "type": "column-image-text",
+        "columned_features_second_cUHzR3": {
+          "type": "columned-features-second",
           "settings": {
-            "text_content": "Nella vigna, l’attenzione, la cura e la capacità di riconoscere il bello e di mantenerlo, sono elementi di una qualità diffusa.",
-            "text_area_content": "Il blu lucente del mare, in contrasto al rosso ferroso delle rocce basaltiche, si permea con il profumo intenso delle piante aromatiche che tappezzano il terreno. Qui è facile chiudere gli occhi e immaginare l'uva maturare mentre il tramonto invade di luce il Podere.",
-            "img_content": "shopify:\/\/shop_images\/home-fiori.png"
+            "Heading_column": "Nella vigna, l’attenzione, la cura e la capacità di riconoscere il bello e di mantenerlo, sono elementi di una qualità diffusa.",
+            "Paragraph_column": "Il blu lucente del mare, in contrasto al rosso ferroso delle rocce basaltiche, si permea con il profumo intenso delle piante aromatiche che tappezzano il terreno. Qui è facile chiudere gli occhi e immaginare l'uva maturare mentre il tramonto invade di luce il Podere.",
+            "Image_column": "shopify:\/\/shop_images\/home-fiori.png"
           }
         }
       },
       "block_order": [
-        "column_text_image_xiYJww",
-        "column_image_text_Xz4tbV"
+        "columned_features_first_mWDCgC",
+        "columned_features_second_cUHzR3"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "slider": {
       "type": "slider",
@@ -55,10 +54,8 @@
     },
     "featured-items": {
       "type": "featured-items",
-      "blocks": {
-      },
-      "block_order": [
-      ],
+      "blocks": {},
+      "block_order": [],
       "settings": {
         "section_margin": 100,
         "section_margin_tablet": 70,
