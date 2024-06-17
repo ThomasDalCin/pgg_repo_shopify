@@ -86,6 +86,12 @@ body {
     line-height: var(--h2-line-height);
 }
 
+.heading-h2-secondary {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
 .heading-h2.light {
     font-family: 'Fulmar-Light';
 }
@@ -621,7 +627,7 @@ li {
 }
 
 /*page product settings*/
-.no-padd{
+.no-padd {
     padding: 0;
 }
 
@@ -639,37 +645,38 @@ li {
     right: 0;
     top: 0;
     object-fit: cover;
+    object-position: center;
 }
 
-.w-flex-start{
+.w-flex-start {
     align-items: flex-start;
     justify-content: flex-start;
 }
 
-.block-content-text{
+.block-content-text {
     width: 100%;
     height: auto;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    row-gap: .8rem; 
+    row-gap: .8rem;
 }
 
-.paragraph-wine{
+.paragraph-wine {
     font-size: 17px;
-    line-height: 27px;  
+    line-height: 27px;
 }
 
-.bold{
-  font-weight: 700; 
+.bold {
+    font-weight: 700;
 }
 
-.w-margin-top{
+.w-margin-top {
     margin-top: 2rem;
 }
 
-.container-img-wine{
+.container-img-wine {
     flex: 1;
     padding: var(--base-wrap-padd);
     display: flex;
@@ -679,12 +686,12 @@ li {
     row-gap: var(--base-row-gap);
 }
 
-.content-img-wine{
+.content-img-wine {
     width: 100%;
     height: auto;
 }
 
-.container-wine-overview{
+.container-wine-overview {
     width: 100%;
     height: auto;
     display: flex;
@@ -694,6 +701,32 @@ li {
     row-gap: var(--base-row-gap);
 }
 
+.is-wine-revert {
+    flex-direction: row-reverse;
+}
+
+.content-link-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
+.link-to-wine {
+    line-height: 27px;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    padding: .5rem;
+    border: 1px solid var(--primary-text-color);
+    transition: all ease .3s;
+    cursor: pointer;
+}
+
+.link-to-wine:hover {
+    color: var(--secondary-text-color);
+    background-color: var(--primary-text-color);
+}
 
 /*footer settings*/
 .content-block {
@@ -748,7 +781,7 @@ li {
         font-size: var(--h2-mobile-font-size);
         line-height: var(--h2-mobile-line-height);
     }
-    
+
     /*navigation wrap settings*/
     .navbar {
         padding: 0.3rem 1rem;
@@ -899,7 +932,7 @@ li {
     }
 
     /*section top page settings*/
-    
+
     .top-page-wrap {
         margin-top: 4rem;
 
