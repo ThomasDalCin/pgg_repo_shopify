@@ -31,7 +31,8 @@
         "columned_features_first_mWDCgC",
         "columned_features_second_cUHzR3"
       ],
-      "settings": {}
+      "settings": {
+      }
     },
     "slider": {
       "type": "slider",
@@ -41,8 +42,8 @@
         "section_margin_mobile": 60
       }
     },
-    "quote": {
-      "type": "quote",
+    "quote-highlights": {
+      "type": "quote-highlights",
       "settings": {
         "section_margin": 100,
         "section_margin_tablet": 70,
@@ -54,16 +55,48 @@
     },
     "featured-items": {
       "type": "featured-items",
-      "blocks": {},
-      "block_order": [],
+      "blocks": {
+        "item_section_nK3LJN": {
+          "type": "item-section",
+          "settings": {
+            "Item_image": "shopify:\/\/shop_images\/home-bottiglia-saldenia.jpg",
+            "Item_logo": "shopify:\/\/shop_images\/logo-saldenia-2.svg",
+            "Item_type": "Vermentino",
+            "Item_name": "Sardegna DOC"
+          }
+        },
+        "item_section_wADyjD": {
+          "type": "item-section",
+          "settings": {
+            "Item_image": "shopify:\/\/shop_images\/home-bottiglia-nascimento.jpg",
+            "Item_logo": "shopify:\/\/shop_images\/logo-nascimento-2.svg",
+            "Item_type": "Cannonau",
+            "Item_name": "Sardegna DOC"
+          }
+        },
+        "item_section_HrjWCq": {
+          "type": "item-section",
+          "settings": {
+            "Item_image": "shopify:\/\/shop_images\/home-bottiglia-alghe.jpg",
+            "Item_logo": "shopify:\/\/shop_images\/logo-lalghe-2.svg",
+            "Item_type": "Cagnulari",
+            "Item_name": "Sardegna DOC"
+          }
+        }
+      },
+      "block_order": [
+        "item_section_nK3LJN",
+        "item_section_wADyjD",
+        "item_section_HrjWCq"
+      ],
       "settings": {
         "section_margin": 100,
         "section_margin_tablet": 70,
         "section_margin_mobile": 60
       }
     },
-    "center-text": {
-      "type": "center-text",
+    "text-core": {
+      "type": "text-core",
       "settings": {
         "section_margin": 100,
         "section_margin_tablet": 70,
@@ -88,9 +121,9 @@
     "hero-section",
     "columned-features",
     "slider",
-    "quote",
+    "quote-highlights",
     "featured-items",
-    "center-text",
+    "text-core",
     "column-images-text"
   ]
 }

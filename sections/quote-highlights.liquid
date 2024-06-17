@@ -3,11 +3,11 @@
   <div class="wrapper-contents">
     <div class="content">
       <div class="container-center-text">
-        <h2 class="heading-h2">{{ section.settings.quote-text }}</h2>
-        {% if section.settings.visibility-button == true %}
+        <h2 class="heading-h2">{{ section.settings.Quote_text }}</h2>
+        {% if section.settings.Visibility_button == true %}
           <div class="content-primary-button">
             <div class="content-button-text">
-              <a class="button-link-text" href="/pages/vini">{{ section.settings.text-button }}</a>
+              <a class="button-link-text" href="/pages/vini">{{ section.settings.Button_text }}</a>
             </div>
             <div class="content-button-icon">
               <div class="container-icon">
@@ -49,7 +49,7 @@
 
 {% schema %}
   {
-    "name": "quote",
+    "name": "quote-highlights",
     "settings": [
       {
 
@@ -89,18 +89,18 @@
       },
       {
         "type": "text",
-        "id": "quote-text",
-        "label": "your quote text",
-        "default": "your quote text here"
+        "id": "Quote_text",
+        "label": "Quote",
+        "default": "A Guardia Grande coltiviamo uve Vermentino, Cannonau e Cagnulari, un vitigno autoctono tipico proprio di questa zona"
       }, {
         "type": "text",
-        "id": "text-button",
-        "label": "your text button",
-        "default": "your text button here"
+        "id": "Button_text",
+        "label": "Button text",
+        "default": "Scopri i vini del podere"
       }, {
         "type": "checkbox",
-        "id": "visibility-button",
-        "label": "hide or show your button",
+        "id": "Visibility_button",
+        "label": "Hide/show button",
         "default": true
       }
     ]
