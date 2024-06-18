@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "hero-section": {
@@ -56,16 +65,16 @@
     "featured-items": {
       "type": "featured-items",
       "blocks": {
-        "item_section_nK3LJN": {
+        "item_section_VrgWDa": {
           "type": "item-section",
           "settings": {
             "Item_image": "shopify:\/\/shop_images\/home-bottiglia-saldenia.jpg",
             "Item_logo": "shopify:\/\/shop_images\/logo-saldenia-2.svg",
-            "Item_type": "Vermentino",
+            "Item_type": "Cannonau",
             "Item_name": "Sardegna DOC"
           }
         },
-        "item_section_wADyjD": {
+        "item_section_xWRPGC": {
           "type": "item-section",
           "settings": {
             "Item_image": "shopify:\/\/shop_images\/home-bottiglia-nascimento.jpg",
@@ -74,7 +83,7 @@
             "Item_name": "Sardegna DOC"
           }
         },
-        "item_section_HrjWCq": {
+        "item_section_nK3LJN": {
           "type": "item-section",
           "settings": {
             "Item_image": "shopify:\/\/shop_images\/home-bottiglia-alghe.jpg",
@@ -85,9 +94,9 @@
         }
       },
       "block_order": [
-        "item_section_nK3LJN",
-        "item_section_wADyjD",
-        "item_section_HrjWCq"
+        "item_section_VrgWDa",
+        "item_section_xWRPGC",
+        "item_section_nK3LJN"
       ],
       "settings": {
         "section_margin": 100,
@@ -109,8 +118,6 @@
         "section_margin": 100,
         "section_margin_tablet": 70,
         "section_margin_mobile": 60,
-        "Main_img": "shopify:\/\/shop_images\/home-podere-etichetta.jpg",
-        "Absolute_img": "shopify:\/\/shop_images\/home-simboli.png",
         "Heading_section": "La terra è madre",
         "First_paragraph": "La bontà del vino si lega saldamente alle qualità intrinseche del promontorio di Guardia Grande, alla natura del luogo, alla sua terra, alle sue pietre, alla particolarità climatica. Fertile e creativa, la terra racchiude in sé le caratteristiche del grembo materno che accoglie la vita e la nutre, con costanza, pazienza e forza. La terra è dotata di potenza magica, la stessa energia che serve nella produzione del vino.",
         "Second_paragraph": "Al valore generativo della terra, alla fertilità e alla ciclicità si legano i ritrovamenti delle statuette di Dea Madre nelle Domus de Janas, archetipi che vanno oltre il tempo e lo spazio."
