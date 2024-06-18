@@ -802,14 +802,13 @@ li {
     color: var(--primary-bg-color);
     padding: var(--base-wrap-padd);
     font-size: 20px;
-    position: fixed;
     bottom: 25px;
     right: 25px;
 }
 
 .dropup-content{
     display: none;
-    position: fixed;
+    position: block;
     bottom: 80px;
     right: 25px;
     min-width: 110px;
