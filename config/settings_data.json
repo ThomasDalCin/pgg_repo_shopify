@@ -1,56 +1,9 @@
 {
   "current": {
     "sections": {
-      "podere-template": {
-        "type": "podere-template",
-        "blocks": {
-          "column_text_image_eHwX4B": {
-            "type": "column-text-image",
-            "settings": {
-              "text_content": "Il rispetto della natura sarda è un atto dovuto verso un territorio la cui straordinaria autenticità emoziona",
-              "text_area_content": "Salvaguardare l’integrità e la vitalità dei vigneti è importante non solo per la qualità dei vini che si producono o per l’interesse paesaggistico, bensì perché esse rappresentano un’importante riserva per la biodiversità.",
-              "img_content": "shopify:\/\/shop_images\/podere-vigna.jpg"
-            }
-          },
-          "column_image_text_tE9mrT": {
-            "type": "column-image-text",
-            "settings": {
-              "text_content": "Le colline sono caratterizzate da una geologia “prepotente” e il vento di Maestrale le taglia trasversalmente.",
-              "text_first_area": "Le viti maturano su un terreno a base sabbioso\/argilloso, asciutto, magro e ciottoloso, cosparso di pietre di quarzite. Tutto attorno ritroviamo gli elementi paesaggistici tipici della macchia mediterranea e una natura incontaminata costellata di vecchie querce, mirto e altre specie arboree tipiche dell’isola.",
-              "text_second_area": "Puntiamo sul valore della natura che ci circonda. Crediamo in un’agricoltura sostenibile nella pratica, non solo nelle dichiarazioni. Ad oggi i nostri vigneti sono in conversione biologica.",
-              "img_content": "shopify:\/\/shop_images\/pgg_podere_viti.png",
-              "button_text": "Scopri i vini del podere",
-              "visibility_button": true
-            }
-          },
-          "slider_pTeCyR": {
-            "type": "slider",
-            "settings": {
-            }
-          },
-          "section_MV8E34": {
-            "type": "section",
-            "settings": {
-              "heading_section_bottom": "Ogni roccia su cui la macchia mediterranea attecchisce vigorosa ha una arcana schiettezza.",
-              "first_paragraph_section_bottom": "È il mosaico di palme nane, asfodeli, ginestre, cisto a dare la misura della biodiversità del luogo.",
-              "second_paragraph_section_bottom": "Il paesaggio circostante è spettacolare e profuma delle piante aromatiche endemiche.La vigna è accarezzata dalle luci che invadono il promontorio. L’uva cresce ricca beneficiando delle peculiarità del suolo, asciutto e soleggiato.",
-              "button_text": "Scopri i vini del podere",
-              "visibility_button": true,
-              "first_image": "shopify:\/\/shop_images\/podere-cespuglio.jpg",
-              "simbol_image": "shopify:\/\/shop_images\/podere-icone.png"
-            }
-          }
-        },
-        "block_order": [
-          "column_text_image_eHwX4B",
-          "column_image_text_tE9mrT",
-          "slider_pTeCyR",
-          "section_MV8E34"
-        ],
+      "navbar": {
+        "type": "navbar",
         "settings": {
-          "section_margin": 100,
-          "section_margin_tablet": 70,
-          "section_margin_mobile": 60
         }
       },
       "footer": {
@@ -73,8 +26,6 @@
           "footer-2": {
             "type": "column-third-info",
             "settings": {
-              "ig_img": "shopify:\/\/shop_images\/Platform_Instagram_Color_Original_2.svg",
-              "fb_img": "shopify:\/\/shop_images\/Platform_Facebook_Color_Original_1.svg"
             }
           },
           "footer-3": {
@@ -93,27 +44,20 @@
         "settings": {
         }
       },
-      "vini-template": {
-        "type": "vini-template",
+      "podere-template": {
+        "type": "podere-template",
         "blocks": {
-          "top_section_8T9Ngg": {
-            "type": "top-section",
+          "column_text_image_LXCzRC": {
+            "type": "column-text-image",
             "settings": {
-              "section_heading": "A Podere Guardia Grande produciamo vini che esprimono il carattere del territorio",
-              "section_paragraph": "Vermentino, Cannonau di Sardegna e Cagnulari, o Alghero Cagnulari, un vitigno autoctono a bacca rossa tipico proprio della ristretta area a nord-ovest della provincia di Sassari.",
-              "section_image": "shopify:\/\/shop_images\/vini-alberi.png"
-            }
-          },
-          "center_text_section_KaNK7t": {
-            "type": "center-text-section",
-            "settings": {
-              "center_text": "In un luogo così genuino, dove la bellezza è travolgente, ciascuno è immerso nel proprio tempo, nel tentativo di comprendere il tempo stesso, di viverlo, di non sprecarlo"
+              "Heading_section": "Il rispetto della natura sarda è un atto dovuto verso un territorio la cui straordinaria autenticità emoziona",
+              "Paragraph_section": "Salvaguardare l’integrità e la vitalità dei vigneti è importante non solo per la qualità dei vini che si producono o per l’interesse paesaggistico, bensì perché esse rappresentano un’importante riserva per la biodiversità.",
+              "img_content": "shopify:\/\/shop_images\/podere-vigna.jpg"
             }
           }
         },
         "block_order": [
-          "top_section_8T9Ngg",
-          "center_text_section_KaNK7t"
+          "column_text_image_LXCzRC"
         ],
         "settings": {
           "section_margin": 0,
@@ -125,9 +69,5 @@
     "content_for_index": [
 
     ]
-  },
-  "presets": {
-    "Default": {
-    }
   }
 }
