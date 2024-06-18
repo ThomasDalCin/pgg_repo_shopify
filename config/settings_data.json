@@ -123,6 +123,12 @@
           "section_margin_tablet": 70,
           "section_margin_mobile": 60
         }
+      },
+      "contatti-template": {
+        "type": "contatti-template",
+        "settings": {
+          "Banner_img": "shopify:\/\/shop_images\/contatti-iniziale.jpg"
+        }
       }
     },
     "content_for_index": [

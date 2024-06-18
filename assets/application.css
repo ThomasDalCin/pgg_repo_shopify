@@ -790,6 +790,49 @@ li {
     object-fit: cover;
 }
 
+/*language switcher*/
+.dropup{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.localeBtn{
+    background-color: #3298db;
+    color: var(--primary-bg-color);
+    padding: var(--base-wrap-padd);
+    font-size: 20px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+.dropup-content{
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 25px;
+    min-width: 110px;
+    z-index: 1;
+    background-color: #f1f1f1;
+}
+
+.dropup:hover .dropup-content{
+    display: block;
+}
+
+.dropup-content a{
+ color: #1a1a1a;
+ font-size: 16px;
+ padding: 15px 10px;
+ display: block;
+ text-align: center;
+}
+
+.dropup-content a:hover{
+    background-color: #f3f3f3;
+}
+
 @media screen and (max-width: 480px) {
     .content-featured-img {
         width: 100%;
