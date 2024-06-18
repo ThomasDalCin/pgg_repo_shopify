@@ -87,7 +87,9 @@
               "First_paragraph": "È il mosaico di palme nane, asfodeli, ginestre, cisto a dare la misura della biodiversità del luogo.",
               "Second_paragraph": "Il paesaggio circostante è spettacolare e profuma delle piante aromatiche endemiche.La vigna è accarezzata dalle luci che invadono il promontorio. L’uva cresce ricca beneficiando delle peculiarità del suolo, asciutto e soleggiato.",
               "Button_text": "Scopri i vini del podere",
-              "Visibility_button": true
+              "Visibility_button": true,
+              "Main_img": "shopify:\/\/shop_images\/home-slider-7.jpg",
+              "Simbol_image": "shopify:\/\/shop_images\/podere-icone.png"
             }
           }
         },
