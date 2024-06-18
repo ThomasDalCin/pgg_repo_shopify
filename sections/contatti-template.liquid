@@ -1,0 +1,22 @@
+       <!--section top page wrap -->
+       <div class="wrapper-section no-padd">
+        <div class="wrapper-contents">
+            <div class="top-page-wrap">
+                <img src="{{ section.settings.Banner_img |  img_url: 'master'  }}" alt="alberi" class="top-page-img-contact">
+            </div>
+        </div>
+    </div>
+    <!--section top page wrap -->
+
+    {% schema %}
+    {
+        "name": "banner-top",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "Banner_img",
+                "label": "Banner img"
+            }
+            ]
+    }
+    {% endschema %}

@@ -652,6 +652,16 @@ li {
     object-position: center;
 }
 
+.top-page-img-contact {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
 .w-flex-start {
     align-items: flex-start;
     justify-content: flex-start;
