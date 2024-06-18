@@ -298,7 +298,7 @@ body {
     z-index: 9999;
 }
 
-.Sticky-nav{
+.Sticky-nav {
     position: sticky;
     top: 0%;
     z-index: 9999999999999;
@@ -438,12 +438,7 @@ li {
     row-gap: var(--base-row-gap);
 }
 
-.content-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-}
+
 
 
 /*slider settings*/
@@ -572,11 +567,7 @@ li {
     position: relative;
 }
 
-.content-img.small-img {
-    width: 100%;
-    min-width: 100%;
-    height: 600px;
-}
+
 
 .absolute-img {
     position: absolute;
@@ -609,11 +600,11 @@ li {
     overflow: hidden;
 }
 
-.top-page-wrap-contact{
+.top-page-wrap-contact {
     width: 100%;
     height: 70vh;
     position: relative;
-    overflow: hidden;  
+    overflow: hidden;
 }
 
 .content-text.absolute {
@@ -787,11 +778,41 @@ li {
     height: 15px;
 }
 
+.content-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
+.content-featured-img {
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+    .content-featured-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .w-margin {
+        margin: 0;
+    }
+}
+
+@media screen and (width: 768px) {
+    .content-img-wine {
+        height: 100% !important;
+        min-height: 470px !important;
+        object-fit: contain !important;
+    }
+}
 
 /* mobile queries */
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
 
     /*general settings*/
 
@@ -939,7 +960,7 @@ li {
     }
 
     .wrap-wine-content {
-        padding: 1rem;
+        padding: 0;
         flex-direction: column;
         row-gap: 4rem;
         flex-wrap: nowrap;
@@ -947,12 +968,7 @@ li {
 
     /*wrapper section parallax img settings*/
 
-    .content-img.small-img {
-        width: 100%;
-        min-width: 100%;
-        height: 60vh;
-        min-height: 60vh;
-    }
+
 
     .absolute-img {
         width: 170px;
@@ -997,199 +1013,9 @@ li {
         border-top: .3px solid gray;
     }
 
+
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px){
-    .navbar {
-        padding: 0.3rem 1rem;
-    }
-
-    .show-menu {
-        display: flex;
-    }
-
-    .nav-text,
-    .nav-menu {
-        display: none;
-    }
-
-    .logo-mobile {
-        width: 100px;
-        height: 100px;
-    }
-
-    .icon-menu {
-        width: 25px;
-        height: 25px;
-    }
-
-    .paragraph {
-        font-size: 18px;
-        line-height: 28px;
-    }
-
-    .content-text,
-    .container-img {
-        padding: 0;
-    }
-
-    .content-img {
-        width: 90%;
-        height: 90%;
-    }
-
-    .absolute-img {
-        width: 250px;
-        height: 130px;
-        object-fit: contain;
-    }
-
-    .content {
-        column-gap: .8rem;
-    }
-
-    .content-text {
-        align-items: flex-start;
-    }
-
-    .container-img.relative {
-        align-items: center;
-    }
-
-    .content-block {
-        flex: auto;
-    }
-
-    .content.w-border {
-        column-gap: .8rem;
-    }
-
-    .top-page-img.vini {
-        display: none;
-    }
-
-    .top-page-img.full-width {
-        width: 100%;
-        height: 100%;
-    }
-
-    .wine-container.w-margin {
-        align-items: flex-start;
-    }
-
-    .content-img-wine {
-        height: auto;
-    }
-
-    .w-space {
-        row-gap: 2rem;
-    }
-
-    .slider-img:hover {
-        transform: none;
-    }
-
-    .content,
-    .content.is-revert {
-        flex-direction: column;
-        row-gap: 2rem;
-    }
-
-    .small-img {
-        width: 100%;
-        height: 600px;
-        min-height: 600px;
-        object-fit: contain;
-    }
-
-    .content.w-border {
-        flex-direction: row;
-    }
-
-    .content.is-revert {
-        flex-direction: column-reverse;
-    }
-
-
-    .static-img {
-        position: static;
-    }
-
-    .content-img.small-img.full-width {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .container-img-wine {
-        padding: 0;
-    }
-
-    .spacer {
-        height: 70px;
-    }
-
-    /*wine tour page*/
-    .main-top-wrapper {
-        padding: 1rem;
-        height: auto;
-    }
-
-    .content-text-block {
-        row-gap: 1rem;
-    }
-
-    .main-top-wrapper-content {
-        flex-direction: column-reverse;
-        row-gap: 2rem;
-    }
-
-    .content-absolute-img {
-        position: static;
-    }
-
-    .content-img-block {
-        padding: 4rem 0rem 0rem 0rem;
-    }
-
-    .inner-img-block {
-        width: 100%;
-        height: 500px;
-        min-height: 500px;
-    }
-
-    .inner-img-block>img {
-        object-position: center 30%;
-    }
-
-    .section-content {
-        padding: 1rem;
-    }
-
-    .section-inner-content {
-        flex-direction: column-reverse;
-        row-gap: 2rem;
-    }
-
-    .content-text-block.w-flex-start {
-        padding: 0;
-    }
-
-    .details-content.w-border {
-        padding: .5rem;
-    }
-
-    .content-img-block.w-sections {
-        position: static;
-        height: 700px;
-        min-height: 700px;
-    }
-
-    .container-banner-img {
-        height: 100px;
-        min-height: 100px;
-    }
-}
 
 @media screen and (width: 768px) and (max-width: 1024px) {
 
@@ -1202,12 +1028,6 @@ li {
         row-gap: 1rem;
     }
 
-    .wrap-wine-content> :nth-child(3) {
-        min-width: 326.4px;
-        width: 326.4px;
-        flex: none;
-        margin-top: 2rem;
-    }
 
     /*swiper style settings*/
     .mySwiper {
@@ -1230,7 +1050,7 @@ li {
 
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1024px) {
 
     /*swiper style settings*/
     .mySwiper {
@@ -1258,7 +1078,6 @@ li {
         object-fit: contain;
     }
 
-
     .top-page-img.full-width {
         width: 100%;
         height: 100%;
@@ -1270,4 +1089,5 @@ li {
         justify-content: center;
         align-items: flex-start;
     }
+
 }
