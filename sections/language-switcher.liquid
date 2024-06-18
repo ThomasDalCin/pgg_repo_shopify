@@ -10,9 +10,10 @@
 
 <script>
     document.querySelectorAll("#localeItem").forEach(item => {
-        item.addEventListner("click", event => {
+        item.addEventListener("click", event => {
+            event.preventDefault();
             document.getElementById("localeCode").value = item.getAttribute('lang');
             document.getElementById("localization_form_tag").submit();
-        })
-    })
+        });
+    });
 </script>
