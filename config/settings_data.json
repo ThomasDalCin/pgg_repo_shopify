@@ -54,10 +54,41 @@
               "Paragraph_section": "Salvaguardare l’integrità e la vitalità dei vigneti è importante non solo per la qualità dei vini che si producono o per l’interesse paesaggistico, bensì perché esse rappresentano un’importante riserva per la biodiversità.",
               "img_content": "shopify:\/\/shop_images\/podere-vigna.jpg"
             }
+          },
+          "column_image_text_9eify4": {
+            "type": "column-image-text",
+            "settings": {
+              "Heading_section": "Il rispetto della natura sarda è un atto dovuto verso un territorio la cui straordinaria autenticità emoziona",
+              "Paragraph_section_first": "Le viti maturano su un terreno a base sabbioso\/argilloso, asciutto, magro e ciottoloso, cosparso di pietre di quarzite. Tutto attorno ritroviamo gli elementi paesaggistici tipici della macchia mediterranea e una natura incontaminata costellata di vecchie querce, mirto e altre specie arboree tipiche dell’isola.",
+              "Paragraph_section_second": "Puntiamo sul valore della natura che ci circonda. Crediamo in un’agricoltura sostenibile nella pratica, non solo nelle dichiarazioni. Ad oggi i nostri vigneti sono in conversione biologica.",
+              "img_content": "shopify:\/\/shop_images\/pgg_podere_viti.png",
+              "Button_text": "Scopri i vini del podere",
+              "Visibility_button": true
+            }
+          },
+          "slider_fPXWNm": {
+            "type": "slider",
+            "settings": {
+            }
+          },
+          "scrolling_feature_column_RLAkbh": {
+            "type": "scrolling-feature-column",
+            "settings": {
+              "Heading_section": "Ogni roccia su cui la macchia mediterranea attecchisce vigorosa ha una arcana schiettezza.",
+              "First_paragraph": "È il mosaico di palme nane, asfodeli, ginestre, cisto a dare la misura della biodiversità del luogo.",
+              "Second_paragraph": "Il paesaggio circostante è spettacolare e profuma delle piante aromatiche endemiche.La vigna è accarezzata dalle luci che invadono il promontorio. L’uva cresce ricca beneficiando delle peculiarità del suolo, asciutto e soleggiato.",
+              "Button_text": "Scopri i vini del podere",
+              "Visibility_button": true,
+              "Main_img": "shopify:\/\/shop_images\/podere-cespuglio.jpg",
+              "Simbol_image": "shopify:\/\/shop_images\/podere-icone.png"
+            }
           }
         },
         "block_order": [
-          "column_text_image_LXCzRC"
+          "column_text_image_LXCzRC",
+          "column_image_text_9eify4",
+          "slider_fPXWNm",
+          "scrolling_feature_column_RLAkbh"
         ],
         "settings": {
           "section_margin": 0,
