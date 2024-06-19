@@ -1076,6 +1076,10 @@ li {
         border-top: .3px solid gray;
     }
 
+    .content.w-border > :last-child{
+        align-items: flex-start;
+    }
+
 
 }
 
