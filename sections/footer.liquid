@@ -4,50 +4,63 @@
       {% for block in section.blocks %}
         {% if block.type == 'column-first-info' %}
           <div class="content-block">
-            <p class="footer-text">{{ block.settings.brand_name }}</p>
-            <a class="footer-link" href="mailto:{{ block.settings.brand_email }}">{{ block.settings.brand_email }}</a>
+            <div class="block">
+              <p class="footer-text">{{ block.settings.brand_name }}</p>
+              <a class="footer-link" href="mailto:{{ block.settings.brand_email }}">{{ block.settings.brand_email }}</a>
+            </div>
+            <div class="block">
+              <p class="footer-text">{{ block.settings.address_info }}</p>
+              <p class="footer-text">{{ block.settings.second_address_info }}</p>
+            </div>
+            <div class="block">
+              <p class="footer-text">FOLLOW</p>
+              <div class="content-social-icon">
+                <a href="#" class="social-link">
+                  <img
+                    src="{{ block.settings.ig_img | img_url: 'master' }}"
+                    alt="fb"
+                    class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/podere.guardia.grande/" class="social-link">
+                  <img
+                    src="{{ block.settings.fb_img | img_url: 'master' }}"
+                    alt="ig"
+                    class="social-icon">
+                </a>
+              </div>
+            </div>
           </div>
-        {% elsif block.type == 'column-second-info' %}
           <div class="content-block">
-            <p class="footer-text">{{ block.settings.address_info }}</p>
-            <p class="footer-text">{{ block.settings.second_address_info }}</p>
+            <ul class="nav-menu">
+              {% for link in linklists.main-menu.links %}
+                <li>
+                  <a href="{{ link.url }}" class="nav-link">{{ link.title | upcase }}</a>
+                </li>
+              {% endfor %}
+            </ul>
           </div>
         {% elsif block.type == 'column-third-info' %}
           <div class="content-block">
-            <p class="footer-text">FOLLOW</p>
-            <div class="content-social-icon">
-              <a href="#" class="social-link">
-                <img
-                  src="{{ block.settings.ig_img | img_url: 'master' }}"
-                  alt="fb"
-                  class="social-icon">
-              </a>
-              <a href="https://www.instagram.com/podere.guardia.grande/" class="social-link">
-                <img
-                  src="{{ block.settings.fb_img | img_url: 'master' }}"
-                  alt="ig"
-                  class="social-icon">
-              </a>
+            <div class="block">
+              <div class="content-switcher">
+                {% form 'localization', id: 'localization_form_tag', class: "dropup" %}
+                  <button class="localeBtn" disabled>{{ form.current_locale.endonym_name }}</button>
+                  <div class="dropup-content">
+                      {% for locale in shop.published_locales %}
+                          <a href="#" id="localeItem" lang="{{ locale.iso_code }}">{{ locale.endonym_name }}</a>
+                      {% endfor %}
+                  </div>
+                  <input type="hidden" name="locale_code" value="{{ form.current_locale.iso_code }}" id="localeCode"/>
+              {% endform %}
+              </div>
             </div>
-          </div>
-        {% elsif block.type == 'column-fourth-info' %}
-          <div class="content-block">
-            <p class="footer-text">©2024</p>
-            <p class="footer-text">{{ block.settings.P_iva }}</p>
+            <div class="block">
+              <p class="footer-text">©2024</p>
+              <p class="footer-text">{{ block.settings.P_iva }}</p>
+            </div>
           </div>
         {% endif %}
       {% endfor %}
-    </div>
-    <div class="content-switcher">
-      {% form 'localization', id: 'localization_form_tag', class: "dropup" %}
-        <button class="localeBtn" disabled>{{ form.current_locale.endonym_name }}</button>
-        <div class="dropup-content">
-            {% for locale in shop.published_locales %}
-                <a href="#" id="localeItem" lang="{{ locale.iso_code }}">{{ locale.endonym_name }}</a>
-            {% endfor %}
-        </div>
-        <input type="hidden" name="locale_code" value="{{ form.current_locale.iso_code }}" id="localeCode"/>
-    {% endform %}
     </div>
   </div>
 </footer>
@@ -82,12 +95,7 @@
             "id": "brand_email",
             "label": "brand email",
             "default": "info@podereguardiagrande.it"
-          }
-        ]
-      }, {
-        "type": "column-second-info",
-        "name": "column-second-info",
-        "settings": [
+          },
           {
             "type": "text",
             "id": "address_info",
@@ -98,12 +106,7 @@
             "id": "second_address_info",
             "label": "info address here",
             "default": "St. Vicinale Baratz Monte-Pedrosu"
-          }
-        ]
-      }, {
-        "type": "column-third-info",
-        "name": "column-third-info",
-        "settings": [
+          },
           {
             "type": "image_picker",
             "id": "ig_img",
@@ -114,9 +117,10 @@
             "label": "social img"
           }
         ]
-      }, {
-        "type": "column-fourth-info",
-        "name": "column-fourth-info",
+      },
+      {
+        "type": "column-third-info",
+        "name": "column-third-info",
         "settings": [
           {
             "type": "text",
@@ -133,13 +137,7 @@
           "type" : "column-first-info"
         },
         {
-          "type" : "column-second-info"
-        },
-        {
           "type" : "column-third-info"
-        },
-        {
-          "type" : "column-fourth-info"
         }
       ]  
     } 
