@@ -1,6 +1,3 @@
-{% assign current_locale = localization.shop_locale.iso_code %}
-
-
 <div class="loading-wrapper">
     <div class="loading-wrapper-logo">
         <img src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podereguardiagrande-logo.svg?v=1714828147" alt="loading-logo" class="loading-logo">
@@ -42,11 +39,7 @@
 
             <img src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podereguardiagrande-logo.svg?v=1714828147" alt="podere" class="logo">
         </a>
-        {% if current_locale == 'it' %}
-            <p class="nav-text">Cantine in Alghero</p>
-            {% else %}
-            <p class="nav-text">Cantine</p>
-        {% endif %}
+        <p class="nav-text" id="nav-main-text"></p>
         <ul class="nav-menu">
             {% for link in linklists.main-menu.links %}
                 <li><a href="{{ link.url }}" class="nav-link">{{ link.title | upcase }}</a></li>
@@ -61,6 +54,23 @@
     </div>
 </header>
 <!--nav wrapper-->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let pathName = window.location.pathname;
+        let langCodeSplit = pathName.split("/");
+        let langCode = langCodeSplit[1];
+        let mainText = document.getElementById('nav-main-text'); 
+        
+        if (mainText) { // Verifica se l'elemento esiste
+            if (langCode === 'en') {
+                mainText.innerText = 'Wineries in Alghero';
+            } else {
+                mainText.innerText = 'Cantine in Alghero';
+            }
+        }
+    });
+</script>
 
 {% schema %}
 {
