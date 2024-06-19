@@ -753,7 +753,7 @@ li {
     row-gap: var(--base-row-gap);
 }
 
-.content.w-border:last-child{
+.content.w-border > :last-child{
     align-items: flex-end;
 }
 
