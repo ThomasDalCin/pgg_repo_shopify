@@ -826,14 +826,15 @@ li {
     display: none;
     position: absolute;
     bottom: 80px;
-    right: 25px;
+    right: -75px;
     min-width: 110px;
+    height: auto;
     z-index: 1;
     background-color: #f1f1f1;
 }
 
 .dropup:hover .dropup-content{
-    display: block;
+    display: inline-block;
 }
 
 .dropup-content a{
