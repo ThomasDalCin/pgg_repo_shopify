@@ -1,4 +1,4 @@
-{% assign current_locale = localization.language %}
+{% assign current_locale = localization.shop_locale.iso_code %}
 
 
 <div class="loading-wrapper">
@@ -42,7 +42,7 @@
 
             <img src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podereguardiagrande-logo.svg?v=1714828147" alt="podere" class="logo">
         </a>
-        {% if current_locale == 'Italiano' %}
+        {% if current_locale == 'it' %}
             <p class="nav-text">Cantine in Alghero</p>
             {% else %}
             <p class="nav-text">Cantine</p>
