@@ -808,8 +808,9 @@ li {
 /*language switcher*/
 .dropup{
     position: relative;
-    display: inline-block;
     cursor: pointer;
+    width: auto;
+    height: auto;
 }
 
 .localeBtn{
@@ -818,11 +819,12 @@ li {
     border: 1px solid var(--primary-text-color);
     padding: 20px 30px;
     font-size: 17px;
+    cursor: pointer;
 }
 
 .dropup-content{
     display: none;
-    position: block;
+    position: absolute;
     bottom: 80px;
     right: 25px;
     min-width: 110px;
