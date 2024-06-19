@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "sections": {
@@ -79,7 +88,7 @@
               "Second_paragraph": "Il paesaggio circostante è spettacolare e profuma delle piante aromatiche endemiche.La vigna è accarezzata dalle luci che invadono il promontorio. L’uva cresce ricca beneficiando delle peculiarità del suolo, asciutto e soleggiato.",
               "Button_text": "Scopri i vini del podere",
               "Visibility_button": true,
-              "Main_img": "shopify:\/\/shop_images\/podere-cespuglio.jpg",
+              "Main_img": "shopify:\/\/shop_images\/home-slider-7.jpg",
               "Simbol_image": "shopify:\/\/shop_images\/podere-icone.png"
             }
           }
