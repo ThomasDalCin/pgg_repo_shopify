@@ -1,3 +1,6 @@
+{% assign current_locale = localization.language %}
+
+
 <div class="loading-wrapper">
     <div class="loading-wrapper-logo">
         <img src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podereguardiagrande-logo.svg?v=1714828147" alt="loading-logo" class="loading-logo">
@@ -39,7 +42,11 @@
 
             <img src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/podereguardiagrande-logo.svg?v=1714828147" alt="podere" class="logo">
         </a>
-        <p class="nav-text">Cantine in Alghero</p>
+        {% if current_locale == 'Italiano' %}
+            <p class="nav-text">Cantine in Alghero</p>
+            {% else %}
+            <p class="nav-text">Cantine</p>
+        {% endif %}
         <ul class="nav-menu">
             {% for link in linklists.main-menu.links %}
                 <li><a href="{{ link.url }}" class="nav-link">{{ link.title | upcase }}</a></li>
