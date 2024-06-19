@@ -829,7 +829,7 @@ li {
 .dropup-content{
     display: none;
     position: absolute;
-    right: -75px;
+    left: -75px;
     min-width: 110px;
     height: auto;
     z-index: 1;
