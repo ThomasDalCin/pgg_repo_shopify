@@ -825,7 +825,6 @@ li {
 .dropup-content{
     display: none;
     position: absolute;
-    bottom: 80px;
     right: -75px;
     min-width: 110px;
     height: auto;
@@ -843,6 +842,7 @@ li {
  padding: 15px 10px;
  display: block;
  text-align: center;
+ text-decoration: none;
 }
 
 .dropup-content a:hover{
