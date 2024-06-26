@@ -30,7 +30,7 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var currentUrl = window.location.href;
+      var currentPath = window.location.pathname;
   
       var breakpoints = {
         320: {
@@ -51,8 +51,8 @@
         }
       };
   
-      // Controlla se l'URL contiene 'podere'
-      if (currentUrl.includes('podere')) {
+      // Controlla se il pathname contiene 'podere'
+      if (currentPath.includes('/pages/podere')) {
         breakpoints = {
           320: {
             slidesPerView: 1,
@@ -74,7 +74,7 @@
       }
   
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: currentUrl.includes('podere') ? 2 : 3,
+        slidesPerView: currentPath.includes('/pages/podere') ? 2 : 3,
         spaceBetween: 24,
         pagination: {
           el: ".swiper-pagination",
@@ -84,6 +84,7 @@
       });
     });
   </script>
+  
   
   
 </body>
