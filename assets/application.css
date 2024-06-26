@@ -876,7 +876,10 @@ li {
 /* mobile queries */
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
-
+     
+    .top-page-wrap{
+        height: auto !important;
+    }
     /*general settings*/
 
     body {
