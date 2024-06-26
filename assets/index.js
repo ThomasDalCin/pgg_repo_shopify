@@ -97,6 +97,8 @@ const myTranslateAbsolute = document.getElementById('translate-absolute');
 const myAbsoluteImage = document.getElementById('absolute-img');
 const sliderTrigger = document.getElementById('slider-section');
 const sliderItems = document.querySelectorAll('.swiper-slide');
+const myAbsoluteTrigger = document.getElementById('translate-effect-absolute');
+const myAbsoluteSecondImage = document.getElementById('translate-effect-img-absolute');
 
 
 mm.add("(max-width: 426px)", () => {
@@ -137,6 +139,19 @@ mm.add("(max-width: 426px)", () => {
         scrollTrigger: {
             trigger: myTranslateAbsolute,
             start: "top bottom",
+            end: "bottom top",
+            scrub: true
+        }
+    });
+
+    gsap.fromTo(myAbsoluteSecondImage, {
+        x: 0
+    }, {
+        x: 200,
+        duration: 1,
+        scrollTrigger: {
+            trigger: myAbsoluteTrigger,
+            start: "center bottom",
             end: "bottom top",
             scrub: true
         }
@@ -203,6 +218,19 @@ mm.add("(min-width: 768px)", () => {
         }
     });
 
+    gsap.fromTo(myAbsoluteSecondImage, {
+        x: -50
+    }, {
+        x: 50,
+        duration: 1,
+        scrollTrigger: {
+            trigger: myAbsoluteTrigger,
+            start: "top center",
+            end: "bottom top",
+            scrub: true
+        }
+    });
+
     sliderItems.forEach((item, index) => {
         gsap.fromTo(item, {
             y: 200 + (index * 1000),
@@ -259,6 +287,19 @@ mm.add("(min-width: 427px) and (max-width: 435px)", () => {
             trigger: myTranslateAbsolute,
             start: "center center",
             end: "bottom center",
+            scrub: true
+        }
+    });
+
+    gsap.fromTo(myAbsoluteSecondImage, {
+        x: 0
+    }, {
+        x: 200,
+        duration: 1,
+        scrollTrigger: {
+            trigger: myAbsoluteTrigger,
+            start: "center bottom",
+            end: "bottom top",
             scrub: true
         }
     });
