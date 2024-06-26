@@ -3,8 +3,9 @@
   <div class="wrapper-contents">
     <div class="content">
       <div class="container-center-text">
-        <h2 class="heading-h2 light">Lavoriamo i nostri vigneti e rispettiamo il territorio generoso,
+        <h2 class="heading-h2 light" id="quote">Lavoriamo i nostri vigneti e rispettiamo il territorio generoso,
           <i>«come
+ 
  
                         conseguenza di quello che dovrebbe essere ormai un “normale” approccio all’agricoltura,
                         poiché
@@ -16,63 +17,79 @@
 </div>
 <!-- section wrapper center text -->
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let pathName = window.location.pathname;
+        let langCodeSplit = pathName.split("/");
+        let langCode = langCodeSplit[1];
+        let quote = document.getElementById('quote'); 
+        
+        
+            if (langCode === 'en') {
+              quote.innerText = 'We work our vineyards and respect this generous land, following what should by now be a “normal” approach to agriculture, because there is no reason to do things differently';
+            } 
+        
+    });
+</script>
+
+
 {% style %}
+  .section-center-text-margin {
+    margin-bottom: {{ section.settings.section_margin }}px;
+  }
+
+  @media screen and (max-width: 768px) {
     .section-center-text-margin {
-      margin-bottom: {{ section.settings.section_margin }}px;
+      margin-bottom: {{ section.settings.section_margin_tablet }}px
     }
-  
-    @media screen and (max-width: 768px) {
-      .section-center-text-margin {
-        margin-bottom: {{ section.settings.section_margin_tablet }}px
+  }
+
+  @media screen and (max-width: 480px) {
+    .section-slider-margin {
+      margin-bottom: {{ section.settings.section_margin_mobile }}px
+    }
+  }
+{% endstyle %}
+
+
+{% schema %}
+  {
+    "name": "text-core",
+    "settings": [
+      {
+
+        "type": "range",
+        "id": "section_margin",
+        "label": "margin section",
+        "default": 0,
+        "unit": "px",
+        "min": 0,
+        "max": 100,
+        "step": 1
+
+      }, {
+
+        "type": "range",
+        "id": "section_margin_tablet",
+        "label": "margin section tablet",
+        "default": 0,
+        "unit": "px",
+        "min": 0,
+        "max": 100,
+        "step": 1
+
+      }, {
+
+        "type": "range",
+        "id": "section_margin_mobile",
+        "label": "margin section mobile",
+        "default": 0,
+        "unit": "px",
+        "min": 0,
+        "max": 100,
+        "step": 1
+
       }
-    }
-  
-    @media screen and (max-width: 480px) {
-      .section-slider-margin {
-        margin-bottom: {{ section.settings.section_margin_mobile }}px
-      }
-    }
-  {% endstyle %}
-  
-  
-  {% schema %}
-    {
-      "name": "text-core",
-      "settings": [
-        {
-  
-          "type": "range",
-          "id": "section_margin",
-          "label": "margin section",
-          "default": 0,
-          "unit": "px",
-          "min": 0,
-          "max": 100,
-          "step": 1
-  
-        }, {
-  
-          "type": "range",
-          "id": "section_margin_tablet",
-          "label": "margin section tablet",
-          "default": 0,
-          "unit": "px",
-          "min": 0,
-          "max": 100,
-          "step": 1
-  
-        }, {
-  
-          "type": "range",
-          "id": "section_margin_mobile",
-          "label": "margin section mobile",
-          "default": 0,
-          "unit": "px",
-          "min": 0,
-          "max": 100,
-          "step": 1
-  
-        }
-      ]
-    }
-  {% endschema %}
+    ]
+  }
+{% endschema %}
