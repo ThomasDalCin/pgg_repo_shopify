@@ -163,9 +163,9 @@ mm.add("(max-width: 426px)", () => {
 mm.add("(min-width: 768px)", () => {
 
     gsap.fromTo(myTranslateImg, {
-        y: -200
+        y: -100
     }, {
-        y: 0,
+        y: 100,
         duration: 1,
         scrollTrigger: {
             trigger: myTranslateTrigger,
@@ -176,9 +176,9 @@ mm.add("(min-width: 768px)", () => {
     });
 
     gsap.fromTo(mySecondTranslateImg, {
-        y: -200
+        y: -100
     }, {
-        y: 0,
+        y: 100,
         duration: 1,
         scrollTrigger: {
             trigger: mySecondTranslateTrigger,
