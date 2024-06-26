@@ -92,7 +92,7 @@
       <div class="wrapper-contents">
         <div class="content">
           <div class="container-center-text">
-            <h2 class="heading-h2 light">
+            <h2 class="heading-h2 light" id="quote">
               <i>{{ block.settings.quote_highlight}}</i>
             </h2>
           </div>
@@ -102,6 +102,21 @@
     <!-- section wrapper center text -->
   {% endif %}
 {% endfor %}
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let pathName = window.location.pathname;
+        let langCodeSplit = pathName.split("/");
+        let langCode = langCodeSplit[1];
+        let quote = document.getElementById('quote'); 
+        
+        
+            if (langCode === 'en') {
+              quote.innerText = 'In such a genuine land of overwhelming beauty, each of us exists in their own dimension, in an attempt to comprehend time and to savour it down to the very last drop';
+            } 
+        
+    });
+</script>
 
 {% style %}
 
