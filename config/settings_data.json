@@ -88,9 +88,9 @@
           "scrolling_feature_column_HPirb3"
         ],
         "settings": {
-          "section_margin": 0,
-          "section_margin_tablet": 0,
-          "section_margin_mobile": 0
+          "section_margin": 100,
+          "section_margin_tablet": 70,
+          "section_margin_mobile": 60
         }
       },
       "contatti-template": {
