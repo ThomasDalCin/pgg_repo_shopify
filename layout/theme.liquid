@@ -29,53 +29,52 @@
   {% section 'footer' %}
 
   <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var currentUrl = window.location.href;
-    var slidesPerView = 3;
-    var breakpoints = {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 16,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      1024: {
-        slidesPerView: 2,
-        spaceBetween: 24,
-      },
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 24,
-      }
-    };
-
-    if (currentUrl.includes('podere')) {
-      slidesPerView = 2;
-      breakpoints[1024] = {
-        slidesPerView: 2,
-        spaceBetween: 24,
+    document.addEventListener('DOMContentLoaded', function () {
+      var currentUrl = window.location.href;
+      var slidesPerView = 3;
+      var breakpoints = {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 16,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        }
       };
-      breakpoints[1200] = {
-        slidesPerView: 1,
-        spaceBetween: 24,
+  
+      if (currentUrl.includes('podere')) {
+        slidesPerView = 2;
+        breakpoints[1024] = {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        };
+        breakpoints[1200] = {
+          slidesPerView: 1,
+          spaceBetween: 24,
+        };
       }
-    }
-
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: slidesPerView,
-      spaceBetween: 24,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        color: "black"
-      },
-      breakpoints: breakpoints
+  
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: slidesPerView,
+        spaceBetween: 24,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        breakpoints: breakpoints
+      });
     });
-  });
-</script>
-
+  </script>
+  
 </body>
 
 </html>
