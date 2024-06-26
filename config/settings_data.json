@@ -22,23 +22,13 @@
             "type": "column-first-info",
             "settings": {
               "brand_name": "PODERE GUARDIA GRANDE",
-              "brand_email": "info@podereguardiagrande.it"
-            }
-          },
-          "footer-1": {
-            "type": "column-second-info",
-            "settings": {
+              "brand_email": "info@podereguardiagrande.it",
               "address_info": "SASSARI (SS) SARDEGNA, ITALIA",
               "second_address_info": "St. Vicinale Baratz Monte-Pedrosu"
             }
           },
-          "footer-2": {
+          "footer-1": {
             "type": "column-third-info",
-            "settings": {
-            }
-          },
-          "footer-3": {
-            "type": "column-fourth-info",
             "settings": {
               "P_iva": "P.IVA 03922530237"
             }
@@ -46,9 +36,7 @@
         },
         "block_order": [
           "footer-0",
-          "footer-1",
-          "footer-2",
-          "footer-3"
+          "footer-1"
         ],
         "settings": {
         }
@@ -56,7 +44,7 @@
       "podere-template": {
         "type": "podere-template",
         "blocks": {
-          "column_text_image_LXCzRC": {
+          "column_text_image_iYxE93": {
             "type": "column-text-image",
             "settings": {
               "Heading_section": "Il rispetto della natura sarda è un atto dovuto verso un territorio la cui straordinaria autenticità emoziona",
@@ -64,7 +52,7 @@
               "img_content": "shopify:\/\/shop_images\/podere-vigna.jpg"
             }
           },
-          "column_image_text_9eify4": {
+          "column_image_text_c9wUTL": {
             "type": "column-image-text",
             "settings": {
               "Heading_section": "Il rispetto della natura sarda è un atto dovuto verso un territorio la cui straordinaria autenticità emoziona",
@@ -75,12 +63,12 @@
               "Visibility_button": true
             }
           },
-          "slider_fPXWNm": {
+          "slider_VDALYY": {
             "type": "slider",
             "settings": {
             }
           },
-          "scrolling_feature_column_RLAkbh": {
+          "scrolling_feature_column_HPirb3": {
             "type": "scrolling-feature-column",
             "settings": {
               "Heading_section": "Ogni roccia su cui la macchia mediterranea attecchisce vigorosa ha una arcana schiettezza.",
@@ -88,55 +76,21 @@
               "Second_paragraph": "Il paesaggio circostante è spettacolare e profuma delle piante aromatiche endemiche.La vigna è accarezzata dalle luci che invadono il promontorio. L’uva cresce ricca beneficiando delle peculiarità del suolo, asciutto e soleggiato.",
               "Button_text": "Scopri i vini del podere",
               "Visibility_button": true,
-              "Main_img": "shopify:\/\/shop_images\/home-slider-7.jpg",
+              "Main_img": "shopify:\/\/shop_images\/podere-cespuglio.jpg",
               "Simbol_image": "shopify:\/\/shop_images\/podere-icone.png"
             }
           }
         },
         "block_order": [
-          "column_text_image_LXCzRC",
-          "column_image_text_9eify4",
-          "slider_fPXWNm",
-          "scrolling_feature_column_RLAkbh"
+          "column_text_image_iYxE93",
+          "column_image_text_c9wUTL",
+          "slider_VDALYY",
+          "scrolling_feature_column_HPirb3"
         ],
         "settings": {
-          "section_margin": 100,
-          "section_margin_tablet": 70,
-          "section_margin_mobile": 60
-        }
-      },
-      "vini-template": {
-        "type": "vini-template",
-        "blocks": {
-          "top_section_AyEPBn": {
-            "type": "top-section",
-            "settings": {
-              "Heading_section": "A Podere Guardia Grande produciamo vini che esprimono il carattere del territorio",
-              "Paragraph_section": "Vermentino, Cannonau di Sardegna e Cagnulari, o Alghero Cagnulari, un vitigno autoctono a bacca rossa tipico proprio della ristretta area a nord-ovest della provincia di Sassari.",
-              "Banner_img": "shopify:\/\/shop_images\/vini-alberi.png"
-            }
-          },
-          "center_text_section_CjEV8U": {
-            "type": "center-text-section",
-            "settings": {
-              "quote_highlight": "In un luogo così genuino, dove la bellezza è travolgente, ciascuno è immerso nel proprio tempo, nel tentativo di comprendere il tempo stesso, di viverlo, di non sprecarlo"
-            }
-          }
-        },
-        "block_order": [
-          "top_section_AyEPBn",
-          "center_text_section_CjEV8U"
-        ],
-        "settings": {
-          "section_margin": 100,
-          "section_margin_tablet": 70,
-          "section_margin_mobile": 60
-        }
-      },
-      "contatti-template": {
-        "type": "contatti-template",
-        "settings": {
-          "Banner_img": "shopify:\/\/shop_images\/contatti-iniziale.jpg"
+          "section_margin": 0,
+          "section_margin_tablet": 0,
+          "section_margin_mobile": 0
         }
       }
     },
