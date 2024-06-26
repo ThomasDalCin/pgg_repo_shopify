@@ -109,10 +109,17 @@
               "Paragraph_section": "Vermentino, Cannonau di Sardegna e Cagnulari, o Alghero Cagnulari, un vitigno autoctono a bacca rossa tipico proprio della ristretta area a nord-ovest della provincia di Sassari.",
               "Banner_img": "shopify:\/\/shop_images\/vini-alberi.png"
             }
+          },
+          "center_text_section_qcL9Xf": {
+            "type": "center-text-section",
+            "settings": {
+              "quote_highlight": "In un luogo così genuino, dove la bellezza è travolgente, ciascuno è immerso nel proprio tempo, nel tentativo di comprendere il tempo stesso, di viverlo, di non sprecarlo"
+            }
           }
         },
         "block_order": [
-          "top_section_RabMnq"
+          "top_section_RabMnq",
+          "center_text_section_qcL9Xf"
         ],
         "settings": {
           "section_margin": 0,
