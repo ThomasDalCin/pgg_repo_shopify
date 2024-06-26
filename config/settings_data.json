@@ -98,6 +98,27 @@
         "settings": {
           "Banner_img": "shopify:\/\/shop_images\/contatti-iniziale.jpg"
         }
+      },
+      "vini-template": {
+        "type": "vini-template",
+        "blocks": {
+          "top_section_RabMnq": {
+            "type": "top-section",
+            "settings": {
+              "Heading_section": "A Podere Guardia Grande produciamo vini che esprimono il carattere del territorio",
+              "Paragraph_section": "Vermentino, Cannonau di Sardegna e Cagnulari, o Alghero Cagnulari, un vitigno autoctono a bacca rossa tipico proprio della ristretta area a nord-ovest della provincia di Sassari.",
+              "Banner_img": "shopify:\/\/shop_images\/vini-alberi.png"
+            }
+          }
+        },
+        "block_order": [
+          "top_section_RabMnq"
+        ],
+        "settings": {
+          "section_margin": 0,
+          "section_margin_tablet": 0,
+          "section_margin_mobile": 0
+        }
       }
     },
     "content_for_index": [
