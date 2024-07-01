@@ -945,6 +945,11 @@ li {
     object-position: center;
 }
 
+.paragraph.small{
+    font-size: 17px;
+    line-height: 27px;
+}
+
 @media screen and (max-width: 480px) {
     .content-featured-img {
         width: 100%;
