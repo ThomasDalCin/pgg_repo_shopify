@@ -885,6 +885,10 @@ li {
     object-position: top;
 }
 
+.tour-image.contain{
+    object-fit: contain;
+}
+
 .content-text.flex-start{
     justify-content: flex-start;
     position: sticky;
