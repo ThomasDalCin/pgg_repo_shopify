@@ -879,6 +879,16 @@ li {
     height: 25px;
 }
 
+.content-text-block.w-flex-start{
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 1.5rem;
+
+}
+
 .content-details-top {
     display: flex;
     align-items: center;
@@ -887,6 +897,14 @@ li {
     column-gap: 1rem;
     row-gap: 1rem;
     flex-wrap: wrap;
+}
+
+.content-details-body{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 1rem;
 }
 
 .details-content {
