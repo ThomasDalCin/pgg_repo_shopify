@@ -122,9 +122,46 @@
           "center_text_section_qcL9Xf"
         ],
         "settings": {
-          "section_margin": 100,
-          "section_margin_tablet": 70,
-          "section_margin_mobile": 60
+          "section_margin": 0,
+          "section_margin_tablet": 0,
+          "section_margin_mobile": 0
+        }
+      },
+      "winetour-template": {
+        "type": "winetour-template",
+        "blocks": {
+          "column_text_image_B7gT7M": {
+            "type": "column-text-image",
+            "settings": {
+              "Heading_section": "Tour e degustazioni",
+              "Paragraph_section_first": "Podere Guardia Grande è una cantina pensate per far letteralmente immergere gli ospiti nel suolo, laddove avviene la vera magia. Un percrso alla scoperta del processo di vinificazione, della filosofia produttiva e di come il terroir circostante sia presenza fondamentale di calice in calice.",
+              "Paragraph_section_second": "La nostra cantina è aperta dal giovedì al lunedì dalle 10:00 alle 13:00 e dalle 16:00 alle 20:00",
+              "Button_text": "Prenota ora la tua degustazione",
+              "Visibility_button": true
+            }
+          },
+          "column_text_image_brzHya": {
+            "type": "column-text-image",
+            "settings": {
+              "Heading_section": "Tour e degustazioni",
+              "Paragraph_section_first": "Podere Guardia Grande è una cantina pensate per far letteralmente immergere gli ospiti nel suolo, laddove avviene la vera magia. Un percrso alla scoperta del processo di vinificazione, della filosofia produttiva e di come il terroir circostante sia presenza fondamentale di calice in calice.",
+              "Paragraph_section_second": "La nostra cantina è aperta dal giovedì al lunedì dalle 10:00 alle 13:00 e dalle 16:00 alle 20:00",
+              "img_content_one": "shopify:\/\/shop_images\/Immagine3.png",
+              "img_content_two": "shopify:\/\/shop_images\/Immagine5.png",
+              "img_content_three": "shopify:\/\/shop_images\/Immagine4.png",
+              "Button_text": "Prenota ora la tua degustazione",
+              "Visibility_button": true
+            }
+          }
+        },
+        "block_order": [
+          "column_text_image_B7gT7M",
+          "column_text_image_brzHya"
+        ],
+        "settings": {
+          "section_margin": 0,
+          "section_margin_tablet": 0,
+          "section_margin_mobile": 0
         }
       }
     },
