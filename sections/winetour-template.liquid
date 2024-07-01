@@ -3,6 +3,12 @@
     <div class="wrapper-section section-bottom-margin">
       <div class="wrapper-contents">
         <div class="content">
+          <div class="addinional-container">
+            <img
+              src="{{ block.settings.img_content_addinional| img_url: 'master' }}"
+              alt=""
+              class="addinional-image">
+          </div>
           <div class="content-text">
             <h2 class="heading-h2">{{ block.settings.Heading_section }}</h2>
             <p class="paragraph">{{ block.settings.Paragraph_section_first }}</p>
@@ -28,12 +34,6 @@
             {% endif %}
           </div>
           <div class="container-img row">
-            <div class="addinional-container">
-              <img
-                src="{{ block.settings.img_content_addinional| img_url: 'master' }}"
-                alt=""
-                class="addinional-image">
-            </div>
             <div class="images-container">
               <img src="{{ block.settings.img_content_one | img_url: 'master' }}" class="image">
               <img src="{{ block.settings.img_content_two | img_url: 'master' }}" class="image">
