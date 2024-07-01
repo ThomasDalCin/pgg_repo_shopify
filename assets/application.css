@@ -891,12 +891,6 @@ li {
 }
 
 .content-text.sticky{
-    flex: 1; 
-    position: sticky;
-    top: 0;
-    padding: 20px; 
-    overflow-y: auto ;
-    justify-content: flex-start;
 }
 
 .content-text-block.w-flex-start{
