@@ -146,11 +146,17 @@
           "column_image_text_dqNG7J": {
             "type": "column-image-text",
             "settings": {
-              "Heading_section": "Tour e degustazioni",
-              "Paragraph_section_first": "Podere Guardia Grande è una cantina pensate per far letteralmente immergere gli ospiti nel suolo, laddove avviene la vera magia. Un percrso alla scoperta del processo di vinificazione, della filosofia produttiva e di come il terroir circostante sia presenza fondamentale di calice in calice.",
-              "Paragraph_section_second": "La nostra cantina è aperta dal giovedì al lunedì dalle 10:00 alle 13:00 e dalle 16:00 alle 20:00",
+              "Heading_one": "Descrizione",
+              "Paragraph_one": "Offriamo una visita guidata alla cantina e al vigneto che si inseriscono ed immergono rispettosamente nell'incantevole territorio di Guardia Grande.",
+              "Heading_two": "Cosa è incluso nella degustazione",
+              "Paragraph_two": "Degustazione guidata con assaggio di 3 vini serviti con una selezione di prodotti tipici del territorio sardo.",
+              "Heading_three": "Wine shop",
+              "Paragraph_three": "Potrete acquistare tutti i vini degustati presso il nostro wine shop.",
               "Button_text": "Prenota ora la tua degustazione",
-              "Visibility_button": true
+              "Visibility_button": true,
+              "img_content_one": "shopify:\/\/shop_images\/Immagine7.png",
+              "img_content_two": "shopify:\/\/shop_images\/Immagine6.png",
+              "img_content_three": "shopify:\/\/shop_images\/podere-slide-13.png"
             }
           }
         },
