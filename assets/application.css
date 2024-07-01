@@ -941,8 +941,8 @@ li {
     width: 270px;
     height: 270px;
     position: absolute;
-    bottom: -12%; 
-    left: 50%; 
+    bottom: -25%;
+    left: 55%;
     transform: translateX(-50%); 
     z-index: 2;
 }
