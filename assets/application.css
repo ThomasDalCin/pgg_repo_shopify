@@ -884,7 +884,9 @@ li {
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
-    column-gap: .5rem;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .details-content {
