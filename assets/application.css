@@ -856,6 +856,7 @@ li {
 /*winetour page*/
 .container-img.row{
     justify-content: flex-start;
+    overflow: scroll;
 }
 .images-container{
     display: flex;
@@ -1102,7 +1103,6 @@ li {
 
     .images-container{
         min-width: 100%;
-        overflow-x: scroll;
     }
 }
 
