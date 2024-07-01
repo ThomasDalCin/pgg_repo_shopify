@@ -1184,6 +1184,22 @@ li {
         position: static;
     }
 
+    .content-details-top{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .details-icon{
+        width: 20px;
+        height: 20px;
+    }
+
+    .paragraph.small{
+        font-size: 12px;
+        line-height: 22px;
+    }
+
 }
 
 
