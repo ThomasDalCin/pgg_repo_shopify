@@ -886,6 +886,10 @@ li {
     object-position: top;
 }
 
+.content-text.flex-start{
+    justify-content: flex-start;
+}
+
 .content-text-block.w-flex-start{
     
     display: flex;
