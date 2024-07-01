@@ -418,7 +418,6 @@ li {
     height: auto;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
 .content {
@@ -888,6 +887,9 @@ li {
 
 .content-text.flex-start{
     justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    height: fit-content;
 }
 
 .content-text-block.w-flex-start{
