@@ -143,7 +143,7 @@
               "Visibility_button": true
             }
           },
-          "column_image_text_w7FRAM": {
+          "column_image_text_dqNG7J": {
             "type": "column-image-text",
             "settings": {
               "Heading_section": "Tour e degustazioni",
@@ -156,7 +156,7 @@
         },
         "block_order": [
           "column_text_image_brzHya",
-          "column_image_text_w7FRAM"
+          "column_image_text_dqNG7J"
         ],
         "settings": {
           "section_margin": 0,
