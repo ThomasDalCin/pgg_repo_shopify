@@ -853,6 +853,12 @@ li {
     background-color: #f3f3f3;
 }
 
+/*winetour page*/
+.container-img.row{
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
 @media screen and (max-width: 480px) {
     .content-featured-img {
         width: 100%;
