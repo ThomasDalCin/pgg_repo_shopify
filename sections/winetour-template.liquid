@@ -42,9 +42,9 @@
       <div class="wrapper-contents">
         <div class="content">
             <div class="container-img sticky">
-                <img class="tour-image" src="" alt="">
-                <img class="tour-image" src="" alt="">
-                <img class="tour-image" src="" alt="">
+                <img class="tour-image" src="{{ block.settings.img_content_one | img_url: 'master' }}"  alt="">
+                <img class="tour-image" src="{{ block.settings.img_content_one | img_url: 'master' }}"  alt="">
+                <img class="tour-image" src="{{ block.settings.img_content_one | img_url: 'master' }}"  alt="">
             </div>
             <div class="content-text sticky">
                 <div class="content-text-block w-flex-start">
@@ -258,6 +258,19 @@
             "id": "Visibility_button",
             "label": "Hide/Show Button",
             "default": true
+          },
+          {
+            "type": "image_picker",
+            "id": "img_content_one",
+            "label": "Image"
+          }, {
+            "type": "image_picker",
+            "id": "img_content_two",
+            "label": "Image"
+          }, {
+            "type": "image_picker",
+            "id": "img_content_three",
+            "label": "Image"
           }
         ]
       }

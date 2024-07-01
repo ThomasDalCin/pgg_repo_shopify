@@ -883,6 +883,12 @@ li {
     height: auto;
 }
 
+.tour-image{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
 .content-text.sticky{
  position: sticky;
  top: 0%;
