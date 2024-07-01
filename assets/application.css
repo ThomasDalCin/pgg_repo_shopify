@@ -865,6 +865,7 @@ li {
     flex-direction: row;
     column-gap: 1rem;
     height: 420px;
+    position: relative;
 }
 
 .image {
@@ -878,26 +879,26 @@ li {
     height: 25px;
 }
 
-.tour-image{
+.tour-image {
     width: 100%;
     height: 400px;
     object-fit: cover;
     object-position: top;
 }
 
-.tour-image.contain{
+.tour-image.contain {
     object-fit: contain;
 }
 
-.content-text.flex-start{
+.content-text.flex-start {
     justify-content: flex-start;
     position: sticky;
     top: 10%;
     height: fit-content;
 }
 
-.content-text-block.w-flex-start{
-    
+.content-text-block.w-flex-start {
+
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -916,7 +917,7 @@ li {
     flex-wrap: wrap;
 }
 
-.content-details-body{
+.content-details-body {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -934,18 +935,22 @@ li {
 
 }
 
-.addinional-container{
+.addinional-container {
     width: 270px;
     height: 270px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
-.addinional-image{
+
+.addinional-image {
     width: 100%;
     height: 100%;
     object-fit: contain;
     object-position: center;
 }
 
-.paragraph.small{
+.paragraph.small {
     font-size: 17px;
     line-height: 27px;
 }
@@ -1196,26 +1201,26 @@ li {
         height: 100%;
     }
 
-    .content.winetour{
+    .content.winetour {
         flex-direction: column-reverse;
     }
 
-    .content-text.flex-start{
+    .content-text.flex-start {
         position: static;
     }
 
-    .content-details-top{
+    .content-details-top {
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .details-icon{
+    .details-icon {
         width: 20px;
         height: 20px;
     }
 
-    .paragraph.small{
+    .paragraph.small {
         font-size: 17px;
         line-height: 27px;
     }
