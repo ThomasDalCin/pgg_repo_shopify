@@ -1100,6 +1100,11 @@ li {
         right: -75px;
     }
 
+    .images-container{
+        min-width: 100%;
+        overflow-x: scroll;
+    }
+
 
 }
 
