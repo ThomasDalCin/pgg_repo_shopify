@@ -143,7 +143,7 @@
               "Visibility_button": true
             }
           },
-          "column_image_text_dqNG7J": {
+          "column_image_text_x7wGpj": {
             "type": "column-image-text",
             "settings": {
               "Heading_one": "Descrizione",
@@ -162,7 +162,7 @@
         },
         "block_order": [
           "column_text_image_brzHya",
-          "column_image_text_dqNG7J"
+          "column_image_text_x7wGpj"
         ],
         "settings": {
           "section_margin": 0,
