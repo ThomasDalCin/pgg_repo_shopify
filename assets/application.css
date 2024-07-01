@@ -856,7 +856,6 @@ li {
 /*winetour page*/
 .container-img.row{
     justify-content: flex-start;
-    overflow: scroll;
 }
 .images-container{
     display: flex;
@@ -865,9 +864,10 @@ li {
     flex-direction: row;
     column-gap: 1rem;
 }
-
 .image{
     object-fit: cover;
+    height: 370px;
+    max-height: 370px;
 }
 
 @media screen and (max-width: 480px) {
@@ -1106,14 +1106,17 @@ li {
     }
 
     /*wine tour*/
-    .images-container{
-        min-width: 100%;
+    .container-img.row {
+        overflow: scroll;
     }
-
-    .image{
+    .images-container{
+        height: 400px;
+    }
+    .images{
         width: 270px;
         height: 100%;
     }
+
 }
 
 
