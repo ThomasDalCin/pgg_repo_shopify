@@ -8,37 +8,32 @@
             <p class="paragraph">{{ block.settings.Paragraph_section_first }}</p>
             <p class="paragraph">{{ block.settings.Paragraph_section_second }}</p>
             {% if block.settings.Visibility_button == true %}
-                <div class="content-primary-button">
-                  <div class="content-button-text">
-                    <a class="button-link-text" href="/">{{ block.settings.Button_text }}</a>
-                  </div>
-                  <div class="content-button-icon">
-                    <div class="container-icon">
-                      <img
-                        src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/free-left-arrow-437-1174845.png?v=1715325754"
-                        alt=""
-                        class="arrow-icon rotate">
-                      <img
-                        src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/free-left-arrow-437-1174845.png?v=1715325754"
-                        alt=""
-                        class="arrow-icon rotate">
-                    </div>
+              <div class="content-primary-button">
+                <div class="content-button-text">
+                  <a class="button-link-text" href="/">{{ block.settings.Button_text }}</a>
+                </div>
+                <div class="content-button-icon">
+                  <div class="container-icon">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/free-left-arrow-437-1174845.png?v=1715325754"
+                      alt=""
+                      class="arrow-icon rotate">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/free-left-arrow-437-1174845.png?v=1715325754"
+                      alt=""
+                      class="arrow-icon rotate">
                   </div>
                 </div>
-              {% endif %}
+              </div>
+            {% endif %}
+          </div>
           <div class="content-img">
             <div class="container-img">
-                <div class="images-container">
-                    
-                        <img src="{{ block.settings.img_content_one |  img_url: 'master'}}">
-                    
-                    
-                        <img src="{{ block.settings.img_content_two |  img_url: 'master'}}">
-                    
-                    
-                        <img src="{{ block.settings.img_content_three |  img_url: 'master'}}">
-                    
-                </div>
+              <div class="images-container">
+                <img src="{{ block.settings.img_content_one |  img_url: 'master'}}">
+                <img src="{{ block.settings.img_content_two |  img_url: 'master'}}">
+                <img src="{{ block.settings.img_content_three |  img_url: 'master'}}">
+              </div>
             </div>
           </div>
         </div>
