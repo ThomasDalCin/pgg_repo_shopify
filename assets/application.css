@@ -854,7 +854,10 @@ li {
 }
 
 /*winetour page*/
-.container-img.row{
+.images-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     flex-direction: row;
     column-gap: 1rem;
 }
