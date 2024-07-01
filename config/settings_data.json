@@ -130,16 +130,6 @@
       "winetour-template": {
         "type": "winetour-template",
         "blocks": {
-          "column_text_image_B7gT7M": {
-            "type": "column-text-image",
-            "settings": {
-              "Heading_section": "Tour e degustazioni",
-              "Paragraph_section_first": "Podere Guardia Grande è una cantina pensate per far letteralmente immergere gli ospiti nel suolo, laddove avviene la vera magia. Un percrso alla scoperta del processo di vinificazione, della filosofia produttiva e di come il terroir circostante sia presenza fondamentale di calice in calice.",
-              "Paragraph_section_second": "La nostra cantina è aperta dal giovedì al lunedì dalle 10:00 alle 13:00 e dalle 16:00 alle 20:00",
-              "Button_text": "Prenota ora la tua degustazione",
-              "Visibility_button": true
-            }
-          },
           "column_text_image_brzHya": {
             "type": "column-text-image",
             "settings": {
@@ -155,7 +145,6 @@
           }
         },
         "block_order": [
-          "column_text_image_B7gT7M",
           "column_text_image_brzHya"
         ],
         "settings": {
