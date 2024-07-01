@@ -856,7 +856,6 @@ li {
 /*winetour page*/
 .container-img.row{
     justify-content: flex-start;
-    min-width: 50%;
 }
 .images-container{
     display: flex;
@@ -1139,6 +1138,10 @@ li {
 }
 
 @media (min-width: 1024px) {
+    /*winetour page*/
+.container-img.row{
+  min-width: 50%;
+}
 
     /*swiper style settings*/
     .mySwiper {
