@@ -41,8 +41,12 @@
     <div class="wrapper-section">
       <div class="wrapper-contents">
         <div class="content">
-            <div class="container-img"></div>
-            <div class="content-text">
+            <div class="container-img sticky">
+                <img class="tour-image" src="" alt="">
+                <img class="tour-image" src="" alt="">
+                <img class="tour-image" src="" alt="">
+            </div>
+            <div class="content-text sticky">
                 <div class="content-text-block w-flex-start">
                     <div class="content-details-top">
                         <div class="details-content">
@@ -95,38 +99,35 @@
                       </div>
                     </div>
                     <div class="content-details-body">
-                      <h2 class="heading-h2 secondary-family">Descrizione</h2>
-                      <p class="paragraph small">Offriamo una visita guidata alla cantina e al vigneto che si inseriscono ed immergono rispettosamente nell'incantevole territorio di Guardia Grande.
+                      <h2 class="heading-h2 secondary-family">{{ block.settings.Heading_one}}</h2>
+                      <p class="paragraph small">{{ block.settings.Paragraph_one }}
                       </p>
-                      <h2 class="heading-h2  secondary-family">Cosa è incluso nella degustazione
+                      <h2 class="heading-h2  secondary-family">{{ block.settings.Heading_two}}
                       </h2>
-                      <p class="paragraph small">Degustazione guidata con assaggio di 3 vini serviti con una selezione di prodotti tipici del territorio sardo</p>
-                      <h2 class="heading-h2  secondary-family">Wine shop
+                      <p class="paragraph small">{{ block.settings.Paragraph_two }}</p>
+                      <h2 class="heading-h2  secondary-family">{{ block.settings.Heading_three}}
                       </h2>
-                      <p class="paragraph small">Potrete acquistare tutti i vini degustati presso il nostro wine shop.
-         
-                                        .</p>
+                      <p class="paragraph small">{{ block.settings.Paragraph_three }}</p>
                     </div>
-                    <div class="content-primary-button">
-                      <div class="content-button-text">
-                        <a class="button-link-text" href="#">Prenota ora la tua
-         
-                                            degustazione
-                        </a>
-                      </div>
-                      <div class="content-button-icon">
-                        <div class="container-icon">
-                          <img
-                            src="./icons/free-left-arrow-437-1174845.png"
-                            alt=""
-                            class="arrow-icon rotate">
-                          <img
-                            src="./icons/free-left-arrow-437-1174845.png"
-                            alt=""
-                            class="arrow-icon rotate">
+                    {% if block.settings.Visibility_button == true %}
+                        <div class="content-primary-button">
+                          <div class="content-button-text">
+                            <a class="button-link-text" href="/">{{ block.settings.Button_text }}</a>
+                          </div>
+                          <div class="content-button-icon">
+                            <div class="container-icon">
+                              <img
+                                src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/free-left-arrow-437-1174845.png?v=1715325754"
+                                alt=""
+                                class="arrow-icon rotate">
+                              <img
+                                src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/free-left-arrow-437-1174845.png?v=1715325754"
+                                alt=""
+                                class="arrow-icon rotate">
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
+                      {% endif %}
                   </div>
             </div>
         </div>
@@ -213,35 +214,41 @@
         "settings": [
           {
             "type": "text",
-            "id": "Heading_section",
-            "label": "Heading section",
-            "default": "Tour e degustazioni"
+            "id": "Heading_one",
+            "label": "Heading one",
+            "default": "Descrizione"
           },
           {
             "type": "textarea",
-            "id": "Paragraph_section_first",
+            "id": "Paragraph_one",
             "label": "Paragraph",
-            "default": "Podere Guardia Grande è una cantina pensate per far letteralmente immergere gli ospiti nel suolo, laddove avviene la vera magia. Un percrso alla scoperta del processo di vinificazione, della filosofia produttiva e di come il terroir circostante sia presenza fondamentale di calice in calice."
+            "default": "Offriamo una visita guidata alla cantina e al vigneto che si inseriscono ed immergono rispettosamente nell'incantevole territorio di Guardia Grande."
+          },
+          {
+            "type": "text",
+            "id": "Heading_two",
+            "label": "Heading two",
+            "default": "Cosa è incluso nella degustazione"
           },
           {
             "type": "textarea",
-            "id": "Paragraph_section_second",
+            "id": "Paragraph_two",
             "label": "Paragraph",
-            "default": "La nostra cantina è aperta dal giovedì al lunedì dalle 10:00 alle 13:00 e dalle 16:00 alle 20:00"
+            "default": "Degustazione guidata con assaggio di 3 vini serviti con una selezione di prodotti tipici del territorio sardo."
           },
           {
-            "type": "image_picker",
-            "id": "img_content_one",
-            "label": "Image"
-          }, {
-            "type": "image_picker",
-            "id": "img_content_two",
-            "label": "Image"
-          }, {
-            "type": "image_picker",
-            "id": "img_content_three",
-            "label": "Image"
-          }, {
+            "type": "text",
+            "id": "Heading_three",
+            "label": "Heading three",
+            "default": "Wine shop"
+          },
+          {
+            "type": "textarea",
+            "id": "Paragraph_three",
+            "label": "Paragraph",
+            "default": "Potrete acquistare tutti i vini degustati presso il nostro wine shop."
+          },
+          {
             "type": "text",
             "id": "Button_text",
             "label": "Button text",

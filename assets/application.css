@@ -879,6 +879,15 @@ li {
     height: 25px;
 }
 
+.container-img.sticky{
+    height: auto;
+}
+
+.content-text.sticky{
+ position: sticky;
+ top: 0%;
+}
+
 .content-text-block.w-flex-start{
     
     display: flex;
