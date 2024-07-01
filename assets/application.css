@@ -856,6 +856,7 @@ li {
 .container-img.row {
     justify-content: flex-start;
     overflow: scroll;
+    position: relative;
 }
 
 .images-container {

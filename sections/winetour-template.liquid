@@ -28,16 +28,16 @@
             {% endif %}
           </div>
           <div class="container-img row">
+            <div class="addinional-container">
+              <img
+                src="{{ block.settings.img_content_addinional| img_url: 'master' }}"
+                alt=""
+                class="addinional-image">
+            </div>
             <div class="images-container">
               <img src="{{ block.settings.img_content_one | img_url: 'master' }}" class="image">
               <img src="{{ block.settings.img_content_two | img_url: 'master' }}" class="image">
               <img src="{{ block.settings.img_content_three | img_url: 'master' }}" class="image">
-              <div class="addinional-container">
-                <img
-                  src="{{ block.settings.img_content_addinional| img_url: 'master' }}"
-                  alt=""
-                  class="addinional-image">
-              </div>
             </div>
           </div>
         </div>
