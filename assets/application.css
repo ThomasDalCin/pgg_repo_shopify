@@ -1138,6 +1138,11 @@ li {
         min-height: 120px;
     }
 
+    .content{
+        flex-direction: column;
+        row-gap: var(--base-latptoprow-gap);
+    }
+
 }
 
 @media (min-width: 1024px) {
