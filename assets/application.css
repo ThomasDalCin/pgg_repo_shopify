@@ -864,11 +864,12 @@ li {
     justify-content: flex-start;
     flex-direction: row;
     column-gap: 1rem;
+    height: 420px;
 }
 .image{
     object-fit: cover;
-    height: 370px;
-    max-height: 370px;
+    height: 100%;
+    max-height: 100%;
 }
 
 @media screen and (max-width: 480px) {
@@ -1110,7 +1111,7 @@ li {
     .images-container{
         height: 400px;
     }
-    .images{
+    .image{
         width: 270px;
         height: 100%;
     }
