@@ -888,7 +888,7 @@ li {
 .content-text.flex-start{
     justify-content: flex-start;
     position: sticky;
-    top: 0%;
+    top: 10%;
     height: fit-content;
 }
 
