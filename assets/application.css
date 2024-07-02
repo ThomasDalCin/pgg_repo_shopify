@@ -1114,6 +1114,18 @@ li {
     .w-margin{
         margin: 0;
     }
+    /*vino template*/
+    .container-img-wine{
+        padding: 0;
+    }
+
+    .content.wine{
+        flex-direction: column;
+    }
+
+    .content-img.wine{
+        height: auto;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
