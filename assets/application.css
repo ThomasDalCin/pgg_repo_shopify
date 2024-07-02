@@ -1160,6 +1160,9 @@ li {
     }
 
     /*hero-wrapper*/
+    .hero-wrapper{
+        margin-bottom: 70px;
+    }
     .hero-wrapper-content {
         padding: var(--base-laptop-wrap-padd);
     }
