@@ -1073,6 +1073,8 @@ li {
     /*footer*/
     .content.w-border {
         flex-direction: column;
+        padding-top: 1rem;
+        border-top: 1px solid gray;
     }
 
     .content-block {
