@@ -1181,6 +1181,7 @@ li {
     }
 
     .wrap-wine-content {
+        flex-direction: column;
         flex-wrap: nowrap;
         row-gap: var(--base-latptoprow-gap);
     }
