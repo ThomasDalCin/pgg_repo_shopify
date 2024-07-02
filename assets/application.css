@@ -1201,14 +1201,6 @@ li {
         padding: 0;
     }
 
-    .wine-container:nth-last-of-type(1) {
-        align-items: flex-end;
-    }
-
-    .wine-container:nth-last-of-type(3) {
-        align-items: flex-start;
-    }
-
     /*container-img-relative*/
     .content.featured {
         flex-direction: column;
@@ -1244,5 +1236,10 @@ li {
 
     .content-img.featured {
         width: 60%;
+    }
+
+    /*vini template*/
+    .top-page-img.vini{
+        display: none;
     }
 }
