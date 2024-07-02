@@ -1246,6 +1246,7 @@ li {
     /*footer*/
     .content.w-border {
         flex-wrap: wrap;
+        row-gap: var(--base-latptoprow-gap);
     }
 
     .content-block {
