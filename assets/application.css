@@ -1146,7 +1146,7 @@ li {
         transform: none;
     }
 
-    .tour-image:nth-of-type(0), .tour-image:nth-of-type(1){
+    .tour-image:nth-of-type(1), .tour-image:nth-of-type(2){
         display: none;
     } 
 }
