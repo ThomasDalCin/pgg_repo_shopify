@@ -1168,6 +1168,7 @@ li {
         padding: var(--base-laptop-wrap-padd);
     }
 
+
     /*column settings*/
     .content-text {
         padding: 0;
@@ -1179,6 +1180,7 @@ li {
 
     .wrapper-section {
         padding: var(--base-laptop-wrap-padd);
+        margin-top: 2rem;
     }
 
     /*settings swiper*/
