@@ -959,10 +959,11 @@ li {
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
     /*nav settings*/
-    .nav-link-special{
+    .nav-link-special {
         font-size: 35px;
         line-height: 45px;
     }
+
     .show-menu {
         display: flex;
     }
@@ -1024,11 +1025,11 @@ li {
         padding: 0;
     }
 
-    .container-img{
+    .container-img {
         height: auto;
     }
 
-    .content-img{
+    .content-img {
         height: 500px;
         min-height: 500px;
     }
@@ -1054,7 +1055,7 @@ li {
         flex-wrap: nowrap;
     }
 
-    .wine-img{
+    .wine-img {
         width: 100%;
     }
 
@@ -1086,51 +1087,63 @@ li {
     }
 
     /*podere template*/
-    .content.is-revert.podere{
-       flex-direction: column-reverse; 
+    .content.is-revert.podere {
+        flex-direction: column-reverse;
     }
-    .content.podere{
+
+    .content.podere {
         flex-direction: column;
     }
-    .container-img.podere{
+
+    .container-img.podere {
         height: 70vh;
         min-height: 70vh;
         overflow: hidden;
     }
-    .content-img.podere{
-       width: 100%;
-       height: 100%;
-       object-fit: cover;
-       object-position: center;
+
+    .content-img.podere {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 
     /*vini template*/
-    .top-page-img.vini{
+    .top-page-img.vini {
         display: none;
     }
-    .content-text.content-text.absolute{
+
+    .content-text.content-text.absolute {
         width: 100%;
         min-width: 100%;
     }
 
-    .w-margin{
+    .w-margin {
         margin: 0;
     }
+
     /*vino template*/
-    .container-img-wine{
+    .container-img-wine {
         padding: 0;
     }
 
-    .content.wine{
+    .content.wine {
         flex-direction: column;
     }
 
-    .content-img.wine{
+    .content-img.wine {
         height: auto;
         min-height: auto;
     }
+
+    /*winetour*/
+    .content-text.flex-start {
+        position: static;
+    }
+
+    .addinional-container {
+        position: static;
+    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px){
-
-}
+@media screen and (min-width: 768px) and (max-width: 1024px) {}
