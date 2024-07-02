@@ -1087,9 +1087,13 @@ li {
     .content.is-revert.podere{
        flex-direction: column-reverse; 
     }
+    .content.podere{
+        flex-direction: column;
+    }
     .container-img.podere{
         height: 70vh;
         min-height: 70vh;
+        overflow: hidden;
     }
     .content-img.podere{
        width: 100%;
