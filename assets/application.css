@@ -940,7 +940,7 @@ li {
     position: absolute;
     bottom: -25%;
     left: 55%;
-    transform: translateX(-50%);
+    transform: translateX(-49%);
     z-index: 2;
 }
 
@@ -1178,8 +1178,8 @@ li {
         row-gap: var(--base-latptoprow-gap);
     }
 
-    .wrapper-section.no-padd{
-margin-top: 0;
+    .wrapper-section.no-padd {
+        margin-top: 0;
     }
 
     .wrapper-section {
