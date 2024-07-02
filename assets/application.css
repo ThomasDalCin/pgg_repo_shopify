@@ -1268,5 +1268,6 @@ li {
         padding: 0;
         flex-direction: row;
         column-gap: var(--base-latptoprow-gap);
+        display: flex;
     }
 }
