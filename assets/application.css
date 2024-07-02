@@ -1260,4 +1260,7 @@ li {
     .content.winetour{
         flex-direction: column-reverse;
     }
+    .content-text.flex-start {
+        position: static;
+    }
 }
