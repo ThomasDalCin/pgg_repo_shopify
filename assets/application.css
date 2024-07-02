@@ -957,6 +957,7 @@ li {
 }
 
 @media screen and (max-width: 480px) {
+    /*hero settings*/
     .hero-wrapper-content{
         padding: var(--base-mobile-wrap-padd);
     }
@@ -969,5 +970,13 @@ li {
     .hero-heading{
         font-size: var(--h1-mobile-font-size);
         line-height: var(--h1-mobile-line-height);
+    }
+    /*wrapper columns settings*/
+    .wrapper-section{
+        padding: var(--base-mobile-wrap-padd);
+    }
+
+    .content{
+        flex-direction: column;
     }
 }
