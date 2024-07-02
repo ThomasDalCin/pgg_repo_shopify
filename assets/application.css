@@ -1239,14 +1239,16 @@ li {
     }
 
     /*vini template*/
-    .top-page-img.vini{
+    .top-page-img.vini {
         display: none;
     }
 
     /*footer*/
+    .content.w-border {
+        flex-wrap: wrap;
+    }
+
     .content-block {
-        flex: 1 1 50%; /* Imposta i contenitori per occupare il 50% della larghezza del genitore */
-        box-sizing: border-box; /* Assicura che padding e bordi siano inclusi nelle dimensioni totali */
-        padding: var(--base-padding); /* Aggiungi padding come necessario */
+        flex: 1 1 50%;
     }
 }
