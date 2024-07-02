@@ -1021,4 +1021,12 @@ li {
         width: 100%;
         height: auto;
     }
+    /*footer*/
+    .content.w-border{
+        flex-direction: column;
+    }
+
+    .content.w-border:nth-child(2){
+        align-items: flex-start;
+    }
 }
