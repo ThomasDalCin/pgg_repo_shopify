@@ -1182,10 +1182,10 @@ li {
 
     /*wine containers*/
     .wine-container:nth-last-of-type(1){
-        align-items: flex-start;
+        align-items: flex-end;
     }
 
     .wine-container:nth-last-of-type(3){
-        align-items: flex-end;
+        align-items: flex-start;
     }
 }
