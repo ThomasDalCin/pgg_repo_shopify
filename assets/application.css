@@ -1227,7 +1227,7 @@ li {
     }
 
     /*podere template*/
-    .content.podere{
+    .content.podere.featured{
         flex-direction: column;
     }
 
