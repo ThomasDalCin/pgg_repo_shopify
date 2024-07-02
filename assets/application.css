@@ -1125,6 +1125,7 @@ li {
 
     .content-img.wine{
         height: auto;
+        min-height: auto;
     }
 }
 
