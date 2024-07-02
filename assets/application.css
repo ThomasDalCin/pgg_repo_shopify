@@ -1269,5 +1269,7 @@ li {
         flex-direction: row;
         column-gap: var(--base-latptoprow-gap);
         display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
 }
