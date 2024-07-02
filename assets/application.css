@@ -1179,4 +1179,13 @@ li {
         min-height: 570px;
         object-fit: cover;
     }
+
+    /*wine containers*/
+    .wine-container:nth-last-of-type(1){
+        align-items: flex-start;
+    }
+
+    .wine-container:nth-last-of-type(3){
+        align-items: flex-end;
+    }
 }
