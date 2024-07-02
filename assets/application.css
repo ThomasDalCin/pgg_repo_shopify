@@ -1143,6 +1143,7 @@ li {
 
     .addinional-container {
         position: static;
+        transform: none;
     }
 }
 
