@@ -1225,4 +1225,13 @@ li {
         width: 270px;
         height: auto;
     }
+
+    /*podere template*/
+    .content.podere{
+        flex-direction: column;
+    }
+
+    .container-img.relative.flex-top.podere{
+        padding: 0;
+    }
 }
