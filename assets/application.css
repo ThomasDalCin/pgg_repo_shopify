@@ -1256,15 +1256,18 @@ li {
     .content.w-border>:last-child {
         align-items: flex-start;
     }
+
     /*wintetour template*/
-    .content.winetour{
+    .content.winetour {
         flex-direction: column-reverse;
         row-gap: var(--base-latptoprow-gap);
     }
+
     .content-text.flex-start {
         position: static;
     }
-    .container-img.winetour{
+
+    .container-img.winetour {
         padding: 0;
         flex-direction: row;
         column-gap: var(--base-latptoprow-gap);
@@ -1274,10 +1277,16 @@ li {
         overflow: scroll;
     }
 
-    .tour-image{
+    .tour-image {
         height: 320px;
         width: 400px;
         min-width: 400px;
         object-fit: cover;
+    }
+
+    .addinional-container {
+        width: 150px;
+        height: 150px;
+        bottom: 10%;
     }
 }
