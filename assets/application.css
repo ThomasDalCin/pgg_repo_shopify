@@ -959,12 +959,17 @@ li {
 @media screen and (max-width: 480px) {
 
     /*nav settings*/
-    .show-menu {
-        display: block;
+    .navbar {
+        padding: 10px 20.8px;
     }
 
+    .nav-text,
     .nav-menu {
         display: none;
+    }
+
+    .show-menu {
+        display: block;
     }
 
     /*hero settings*/
