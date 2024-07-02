@@ -1173,6 +1173,10 @@ li {
         row-gap: var(--base-latptoprow-gap);
     }
 
+    .wrapper-section{
+        padding: var(--base-laptop-wrap-padd);
+    }
+
     /*settings swiper*/
     .mySwiper {
         height: 570px;
