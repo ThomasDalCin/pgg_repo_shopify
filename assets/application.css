@@ -977,7 +977,9 @@ li {
     .wrapper-section {
         padding: var(--base-mobile-wrap-padd);
     }
-
+    .wrapper-contents{
+        row-gap: var(--base-row-gap);
+    }
     .content {
         flex-direction: column-reverse;
     }
