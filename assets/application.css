@@ -1145,6 +1145,10 @@ li {
         position: static;
         transform: none;
     }
+
+    .tour-image:nth-of-type(0), .tour-image:nth-of-type(1){
+        display: none;
+    } 
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {}
