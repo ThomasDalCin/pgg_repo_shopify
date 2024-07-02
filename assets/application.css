@@ -1025,7 +1025,9 @@ li {
     .content.w-border{
         flex-direction: column;
     }
-
+    .content-block{
+        row-gap: var(--base-mobile-row-gap);
+    }
     .content.w-border> :last-child{
         align-items: flex-start;
     }
