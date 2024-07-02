@@ -959,8 +959,12 @@ li {
 @media screen and (max-width: 480px) {
 
     /*nav settings*/
+    .show-menu {
+        display: flex;
+    }
+
     .navbar {
-        padding: 10px 20.8px;
+        padding: 0.3rem 1rem;
     }
 
     .nav-text,
@@ -968,8 +972,14 @@ li {
         display: none;
     }
 
-    .show-menu {
-        display: block;
+    .logo-mobile {
+        width: 100px;
+        height: 100px;
+    }
+
+    .icon-menu {
+        width: 25px;
+        height: 25px;
     }
 
     /*hero settings*/
