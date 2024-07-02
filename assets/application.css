@@ -1146,9 +1146,37 @@ li {
         transform: none;
     }
 
-    .tour-image:nth-of-type(1), .tour-image:nth-of-type(2){
+    .tour-image:nth-of-type(1),
+    .tour-image:nth-of-type(2) {
         display: none;
-    } 
+    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /*nav settings*/
+    .nav-text {
+        display: none;
+    }
+
+    /*hero-wrapper*/
+    .hero-wrapper-content {
+        padding: var(--base-laptop-wrap-padd);
+    }
+
+    /*column settings*/
+    .content-text {
+        padding: 0;
+    }
+
+    .wrapper-contents {
+        row-gap: var(--base-latptoprow-gap);
+    }
+
+    /*settings swiper*/
+    .mySwiper {
+        height: 570px;
+        min-height: 570px;
+        object-fit: cover;
+    }
+}
