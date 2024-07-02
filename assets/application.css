@@ -1101,4 +1101,21 @@ li {
        object-fit: cover;
        object-position: center;
     }
+
+    /*vini template*/
+    .top-page-img.vini{
+        display: none;
+    }
+    .content-text.content-text.absolute{
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .w-margin{
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
 }
