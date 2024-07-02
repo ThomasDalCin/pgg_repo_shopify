@@ -1256,4 +1256,8 @@ li {
     .content.w-border>:last-child {
         align-items: flex-start;
     }
+    /*wintetour template*/
+    .content.winwtour{
+        flex-direction: column-reverse;
+    }
 }
