@@ -1259,8 +1259,14 @@ li {
     /*wintetour template*/
     .content.winetour{
         flex-direction: column-reverse;
+        row-gap: var(--base-latptoprow-gap);
     }
     .content-text.flex-start {
         position: static;
+    }
+    .container-img.winetour{
+        padding: 0;
+        flex-direction: row;
+        column-gap: var(--base-latptoprow-gap);
     }
 }
