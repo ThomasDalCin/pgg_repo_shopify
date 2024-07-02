@@ -1257,7 +1257,7 @@ li {
         align-items: flex-start;
     }
     /*wintetour template*/
-    .content.winwtour{
+    .content.winetour{
         flex-direction: column-reverse;
     }
 }
