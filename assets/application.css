@@ -965,4 +965,9 @@ li {
         width: 100%;
         min-width: 100%;
     }
+
+    .hero-heading{
+        font-size: var(--h1-mobile-font-size);
+        line-height: var(--h1-mobile-line-height);
+    }
 }
