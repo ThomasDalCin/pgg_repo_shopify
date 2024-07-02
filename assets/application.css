@@ -1180,12 +1180,17 @@ li {
         object-fit: cover;
     }
 
+    .wrap-wine-content {
+        flex-wrap: nowrap;
+        row-gap: var(--base-latptoprow-gap);
+    }
+
     /*wine containers*/
-    .wine-container:nth-last-of-type(1){
+    .wine-container:nth-last-of-type(1) {
         align-items: flex-end;
     }
 
-    .wine-container:nth-last-of-type(3){
+    .wine-container:nth-last-of-type(3) {
         align-items: flex-start;
     }
 }
