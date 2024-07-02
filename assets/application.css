@@ -1204,7 +1204,7 @@ li {
     }
 
     /*container-img-relative*/
-    .content-featured {
+    .content.featured {
         flex-direction: column;
     }
 
