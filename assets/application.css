@@ -1160,9 +1160,10 @@ li {
     }
 
     /*hero-wrapper*/
-    .hero-wrapper{
+    .hero-wrapper {
         margin-bottom: 70px;
     }
+
     .hero-wrapper-content {
         padding: var(--base-laptop-wrap-padd);
     }
@@ -1227,15 +1228,19 @@ li {
     }
 
     /*podere template*/
-    .content.podere.featured{
+    .content.podere.featured {
         flex-direction: column;
     }
 
-    .container-img.relative.flex-top.podere{
+    .container-img.relative.flex-top.podere {
         padding: 0;
     }
 
-    .container-img.podere{
-display: none;
+    .container-img.podere {
+        display: none;
+    }
+
+    .content-img.featured {
+        width: 80%;
     }
 }
