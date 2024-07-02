@@ -1026,7 +1026,7 @@ li {
         flex-direction: column;
     }
 
-    .content.w-border:nth-child(2){
+    .content.w-border> :last-child{
         align-items: flex-start;
     }
 }
