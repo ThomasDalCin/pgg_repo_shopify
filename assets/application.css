@@ -956,7 +956,7 @@ li {
     line-height: 27px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
 
     /*nav settings*/
     .show-menu {
