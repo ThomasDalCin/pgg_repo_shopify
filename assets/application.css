@@ -957,5 +957,12 @@ li {
 }
 
 @media screen and (max-width: 480px) {
-    
+    .hero-wrapper-content{
+        padding: var(--base-mobile-wrap-padd);
+    }
+
+    .hero-heading-content{
+        width: 100%;
+        min-width: 100%;
+    }
 }
