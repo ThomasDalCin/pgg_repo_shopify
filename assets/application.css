@@ -1020,10 +1020,20 @@ li {
         padding: 0;
     }
 
+    .container-img{
+        height: auto;
+    }
+
+    .content-img{
+        height: 500px;
+        min-height: 500px;
+    }
+
     /*settings swiper*/
     .mySwiper {
         height: 500px;
         min-height: 500px;
+        object-fit: cover;
     }
 
     /*container center text*/
