@@ -997,4 +997,9 @@ li {
         height: 500px;
         min-height: 500px;
     }
+    /*container center text*/
+    .container-center-text{
+        width: 100%;
+        min-width: 100%;
+    }
 }
