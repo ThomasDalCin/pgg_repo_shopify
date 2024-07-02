@@ -992,4 +992,9 @@ li {
     .container-img {
         padding: 0;
     }
+    /*settings swiper*/
+    .mySwiper{
+        height: 500px;
+        min-height: 500px;
+    }
 }
