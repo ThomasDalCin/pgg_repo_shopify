@@ -1191,6 +1191,9 @@ li {
     }
 
     /*wine containers*/
+    .wrap-wine-content{
+        padding: 0;
+    }
     .wine-container:nth-last-of-type(1) {
         align-items: flex-end;
     }
