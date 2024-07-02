@@ -1178,6 +1178,10 @@ li {
         row-gap: var(--base-latptoprow-gap);
     }
 
+    .wrapper-section.no-padd{
+margin-top: 0;
+    }
+
     .wrapper-section {
         padding: var(--base-laptop-wrap-padd);
         margin-top: 2rem;
