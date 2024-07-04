@@ -1324,7 +1324,7 @@ li {
     }
 
     .wine-container:nth-child(3) {
-        flex-basis: 100%; /* Il terzo elemento occupa l'intera larghezza */
+        flex-basis: calc(50% - 20px); /* Larghezza del terzo elemento come gli altri due */
         margin: 10px auto; /* Margine automatico per centrare l'elemento */
         text-align: center; /* Centra il contenuto del terzo elemento */
     }
