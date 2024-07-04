@@ -1328,7 +1328,7 @@ li {
         margin: 10px;
     }
 
-    .wine-container:nth-child(3) {
+    .wine-container.w-margin:nth-child(3) {
         min-width: 326.4px;
         width: 326.4px;
         flex: none;
