@@ -132,6 +132,9 @@ body {
     border-bottom: 1px solid var(--primary-text-color);
 }
 
+.content-primary-button:hover .container-icon {
+    transform: translateX(-31px);
+}
 
 .content-button-icon {
     display: flex;
