@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "hero-section": {
@@ -53,6 +62,14 @@
         "Visibility_button": true
       }
     },
+    "featured": {
+      "type": "featured-items",
+      "settings": {
+        "section_margin": 0,
+        "section_margin_tablet": 0,
+        "section_margin_mobile": 0
+      }
+    },
     "text-core": {
       "type": "text-core",
       "settings": {
@@ -73,12 +90,6 @@
         "First_paragraph": "La bontà del vino si lega saldamente alle qualità intrinseche del promontorio di Guardia Grande, alla natura del luogo, alla sua terra, alle sue pietre, alla particolarità climatica. Fertile e creativa, la terra racchiude in sé le caratteristiche del grembo materno che accoglie la vita e la nutre, con costanza, pazienza e forza. La terra è dotata di potenza magica, la stessa energia che serve nella produzione del vino.",
         "Second_paragraph": "Al valore generativo della terra, alla fertilità e alla ciclicità si legano i ritrovamenti delle statuette di Dea Madre nelle Domus de Janas, archetipi che vanno oltre il tempo e lo spazio."
       }
-    },
-    "featured" : {
-      "type": "featured-items",
-      "settings": {
-
-      }
     }
   },
   "order": [
@@ -86,8 +97,8 @@
     "columned-features",
     "slider",
     "quote-highlights",
+    "featured",
     "text-core",
-    "scrolling-feature-columns",
-    "featured"
+    "scrolling-feature-columns"
   ]
 }
