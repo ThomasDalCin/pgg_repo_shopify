@@ -757,7 +757,7 @@ li {
 }
 
 .content.w-border{
-    padding-top: 1rem;
+    padding-top: 2rem;
     border-top: 1px solid #ceccc6;
 }
 
@@ -1091,7 +1091,7 @@ li {
     /*footer*/
     .content.w-border {
         flex-direction: column;
-        padding-top: 1rem;
+        padding-top: 2rem;
         border-top: 1px solid #ceccc6;
     }
 
