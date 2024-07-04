@@ -1,7 +1,6 @@
 {% assign productImgLogo = product.images[4] | default: product.featured_image %}
 {% assign productMainImg = product.images[5] | default: product.featured_image %}
 
-
 <!-- section wrapper wine rendering -->
 <div class="wrapper-section wine-section-margin">
   <div class="wrapper-contents">
@@ -12,15 +11,24 @@
           {% for collection in collections %}
             {% for product in collection.products %}
               <div class="wine-container">
-                <img
-                  src="{{ productImgLogo |  img_url: 'master' }}"
-                  alt="{{ productImgLogo.alt | default: product.title }}"
-                  class="wine-logo">
-                <a href="{{ product.url }}">
+                {% if product.images.size > 4 %}
                   <img
-                    src="{{ productMainImg |  img_url: 'master' }}"
-                    alt="{{ productMainImg.alt | default: product.title }}"
-                    class="wine-img">
+                    src="{{ productImgLogo | img_url: 'master' }}"
+                    alt="{{ productImgLogo.alt | default: product.title }}"
+                    class="wine-logo">
+                {% endif %}
+                <a href="{{ product.url }}">
+                  {% if product.images.size > 5 %}
+                    <img
+                      src="{{ productMainImg | img_url: 'master' }}"
+                      alt="{{ productMainImg.alt | default: product.title }}"
+                      class="wine-img">
+                  {% else %}
+                    <img
+                      src="{{ product.featured_image | img_url: 'master' }}"
+                      alt="{{ product.title }}"
+                      class="wine-img">
+                  {% endif %}
                 </a>
                 {% if product.title == 'Saldenya' %}
                   <p class="wine-heading">Cannonau</p>
@@ -64,7 +72,6 @@
     "name": "featured-items",
     "settings": [
       {
-
         "type": "range",
         "id": "section_margin",
         "label": "margin section",
@@ -73,9 +80,8 @@
         "min": 0,
         "max": 100,
         "step": 1
-
-      }, {
-
+      },
+      {
         "type": "range",
         "id": "section_margin_tablet",
         "label": "margin section tablet",
@@ -84,9 +90,8 @@
         "min": 0,
         "max": 100,
         "step": 1
-
-      }, {
-
+      },
+      {
         "type": "range",
         "id": "section_margin_mobile",
         "label": "margin section mobile",
@@ -95,7 +100,6 @@
         "min": 0,
         "max": 100,
         "step": 1
-
       }
     ]
   }
