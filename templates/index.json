@@ -53,44 +53,6 @@
         "Visibility_button": true
       }
     },
-    "featured-items": {
-      "type": "featured-items",
-      "blocks": {
-        "item_section_VrgWDa": {
-          "type": "item-section",
-          "settings": {
-          }
-        },
-        "item_section_xWRPGC": {
-          "type": "item-section",
-          "settings": {
-            "Item_image": "shopify:\/\/shop_images\/home-bottiglia-nascimento.jpg",
-            "Item_logo": "shopify:\/\/shop_images\/logo-nascimento-2.svg",
-            "Item_type": "Cannonau",
-            "Item_name": "Sardegna DOC"
-          }
-        },
-        "item_section_nK3LJN": {
-          "type": "item-section",
-          "settings": {
-            "Item_image": "shopify:\/\/shop_images\/home-bottiglia-alghe.jpg",
-            "Item_logo": "shopify:\/\/shop_images\/logo-lalghe-2.svg",
-            "Item_type": "Cagnulari",
-            "Item_name": "Sardegna DOC"
-          }
-        }
-      },
-      "block_order": [
-        "item_section_VrgWDa",
-        "item_section_xWRPGC",
-        "item_section_nK3LJN"
-      ],
-      "settings": {
-        "section_margin": 100,
-        "section_margin_tablet": 70,
-        "section_margin_mobile": 60
-      }
-    },
     "text-core": {
       "type": "text-core",
       "settings": {
@@ -118,7 +80,6 @@
     "columned-features",
     "slider",
     "quote-highlights",
-    "featured-items",
     "text-core",
     "scrolling-feature-columns"
   ]
