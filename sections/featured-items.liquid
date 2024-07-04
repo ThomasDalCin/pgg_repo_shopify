@@ -3,34 +3,34 @@
   <div class="wrapper-contents">
     <div class="content wine-content" id="wine-section">
       <div class="wrap-wine-content">
-          {% for collection in collections %}
-            {% for product in collection.products %}
-              {% assign productImgLogo = product.images[4] | default: product.featured_image %}
-              {% assign productMainImg = product.images[5] | default: product.featured_image %}
-              {% assign productTitle = product.title %}
-              
-              <div class="wine-container">
+        {% for collection in collections %}
+          {% for product in collection.products %}
+            {% assign productImgLogo = product.images[4] | default: product.featured_image %}
+            {% assign productMainImg = product.images[5] | default: product.featured_image %}
+            {% assign productTitle = product.title %}
+
+            <div class="wine-container">
+              <a href="{{ product.url }}">
                 <img
-                  src="{{ productImgLogo | img_url: 'master' }}"
-                  alt="{{ productImgLogo.alt | default: productTitle }}"
-                  class="wine-logo">
-                <a href="{{ product.url }}">
-                  <img
-                    src="{{ productMainImg | img_url: 'master' }}"
-                    alt="{{ productMainImg.alt | default: productTitle }}"
-                    class="wine-img">
-                </a>
-                {% if productTitle == 'Saldenya' %}
-                  <p class="wine-heading">Cannonau</p>
-                {% elsif productTitle == 'Nascimento' %}
-                  <p class="wine-heading">Cannonau</p>
-                {% else %}
-                  <p class="wine-heading">Cagnaluri</p>
-                {% endif %}
-                <p>Sardegna DOC</p>
-              </div>
-            {% endfor %}
+                  src="{{ productMainImg | img_url: 'master' }}"
+                  alt="{{ productMainImg.alt | default: productTitle }}"
+                  class="wine-img">
+              </a>
+              <img
+                src="{{ productImgLogo | img_url: 'master' }}"
+                alt="{{ productImgLogo.alt | default: productTitle }}"
+                class="wine-logo">
+              {% if productTitle == 'Saldenya' %}
+                <p class="wine-heading">Cannonau</p>
+              {% elsif productTitle == 'Nascimento' %}
+                <p class="wine-heading">Cannonau</p>
+              {% else %}
+                <p class="wine-heading">Cagnaluri</p>
+              {% endif %}
+              <p>Sardegna DOC</p>
+            </div>
           {% endfor %}
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -68,8 +68,7 @@
         "min": 0,
         "max": 100,
         "step": 1
-      },
-      {
+      }, {
         "type": "range",
         "id": "section_margin_tablet",
         "label": "margin section tablet",
@@ -78,8 +77,7 @@
         "min": 0,
         "max": 100,
         "step": 1
-      },
-      {
+      }, {
         "type": "range",
         "id": "section_margin_mobile",
         "label": "margin section mobile",
