@@ -5,8 +5,8 @@
       <div class="wrap-wine-content">
           {% for collection in collections %}
             {% for product in collection.products %}
-              {% assign productImgLogo = product.images[3] | default: product.featured_image %}
-              {% assign productMainImg = product.images[4] | default: product.featured_image %}
+              {% assign productImgLogo = product.images[4] | default: product.featured_image %}
+              {% assign productMainImg = product.images[5] | default: product.featured_image %}
               {% assign productTitle = product.title %}
               
               <div class="wine-container">
