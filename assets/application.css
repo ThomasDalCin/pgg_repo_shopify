@@ -1323,9 +1323,11 @@ li {
         margin: 10px;
     }
 
-    .wrap-wine-content > .wine-container:nth-child(3) {
-        flex-basis: calc(100% - 20px); /* Larghezza del terzo elemento, occupa tutta la larghezza disponibile */
-        margin-top: 20px; /* Margine superiore per separare dal blocco precedente */
+    .wine-container:nth-child(3) {
+        min-width: 326.4px;
+        width: 326.4px;
+        flex: none;
+        margin-top: 2rem;
     }
 }
 
