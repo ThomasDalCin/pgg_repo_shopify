@@ -1,23 +1,39 @@
+{% assign productImgLogo = product.images[4] | default: product.featured_image %}
+{% assign productMainImg = product.images[5] | default: product.featured_image %}
+
+
 <!-- section wrapper wine rendering -->
 <div class="wrapper-section wine-section-margin">
   <div class="wrapper-contents">
     <div class="content wine-content" id="wine-section">
       <div class="wrap-wine-content">
         {% for block in section.blocks %}
-          {% if block.type == 'item-section' %}
-            <div class="wine-container">
-              <img
-                src="{{ block.settings.Item_image | img_url: 'master' }}"
-                alt="wine-img"
-                class="wine-img">
-              <img
-                src="{{ block.settings.Item_logo | img_url: 'master' }}"
-                alt=""
-                class="wine-logo">
-              <p class="wine-heading">{{ block.settings.Item_type }}</p>
-              <p>{{ block.settings.Item_name }}</p>
-            </div>
-          {% endif %}
+
+          {% for collection in collections %}
+            {% for product in collection.products %}
+              <div class="wine-container">
+                <img
+                  src="{{ productImgLogo |  img_url: 'master' }}"
+                  alt="{{ productImgLogo.alt | default: product.title }}"
+                  class="wine-logo">
+                <a href="{{ product.url }}">
+                  <img
+                    src="{{ productMainImg |  img_url: 'master' }}"
+                    alt="{{ productMainImg.alt | default: product.title }}"
+                    class="wine-img">
+                </a>
+                {% if product.title == 'Saldenya' %}
+                  <p class="wine-heading">Cannonau</p>
+                {% elsif product.title == 'Nascimento' %}
+                  <p class="wine-heading">Cannonau</p>
+                {% else %}
+                  <p class="wine-heading">Cagnaluri</p>
+                {% endif %}
+                <p>Sardegna DOC</p>
+              </div>
+            {% endfor %}
+          {% endfor %}
+
         {% endfor %}
       </div>
     </div>
@@ -80,34 +96,6 @@
         "max": 100,
         "step": 1
 
-      }
-    ],
-    "max_blocks": 6,
-    "blocks": [
-      {
-        "type": "item-section",
-        "name": "item-section",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "Item_image",
-            "label": "Image"
-          }, {
-            "type": "image_picker",
-            "id": "Item_logo",
-            "label": "Item logo"
-          }, {
-            "type": "text",
-            "id": "Item_type",
-            "label": "Item details",
-            "default": "Product details"
-          }, {
-            "type": "text",
-            "id": "Item_name",
-            "label": "Item name",
-            "default": "Product name"
-          }
-        ]
       }
     ]
   }
