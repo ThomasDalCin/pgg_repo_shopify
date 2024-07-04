@@ -1315,15 +1315,17 @@ li {
     .wrap-wine-content {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between; /* Spazio tra i primi due elementi */
     }
 
     .wine-container {
-        width: 30%; /* Tutti e tre gli elementi avranno la stessa larghezza */
+        flex-basis: calc(50% - 20px); /* Larghezza dei primi due elementi meno il margine */
         margin: 10px;
     }
 
     .wine-container:nth-child(3) {
+        flex-basis: 100%; /* Il terzo elemento occupa l'intera larghezza */
         margin: 10px auto; /* Margine automatico per centrare l'elemento */
+        text-align: center; /* Centra il contenuto del terzo elemento */
     }
 }
