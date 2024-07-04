@@ -3,7 +3,6 @@
   <div class="wrapper-contents">
     <div class="content wine-content" id="wine-section">
       <div class="wrap-wine-content">
-        {% for block in section.blocks %}
           {% for collection in collections %}
             {% for product in collection.products %}
               {% assign productImgLogo = product.images[3] | default: product.featured_image %}
@@ -32,7 +31,6 @@
               </div>
             {% endfor %}
           {% endfor %}
-        {% endfor %}
       </div>
     </div>
   </div>
