@@ -756,6 +756,11 @@ li {
     row-gap: var(--base-row-gap);
 }
 
+.content.w-border{
+    padding-top: 1rem;
+    border-top: 1px solid #ceccc6;
+}
+
 .content.w-border> :last-child {
     align-items: flex-end;
 }
@@ -1087,7 +1092,7 @@ li {
     .content.w-border {
         flex-direction: column;
         padding-top: 1rem;
-        border-top: 1px solid gray;
+        border-top: 1px solid #ceccc6;
     }
 
     .content-block {
