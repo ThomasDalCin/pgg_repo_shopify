@@ -1,38 +1,29 @@
-{% assign productImgLogo = product.images[4] | default: product.featured_image %}
-{% assign productMainImg = product.images[5] | default: product.featured_image %}
-
 <!-- section wrapper wine rendering -->
 <div class="wrapper-section wine-section-margin">
   <div class="wrapper-contents">
     <div class="content wine-content" id="wine-section">
       <div class="wrap-wine-content">
         {% for block in section.blocks %}
-
           {% for collection in collections %}
             {% for product in collection.products %}
+              {% assign productImgLogo = product.images[3] | default: product.featured_image %}
+              {% assign productMainImg = product.images[4] | default: product.featured_image %}
+              {% assign productTitle = product.title %}
+              
               <div class="wine-container">
-                {% if product.images.size > 4 %}
-                  <img
-                    src="{{ productImgLogo | img_url: 'master' }}"
-                    alt="{{ productImgLogo.alt | default: product.title }}"
-                    class="wine-logo">
-                {% endif %}
+                <img
+                  src="{{ productImgLogo | img_url: 'master' }}"
+                  alt="{{ productImgLogo.alt | default: productTitle }}"
+                  class="wine-logo">
                 <a href="{{ product.url }}">
-                  {% if product.images.size > 5 %}
-                    <img
-                      src="{{ productMainImg | img_url: 'master' }}"
-                      alt="{{ productMainImg.alt | default: product.title }}"
-                      class="wine-img">
-                  {% else %}
-                    <img
-                      src="{{ product.featured_image | img_url: 'master' }}"
-                      alt="{{ product.title }}"
-                      class="wine-img">
-                  {% endif %}
+                  <img
+                    src="{{ productMainImg | img_url: 'master' }}"
+                    alt="{{ productMainImg.alt | default: productTitle }}"
+                    class="wine-img">
                 </a>
-                {% if product.title == 'Saldenya' %}
+                {% if productTitle == 'Saldenya' %}
                   <p class="wine-heading">Cannonau</p>
-                {% elsif product.title == 'Nascimento' %}
+                {% elsif productTitle == 'Nascimento' %}
                   <p class="wine-heading">Cannonau</p>
                 {% else %}
                   <p class="wine-heading">Cagnaluri</p>
@@ -41,7 +32,6 @@
               </div>
             {% endfor %}
           {% endfor %}
-
         {% endfor %}
       </div>
     </div>
@@ -56,13 +46,13 @@
 
   @media screen and (max-width: 768px) {
     .wine-section-margin {
-      margin-bottom: {{ section.settings.section_margin_tablet }}px
+      margin-bottom: {{ section.settings.section_margin_tablet }}px;
     }
   }
 
   @media screen and (max-width: 480px) {
     .wine-section-margin {
-      margin-bottom: {{ section.settings.section_margin_mobile }}px
+      margin-bottom: {{ section.settings.section_margin_mobile }}px;
     }
   }
 {% endstyle %}
