@@ -303,6 +303,7 @@ body {
     top: 0%;
     left: 0%;
     right: 0%;
+    bottom: auto;
     z-index: 9999999999999;
 }
 
