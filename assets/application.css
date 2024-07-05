@@ -1275,10 +1275,7 @@ li {
         display: none;
     }
 
-    /*product template*/
-    .content.is-wine-revert {
-        flex-direction: column-reverse;
-    }
+
 
     /*footer*/
     .content.w-border {
