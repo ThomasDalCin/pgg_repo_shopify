@@ -977,6 +977,10 @@ li {
     object-fit: contain !important;
 }
 
+.wrapper-contents.w-space{
+    margin-top: 60px;
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
     /*nav settings*/
@@ -1124,7 +1128,7 @@ li {
 
     .content-img.podere {
         width: 100%;
-        height: 100%;
+        height: 370px;
         object-fit: cover;
         object-position: center;
     }
@@ -1321,10 +1325,6 @@ li {
         width: 150px;
         height: 150px;
         bottom: 10%;
-    }
-
-    .wrapper-contents.w-space{
-        margin-top: 60px;
     }
 }
 
