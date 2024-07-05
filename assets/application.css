@@ -1322,6 +1322,10 @@ li {
         height: 150px;
         bottom: 10%;
     }
+
+    .wrapper-contents.w-space{
+        margin-top: 60px;
+    }
 }
 
 
