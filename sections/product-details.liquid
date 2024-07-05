@@ -3,18 +3,6 @@
 {% assign productCustomImage = product.images[3] | default: product.featured_image %}
 {% assign productTitle = product.title %}
 
-{% for collection in collections %}
-  {% for product in collection.products %}
-    {% assign zona_di_produzione = product.metafields.custom.zona_di_produzione %}
-    {% assign suolo = product.metafields.custom.suolo %}
-    {% assign altitudine_del_vigneto = product.metafields.custom.altitudine_del_vigneto %}
-    {% assign forma_di_allevamento = product.metafields.custom.forma_di_allevamento %}
-    {% assign densita_di_impianto = product.metafields.custom.densita_di_impianto %}
-    {% assign resa_per_ettaro = product.metafields.custom.resa_per_ettaro %}
-    {% assign alcool_svolto = product.metafields.custom.alcool_svolto %}
-  {% endfor %}
-{% endfor %}
-
 
 <!-- section rendering item -->
 <div class="wrapper-section">
@@ -88,32 +76,32 @@
         <div class="block-content-text w-margin-top">
           <div class="content-block-text">
             <h2 class="heading-h2-secondary" id="production">Zona di produzione</h2>
-            <p class="paragraph-wine">{{ zona_di_produzione }}</p>
+            <p class="paragraph-wine">{{ product.metafields.custom.zona_di_produzione }}</p>
           </div>
           <div class="content-block-text">
             <h2 class="heading-h2-secondary" id="soul">Suolo</h2>
-            <p class="paragraph-wine">{{ suolo }}</p>
+            <p class="paragraph-wine">{{ product.metafields.custom.suolo }}</p>
           </div>
           <div class="content-block-text">
             <h2 class="heading-h2-secondary" id="altitude">Altitudine del vigneto</h2>
-            <p class="paragraph-wine">{{ altitudine_del_vigneto }}</p>
+            <p class="paragraph-wine">{{ product.metafields.custom.altitudine_del_vigneto }}</p>
           </div>
           <div class="content-block-text">
             <h2 class="heading-h2-secondary" id="allev">Forma di allevamento</h2>
-            <p class="paragraph-wine">{{ forma_di_allevamento }}</p>
+            <p class="paragraph-wine">{{ product.metafields.custom.forma_di_allevamento}}</p>
           </div>
           <div class="content-block-text">
             <h2 class="heading-h2-secondary" id="density">Densità di impianto</h2>
-            <p class="paragraph-wine">{{ densita_di_impianto }}</p>
+            <p class="paragraph-wine">{{ product.metafields.custom.densita_di_impianto}}</p>
           </div>
           <div class="content-block-text">
             <h2 class="heading-h2-secondary" id="resa">Resa per ettaro</h2>
             <p class="paragraph-wine">
-              {{ resa_per_ettaro }}</p>
+              {{ product.metafields.custom.resa_per_ettaro }}</p>
           </div>
           <div class="content-block-text">
             <h2 class="heading-h2-secondary" id="alcool">Alcool svolto</h2>
-            <p class="paragraph-wine">{{ alcool_svolto }}</p>
+            <p class="paragraph-wine">{{ product.metafields.custom.alcool_svolto }}</p>
           </div>
         </div>
       </div>
