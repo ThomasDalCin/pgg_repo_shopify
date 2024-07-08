@@ -103,7 +103,7 @@ mm.add("(max-width: 426px)", () => {
     }, {
         y: 300,
         duration: 1,
-        ease: 'power1.inOut',
+        ease: 'none',
         scrollTrigger: {
             trigger: myTranslateAbsolute,
             start: "top bottom",
@@ -129,7 +129,7 @@ mm.add("(max-width: 426px)", () => {
         gsap.to(item, {
             opacity: 1,
             duration: 1,
-            ease: 'power1.inOut',
+            ease: 'none',
             scrollTrigger: {
                 trigger: sliderTrigger,
                 start: "top-=300px bottom",
@@ -177,7 +177,7 @@ mm.add("(min-width: 768px)", () => {
     }, {
         y: 300,
         duration: 1,
-        ease: 'power1.inOut',
+        ease: 'none',
         scrollTrigger: {
             trigger: myTranslateAbsolute,
             start: "top bottom",
@@ -205,7 +205,7 @@ mm.add("(min-width: 768px)", () => {
         }, {
             y: 0,
             duration: 1,
-            ease: 'power1.inOut',
+            ease: 'none',
             scrollTrigger: {
                 trigger: sliderTrigger,
                 start: "top-=300px bottom",
@@ -250,7 +250,7 @@ mm.add("(min-width: 427px) and (max-width: 435px)", () => {
     }, {
         y: 100,
         duration: 1,
-        ease: 'power1.inOut',
+        ease: 'none',
         scrollTrigger: {
             trigger: myTranslateAbsolute,
             start: "center center",
