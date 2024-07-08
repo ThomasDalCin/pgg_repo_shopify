@@ -1242,8 +1242,8 @@ li {
 
     .wine-logo {
         width: 50%;
-        height: 30px;
-        min-height: 30px;
+        height: 25px;
+        min-height: 25px;
         object-fit: contain;
     }
 
