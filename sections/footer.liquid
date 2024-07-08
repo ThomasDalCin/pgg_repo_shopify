@@ -55,9 +55,9 @@
                   <button class="localeBtn" disabled>
                       {% case form.current_locale.endonym_name %}
                           {% when "Italiano" %}
-                              it
+                              It
                           {% when "English" %}
-                              en
+                              En
                           {% else %}
                               {{ form.current_locale.endonym_name }}
                       {% endcase %}
@@ -67,9 +67,9 @@
                       <a href="#" id="localeItem" lang="{{ locale.iso_code }}">
                           {% case locale.endonym_name %}
                               {% when "Italiano" %}
-                                  it
+                                  It
                               {% when "English" %}
-                                  en
+                                  En
                               {% else %}
                                   {{ locale.endonym_name }}
                           {% endcase %}
