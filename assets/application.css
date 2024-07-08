@@ -797,8 +797,8 @@ li {
 .footer-link {
     font-size: 14px;
     line-height: 1.5;
-    text-decoration: none;
-    color: var(--primary-text-color);
+    text-decoration: none !important;
+    color: var(--primary-text-color) !important;
 }
 
 .social-icon {
