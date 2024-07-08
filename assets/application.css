@@ -504,7 +504,6 @@ li {
     height: auto;
     display: flex;
     padding: var(--base-row-gap);
-    flex-wrap: wrap;
 }
 
 .wine-container {
@@ -1325,25 +1324,3 @@ li {
     }
 }
 
-
-@media screen and (min-width: 768px) and (max-width: 768px) {
-    .wrap-wine-content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        /* Spazio tra i primi due elementi */
-    }
-
-    .wine-container {
-        flex-basis: calc(50% - 20px);
-        /* Larghezza dei primi due elementi meno il margine */
-        margin: 10px;
-    }
-
-    .wine-container.w-margin:nth-child(3) {
-        min-width: 326.4px;
-        width: 326.4px;
-        flex: none;
-        margin-top: 2rem;
-    }
-}
