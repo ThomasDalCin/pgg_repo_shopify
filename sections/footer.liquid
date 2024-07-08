@@ -2,157 +2,152 @@
   <div class="wrapper-contents">
     <div class="content w-border">
       {% for block in section.blocks %}
-        {% if block.type == 'column-first-info' %}
-          <div class="content-block">
-            <div class="block">
-              <p class="footer-text">{{ block.settings.brand_name }}</p>
-              <a class="footer-link" href="mailto:{{ block.settings.brand_email }}">{{ block.settings.brand_email }}</a>
-            </div>
-            <div class="block">
-              <p class="footer-text">{{ block.settings.address_info }}</p>
-              <p class="footer-text">{{ block.settings.second_address_info }}</p>
-            </div>
-            <div class="block">
-              <p class="footer-text">FOLLOW</p>
-              <div class="content-social-icon">
-                <a href="#" class="social-link">
-                  <img
-                    src="{{ block.settings.ig_img | img_url: 'master' }}"
-                    alt="fb"
-                    class="social-icon">
-                </a>
-                <a href="https://www.instagram.com/podere.guardia.grande/" class="social-link">
-                  <img
-                    src="{{ block.settings.fb_img | img_url: 'master' }}"
-                    alt="ig"
-                    class="social-icon">
-                </a>
-              </div>
-            </div>
+      {% if block.type == 'column-first-info' %}
+      <div class="content-block">
+        <div class="block">
+          <p class="footer-text">{{ block.settings.brand_name }}</p>
+          <a class="footer-link" href="mailto:{{ block.settings.brand_email }}">{{ block.settings.brand_email }}</a>
+        </div>
+        <div class="block">
+          <p class="footer-text">{{ block.settings.address_info }}</p>
+          <p class="footer-text">{{ block.settings.second_address_info }}</p>
+        </div>
+        <div class="block">
+          <p class="footer-text">FOLLOW</p>
+          <div class="content-social-icon">
+            <a href="#" class="social-link">
+              <img src="{{ block.settings.ig_img | img_url: 'master' }}" alt="fb" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/podere.guardia.grande/" class="social-link">
+              <img src="{{ block.settings.fb_img | img_url: 'master' }}" alt="ig" class="social-icon">
+            </a>
           </div>
-          <div class="content-block">
-            <ul class="nav-menu footer">
-              {% for link in linklists.main-menu.links %}
-                <li>
-                  <a href="{{ link.url }}" class="nav-link">{{ link.title | upcase }}</a>
-                </li>
+        </div>
+      </div>
+      <div class="content-block">
+        <ul class="nav-menu footer">
+          {% for link in linklists.main-menu.links %}
+          <li>
+            <a href="{{ link.url }}" class="nav-link">{{ link.title | upcase }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="content-block">
+        <div class="container-text-block">
+          <p class="footer-text">Svolgiamo la nostra attività enoturistica nei seguenti giorni e orari:</p>
+        </div>
+
+        <div class="container-text-block">
+          <p class="footer-text">Lunedì 10:00-13:00 16:00-20:00</p>
+          <p class="footer-text">Giovedì 10:00-13:00 16:00-20:00</p>
+          <p class="footer-text">Venerdì 10:00-13:00 16:00-20:00</p>
+          <p class="footer-text">Sabato 10:00-13:00 16:00-20:00</p>
+          <p class="footer-text">Domenica 10:00-13:00 16:00-20:00</p>
+        </div>
+
+      </div>
+      {% elsif block.type == 'column-third-info' %}
+      <div class="content-block">
+        <div class="block">
+          <div class="content-switcher">
+            {% form 'localization', id: 'localization_form_tag', class: "dropup" %}
+            <button class="localeBtn" disabled>{{ form.current_locale.endonym_name }}</button>
+            <div class="dropup-content">
+              {% for locale in shop.published_locales %}
+              <a href="#" id="localeItem" lang="{{ locale.iso_code }}">{{ locale.endonym_name }}</a>
               {% endfor %}
-            </ul>
+            </div>
+            <input type="hidden" name="locale_code" value="{{ form.current_locale.iso_code }}" id="localeCode" />
+            {% endform %}
           </div>
-          <div class="content-block">
-            <div class="container-text-block">
-              <p class="footer-text">Svolgiamo la nostra attività enoturistica nei seguenti giorni e orari:</p>
-            </div>
-            <div class="container-text-block">
-              <p class="footer-text">Lunedì 10:00-13:00 16:00-20:00</p>
-              <p class="footer-text">Giovedì 10:00-13:00 16:00-20:00</p>
-              <p class="footer-text">Venerdì 10:00-13:00 16:00-20:00</p>
-  <p class="footer-text">Sabato 10:00-13:00 16:00-20:00</p>
-              <p class="footer-text">Domenica 10:00-13:00 16:00-20:00</p>
-            </div>
-                  
-          </div>
-        {% elsif block.type == 'column-third-info' %}
-          <div class="content-block">
-            <div class="block">
-              <div class="content-switcher">
-                {% form 'localization', id: 'localization_form_tag', class: "dropup" %}
-                  <button class="localeBtn" disabled>{{ form.current_locale.endonym_name }}</button>
-                  <div class="dropup-content">
-                      {% for locale in shop.published_locales %}
-                          <a href="#" id="localeItem" lang="{{ locale.iso_code }}">{{ locale.endonym_name }}</a>
-                      {% endfor %}
-                  </div>
-                  <input type="hidden" name="locale_code" value="{{ form.current_locale.iso_code }}" id="localeCode"/>
-              {% endform %}
-              </div>
-            </div>
-            <div class="block">
-              <p class="footer-text">©2024</p>
-              <p class="footer-text">{{ block.settings.P_iva }}</p>
-            </div>
-          </div>
-        {% endif %}
+        </div>
+        <div class="block">
+          <p class="footer-text">©2024</p>
+          <p class="footer-text">{{ block.settings.P_iva }}</p>
+        </div>
+      </div>
+      {% endif %}
       {% endfor %}
     </div>
   </div>
 </footer>
 
 <script>
-    document.querySelectorAll("#localeItem").forEach(item => {
-        item.addEventListener("click", event => {
-            event.preventDefault();
-            document.getElementById("localeCode").value = item.getAttribute('lang');
-            document.getElementById("localization_form_tag").submit();
-        });
+  document.querySelectorAll("#localeItem").forEach(item => {
+    item.addEventListener("click", event => {
+      event.preventDefault();
+      document.getElementById("localeCode").value = item.getAttribute('lang');
+      document.getElementById("localization_form_tag").submit();
     });
+  });
 </script>
 
 
 {% schema %}
-  {
-    "name": "footer",
-    "max_blocks": 4,
-    "blocks": [
-      {
-        "type": "column-first-info",
-        "name": "column-first-info",
-        "settings": [
-          {
-            "type": "text",
-            "id": "brand_name",
-            "label": "Podere guardia grande",
-            "default": "PODERE GUARDIA GRANDE"
-          }, {
-            "type": "text",
-            "id": "brand_email",
-            "label": "brand email",
-            "default": "info@podereguardiagrande.it"
-          },
-          {
-            "type": "text",
-            "id": "address_info",
-            "label": "info address here",
-            "default": "SASSARI (SS) SARDEGNA, ITALIA"
-          }, {
-            "type": "text",
-            "id": "second_address_info",
-            "label": "info address here",
-            "default": "St. Vicinale Baratz Monte-Pedrosu"
-          },
-          {
-            "type": "image_picker",
-            "id": "ig_img",
-            "label": "social_img"
-          }, {
-            "type": "image_picker",
-            "id": "fb_img",
-            "label": "social img"
-          }
-        ]
-      },
-      {
-        "type": "column-third-info",
-        "name": "column-third-info",
-        "settings": [
-          {
-            "type": "text",
-            "id": "P_iva",
-            "label": "Your p.iva",
-            "default": "P.IVA 03922530237"
-          }
-        ]
-      }
-    ],
-    "default": {
-      "blocks" : [
-        {
-          "type" : "column-first-info"
-        },
-        {
-          "type" : "column-third-info"
-        }
-      ]  
-    } 
-  }
+{
+"name": "footer",
+"max_blocks": 4,
+"blocks": [
+{
+"type": "column-first-info",
+"name": "column-first-info",
+"settings": [
+{
+"type": "text",
+"id": "brand_name",
+"label": "Podere guardia grande",
+"default": "PODERE GUARDIA GRANDE"
+}, {
+"type": "text",
+"id": "brand_email",
+"label": "brand email",
+"default": "info@podereguardiagrande.it"
+},
+{
+"type": "text",
+"id": "address_info",
+"label": "info address here",
+"default": "SASSARI (SS) SARDEGNA, ITALIA"
+}, {
+"type": "text",
+"id": "second_address_info",
+"label": "info address here",
+"default": "St. Vicinale Baratz Monte-Pedrosu"
+},
+{
+"type": "image_picker",
+"id": "ig_img",
+"label": "social_img"
+}, {
+"type": "image_picker",
+"id": "fb_img",
+"label": "social img"
+}
+]
+},
+{
+"type": "column-third-info",
+"name": "column-third-info",
+"settings": [
+{
+"type": "text",
+"id": "P_iva",
+"label": "Your p.iva",
+"default": "P.IVA 03922530237"
+}
+]
+}
+],
+"default": {
+"blocks" : [
+{
+"type" : "column-first-info"
+},
+{
+"type" : "column-third-info"
+}
+]
+}
+}
 {% endschema %}
