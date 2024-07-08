@@ -839,7 +839,7 @@ li {
     display: none;
     position: absolute;
     left: auto;
-    top: 0;
+    top: 70px;
     right: -70px;
     min-width: 110px;
     height: auto;
