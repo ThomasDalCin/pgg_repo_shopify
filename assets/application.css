@@ -1075,7 +1075,7 @@ li {
     /* wrap wines*/
     .wrap-wine-content {
         padding: 0;
-        row-gap: 2.5rem;
+        row-gap: 4rem;
         flex-direction: column;
         flex-wrap: nowrap;
     }
