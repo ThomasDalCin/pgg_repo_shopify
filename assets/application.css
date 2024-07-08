@@ -758,6 +758,7 @@ li {
 
 .content.w-border {
     padding-top: 2rem;
+    column-gap: 2rem;
     border-top: 1px solid #ceccc6;
 }
 
