@@ -839,9 +839,6 @@ li {
     text-decoration: none;
 }
 
-.dropup-content a:hover {
-    background-color: var(--primary-bg-color);
-}
 
 /*winetour page*/
 .container-img.row {
