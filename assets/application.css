@@ -823,7 +823,7 @@ li {
     width: auto;
     height: auto;
     z-index: 1;
-    background-color: var(--primary-bg-color);
+    background-color: #fffaee;
 }
 
 .dropup:hover .dropup-content {
