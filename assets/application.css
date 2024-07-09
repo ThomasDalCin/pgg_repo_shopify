@@ -1278,16 +1278,24 @@ li {
 
     /*footer*/
     .content.w-border {
+        display: flex;
         flex-wrap: wrap;
         row-gap: var(--base-latptoprow-gap);
+        justify-content: space-between;
     }
-
+    
     .content-block {
-        flex: 1 1 50%;
+        flex: 1 1 48%; /* Ogni blocco occuperà circa il 48% della larghezza per avere spazio tra di essi */
+        box-sizing: border-box;
+        margin-bottom: 20px; /* Spazio tra le righe */
     }
-
-    .content.w-border>:last-child {
-        align-items: flex-start;
+    
+    .content.w-border > .content-block:nth-child(odd) {
+        margin-right: 2%; /* Aggiungi spazio tra i blocchi di ogni riga */
+    }
+    
+    .content.w-border > .content-block:nth-child(even) {
+        margin-left: 0;
     }
 
     /*wintetour template*/
