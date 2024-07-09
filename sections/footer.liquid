@@ -90,22 +90,41 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('localization_form_tag');
     const selectElement = document.getElementById('localeSelect');
     
-    if (form && selectElement) {
-        form.addEventListener('submit', function (event) {
-            event.preventDefault(); // Previeni l'invio normale del form
+    if (selectElement) {
+        // Gestione del cambio lingua quando si seleziona una nuova opzione nella select
+        selectElement.addEventListener('change', function () {
+            const selectedOption = selectElement.options[selectElement.selectedIndex];
+            const localeCode = selectedOption.value;
+            const form = document.getElementById("localization_form_tag");
 
-            const localeCode = selectElement.value;
-            const currentUrl = window.location.href;
+            // Aggiornamento del valore del campo nascosto 'localeCode'
+            document.getElementById("localeCode").value = localeCode;
 
-            // Simulazione di reindirizzamento dopo la selezione
+            // Simulazione di reindirizzamento dopo la selezione (ad esempio, sostituisci con la tua logica di reindirizzamento)
             setTimeout(() => {
-                window.location.href = `${currentUrl}?locale=${localeCode}`;
+                form.submit();
             }, 1000);
         });
     }
+
+    // Script originale per il click sugli elementi 'a' (#localeItem)
+    document.querySelectorAll("#localeItem").forEach(item => {
+        item.addEventListener("click", event => {
+            event.preventDefault();
+            const localeCode = item.getAttribute('lang');
+            const form = document.getElementById("localization_form_tag");
+
+            // Aggiornamento del valore del campo nascosto 'localeCode'
+            document.getElementById("localeCode").value = localeCode;
+
+            // Simulazione di reindirizzamento dopo il click (ad esempio, sostituisci con la tua logica di reindirizzamento)
+            setTimeout(() => {
+                form.submit();
+            }, 1000);
+        });
+    });
 });
 
 </script>
