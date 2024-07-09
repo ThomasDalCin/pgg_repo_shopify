@@ -1288,6 +1288,10 @@ li {
         box-sizing: border-box;
     }
 
+    .content.w-border>:last-child {
+        align-items: flex-start;
+    }
+
     /*wintetour template*/
     .content.winetour {
         flex-direction: column-reverse;
