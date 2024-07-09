@@ -19,11 +19,11 @@
             <p class="paragraph-wine">{{ section.settings.product-one-name-origin }}</p>
             <p class="paragraph-wine bold">{{ section.settings.product-one-composition }}</p>
             <p class="paragraph-wine">{{ section.settings.product-one-overview }}</p>
-            {% if block.settings.Visibility_button == true %}
+            {% if section.settings.Visibility_button == true %}
               <div class="content-primary-button">
-                <a class="button-link-text" href="/vini">
+                <a class="button-link-text" href="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/PDF-Saldenya.pdf?v=1718357036">
                   <div class="content-button-text">
-                    {{ block.settings.Button_text }}
+                    {{ section.settings.Button_text }}
                   </div>
                   <div class="content-button-icon">
                     <img
@@ -43,20 +43,25 @@
             <p class="paragraph-wine">{{ section.settings.product-two-name-origin }}</p>
             <p class="paragraph-wine bold">{{ section.settings.product-two-composition }}</p>
             <p class="paragraph-wine">{{ section.settings.product-two-overview }}</p>
-            <div class="content-primary-button">
-              <div class="content-button-text">
-                <a class="button-link-text" id="button-text" href="{{ section.settings.product-two-sheet }}">Scarica la scheda tecnica</a>
-              </div>
-              <div class="content-button-icon">
-                <div class="container-icon"><img
-                    src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/free-left-arrow-437-1174845.png?v=1715325754"
-                    alt=""
-                    class="arrow-icon rotate"><img
-                    src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/free-left-arrow-437-1174845.png?v=1715325754"
-                    alt=""
-                    class="arrow-icon rotate"></div>
-              </div>
-            </div>
+            {% if section.settings.Visibility_button == true %}
+              <div class="content-primary-button">
+                <a class="button-link-text" href="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/PDF-Nascimento.pdf?v=1718356966">
+                  <div class="content-button-text">
+                    {{ section.settings.Button_text }}
+                  </div>
+                  <div class="content-button-icon">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/arrow-right.png?v=1720508256"
+                      alt=""
+                      class="arrow-icon rotate">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/arrow-right.png?v=1720508256"
+                      alt=""
+                      class="arrow-icon rotate">
+                  </div>
+                </a>
+              </div> 
+            {% endif %}
           {% elsif productTitle == "L'Alghè" %}
             <p class="paragraph-wine">{{ section.settings.product-three-origin }}</p>
             <p class="paragraph-wine">{{ section.settings.product-three-name-origin }}</p>
@@ -64,7 +69,7 @@
             <p class="paragraph-wine">{{ section.settings.product-three-overview }}</p>
             {% if section.settings.Visibility_button == true %}
               <div class="content-primary-button">
-                <a class="button-link-text" href="/vini">
+                <a class="button-link-text" href="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/PDF-LAlghe.pdf?v=1718357013">
                   <div class="content-button-text">
                     {{ section.settings.Button_text }}
                   </div>
@@ -315,7 +320,7 @@
             "type": "text",
             "id": "Button_text",
             "label": "Button text",
-            "default": "Scopri i vini del podere"
+            "default": "Scarica la scheda tecnica"
           }, {
             "type": "checkbox",
             "id": "Visibility_button",
