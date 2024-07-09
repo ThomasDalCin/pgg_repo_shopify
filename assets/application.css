@@ -823,15 +823,12 @@ li {
     background-position: right 10px center;
     /* Aggiustare padding a destra per la freccia */
     padding-right: 40px;
-    /* Rendi la select quadrata con bordi rotondi */
-    border-radius: 5px;
 }
 
 /* Stili per le opzioni della select */
 #localeSelect option {
     background-color: #fffaee;
     padding: 10px;
-    border-radius: 5px; /* Bordi rotondi per le opzioni */
 }
 
 
