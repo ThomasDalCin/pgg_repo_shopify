@@ -802,46 +802,27 @@ li {
 }
 
 /*language switcher*/
-.dropup {
-    position: relative;
-    cursor: pointer;
-    width: auto;
-    height: auto;
-}
-
-.localeBtn {
+/* Stili per la select */
+#localeSelect {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     background-color: transparent;
     color: var(--primary-text-color);
     border: 1px solid var(--primary-text-color);
-    padding: 15px 30px;
-    font-size: 17px;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
+    width: 100%;
+    max-width: 300px; /* Larghezza massima della select */
+    margin: 0 auto; /* Centrare la select, se necessario */
 }
 
-.dropup-content {
-    display: none;
-    position: absolute;
-    left: auto;
-    top: 10%;
-    right: 10%;
-    width: auto;
-    height: auto;
-    z-index: 1;
+#localeSelect option {
     background-color: #fffaee;
+    padding: 10px;
 }
 
-.dropup:hover .dropup-content {
-    display: inline-block;
-}
-
-.dropup-content a {
-    color: var(--primary-text-color);
-    font-size: 17px;
-    padding: 15px 30px;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-}
 
 
 /*winetour page*/
