@@ -1280,19 +1280,12 @@ li {
     .content.w-border {
         display: flex;
         flex-wrap: wrap;
-        row-gap: var(--base-latptoprow-gap);
-        justify-content: space-between;
+        gap: 20px; /* Spazio tra i blocchi */
     }
     
     .content-block {
-        flex: 1 1 calc(50% - 10px); /* Ogni blocco occuperà circa il 50% della larghezza meno il margine */
+        flex: 1 1 calc(50% - 10px); /* Ogni blocco occupa circa il 50% della larghezza meno il gap */
         box-sizing: border-box;
-        margin-bottom: 20px; /* Spazio tra le righe */
-    }
-    
-    /* Aggiunge un piccolo margine tra i blocchi della stessa riga */
-    .content-block:nth-child(odd) {
-        margin-right: 10px;
     }
 
     /*wintetour template*/
