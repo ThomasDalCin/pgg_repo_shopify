@@ -56,9 +56,9 @@
                         <option value="{{ locale.iso_code }}" {% if locale.iso_code == form.current_locale.iso_code %} selected {% endif %}>
                           {% case locale.endonym_name %}
                             {% when "Italiano" %}
-                              It
+                              IT
                             {% when "English" %}
-                              En
+                              EN
                             {% else %}
                               {{ locale.endonym_name }}
                           {% endcase %}
