@@ -176,8 +176,6 @@
         let pathName = window.location.pathname;
         let langCodeSplit = pathName.split("/");
         let langCode = langCodeSplit[1];
-
-        let buttonText = document.getElementById('button-text');
         let production = document.getElementById('production'); 
         let altitude = document.getElementById('altitude'); 
         let resa = document.getElementById('resa'); 
@@ -190,7 +188,6 @@
         
     
             if (langCode === 'en') {
-              buttonText.innerText = 'Download the data sheet';
               production.innerText = 'Production area';
               altitude.innerText = 'Vineyard altitude';
               resa.innerText = 'Yield per hectare';
