@@ -29,7 +29,7 @@ function handleMenu() {
     if (openIcon && closeIcon && menu) {
         openIcon.addEventListener('click', function () {
             menu.style.top = '0%';
-            body.classList.add('no-scroll'); // Aggiunge la classe per disabilitare lo scrolling
+            body.classList.add('no-scroll'); 
 
             setTimeout(() => {
                 navMenu.forEach((container) => {
@@ -40,7 +40,7 @@ function handleMenu() {
 
         closeIcon.addEventListener('click', function () {
             menu.style.top = '-500%';
-            body.classList.remove('no-scroll'); // Rimuove la classe per riabilitare lo scrolling
+            body.classList.remove('no-scroll'); 
         });
     }
 }
