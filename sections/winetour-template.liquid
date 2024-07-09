@@ -13,11 +13,11 @@
             <h2 class="heading-h2">{{ block.settings.Heading_section }}</h2>
             <p class="paragraph">{{ block.settings.Paragraph_section_first }}</p>
             <p class="paragraph">{{ block.settings.Paragraph_section_second }}</p>
-            {% if block.settings.Visibility_button == true %}
+            {% if section.settings.Visibility_button == true %}
               <div class="content-primary-button">
                 <a class="button-link-text" href="pages/vini">
                   <div class="content-button-text">
-                    {{ block.settings.Button_text }}
+                    {{ section.settings.Button_text }}
                   </div>
                   <div class="content-button-icon">
                     <img
@@ -121,10 +121,10 @@
                 <h2 class="heading-h2-secondary">{{ block.settings.Heading_three }}</h2>
                 <p class="paragraph">{{ block.settings.Paragraph_three }}</p>
               </div>
-              {% if block.settings.Visibility_button == true %}
+              {% if section.settings.Visibility_button == true %}
                 <div class="content-primary-button">
                   <div class="content-button-text">
-                    <a class="button-link-text" href="/">{{ block.settings.Button_text }}</a>
+                    <a class="button-link-text" href="/">{{ section.settings.Button_text }}</a>
                   </div>
                   <div class="content-button-icon">
                     <div class="container-icon">
@@ -262,16 +262,6 @@
             "label": "Paragraph",
             "default": "Potrete acquistare tutti i vini degustati presso il nostro wine shop."
           }, {
-            "type": "text",
-            "id": "Button_text",
-            "label": "Button text",
-            "default": "Prenota ora la tua degustazione"
-          }, {
-            "type": "checkbox",
-            "id": "Visibility_button",
-            "label": "Hide/Show Button",
-            "default": true
-          }, {
             "type": "image_picker",
             "id": "img_content_one",
             "label": "Image"
@@ -315,7 +305,18 @@
         "min": 0,
         "max": 100,
         "step": 1
-      }
+      },
+      {
+            "type": "text",
+            "id": "Button_text",
+            "label": "Button text",
+            "default": "Prenota ora la tua degustazione"
+          }, {
+            "type": "checkbox",
+            "id": "Visibility_button",
+            "label": "Hide/Show Button",
+            "default": true
+          },
     ]
   }
 

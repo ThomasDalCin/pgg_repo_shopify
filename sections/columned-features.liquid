@@ -29,6 +29,25 @@
             <h2 class="heading-h2">{{ block.settings.Heading_column }}</h2>
             <p class="paragraph">{{ block.settings.Paragraph_column }}</p>
           </div>
+          {% if block.settings.Visibility_button == true %}
+            <div class="content-primary-button">
+              <a class="button-link-text" href="/vini">
+                <div class="content-button-text">
+                  {{ block.settings.Button_text }}
+                </div>
+                <div class="content-button-icon">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/arrow-right.png?v=1720508256"
+                    alt=""
+                    class="arrow-icon rotate">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/arrow-right.png?v=1720508256"
+                    alt=""
+                    class="arrow-icon rotate">
+                </div>
+              </a>
+            </div> 
+          {% endif %}
         </div>
       {% endif %}
     {% endfor %}
@@ -80,6 +99,17 @@
             "type": "image_picker",
             "id": "Image_column",
             "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "Button_text",
+            "label": "Button text",
+            "default": "Scopri i vini del podere"
+          }, {
+            "type": "checkbox",
+            "id": "Visibility_button",
+            "label": "Hide/Show Button",
+            "default": true
           }
         ]
       }
