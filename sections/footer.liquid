@@ -2,96 +2,90 @@
   <div class="wrapper-contents">
     <div class="content w-border">
       {% for block in section.blocks %}
-      {% if block.type == 'column-first-info' %}
-      <div class="content-block">
-        <div class="block">
-          <p class="footer-text">{{ block.settings.brand_name }}</p>
-          <a class="footer-link" href="mailto:{{ block.settings.brand_email }}">{{ block.settings.brand_email }}</a>
-        </div>
-        <div class="block">
-          <p class="footer-text">{{ block.settings.address_info }}</p>
-          <p class="footer-text">{{ block.settings.second_address_info }}</p>
-        </div>
-        <div class="block">
-          <p class="footer-text">PRESS KIT</p>
-          <a class="footer-link" href="https://cdn.shopify.com/s/files/1/0838/0281/6860/files/Podere_Guardia_Grande_04-2023-IT.pdf?v=1720510503" target="_blank">Download PDF</a>
-        </div>
-        <div class="block">
-          <p class="footer-text">FOLLOW</p>
-          <div class="content-social-icon">
-            <a href="https://www.instagram.com/podere.guardia.grande/" class="social-link">
-              <img src="{{ block.settings.ig_img | img_url: 'master' }}" alt="fb" class="social-icon">
-            </a>
-            <a href="https://www.instagram.com/podere.guardia.grande/" class="social-link">
-              <img src="{{ block.settings.fb_img | img_url: 'master' }}" alt="ig" class="social-icon">
-            </a>
+        {% if block.type == 'column-first-info' %}
+          <div class="content-block">
+            <div class="block">
+              <p class="footer-text">{{ block.settings.brand_name }}</p>
+              <a class="footer-link" href="mailto:{{ block.settings.brand_email }}">{{ block.settings.brand_email }}</a>
+            </div>
+            <div class="block">
+              <p class="footer-text">{{ block.settings.address_info }}</p>
+              <p class="footer-text">{{ block.settings.second_address_info }}</p>
+            </div>
+            <div class="block">
+              <p class="footer-text">PRESS KIT</p>
+              <a class="footer-link" href="https://cdn.shopify.com/s/files/1/0838/0281/6860/files/Podere_Guardia_Grande_04-2023-IT.pdf?v=1720510503" target="_blank">Download PDF</a>
+            </div>
+            <div class="block">
+              <p class="footer-text">FOLLOW</p>
+              <div class="content-social-icon">
+                <a href="https://www.instagram.com/podere.guardia.grande/" class="social-link">
+                  <img src="{{ block.settings.ig_img | img_url: 'master' }}" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/podere.guardia.grande/" class="social-link">
+                  <img src="{{ block.settings.fb_img | img_url: 'master' }}" alt="Facebook" class="social-icon">
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="content-block">
-        <ul class="nav-footer-menu">
-          {% for link in linklists.main-menu.links %}
-          <li>
-            <a href="{{ link.url }}" class="nav-link">{{ link.title | upcase }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="content-block">
-        <div class="container-text-block">
-          <p class="footer-text">Svolgiamo la nostra attività enoturistica nei seguenti giorni e orari:</p>
-        </div>
-
-        <div class="container-text-block">
-          <p class="footer-text">Lunedì 10:00-13:00 16:00-20:00</p>
-          <p class="footer-text">Giovedì 10:00-13:00 16:00-20:00</p>
-          <p class="footer-text">Venerdì 10:00-13:00 16:00-20:00</p>
-          <p class="footer-text">Sabato 10:00-13:00 16:00-20:00</p>
-          <p class="footer-text">Domenica 10:00-13:00 16:00-20:00</p>
-        </div>
-
-      </div>
-      {% elsif block.type == 'column-third-info' %}
-
-      <div class="content-block">
-        <div class="block">
-          <p class="footer-text">©2024</p>
-          <p class="footer-text">{{ block.settings.P_iva }}</p>
-        </div>
-        <div class="block">
-          <div class="content-switcher">
-    {% form 'localization', id: 'localization_form_tag', class: "dropup" %}
-    <div>
-        <select id="localeSelect" name="locale_code">
-            {% for locale in shop.published_locales %}
-                <option value="{{ locale.iso_code }}" {% if locale.iso_code == form.current_locale.iso_code %} selected {% endif %}>
-                    {% case locale.endonym_name %}
-                        {% when "Italiano" %}
-                        It
-                        {% when "English" %}
-                        En
-                        {% else %}
-                        {{ locale.endonym_name }}
-                    {% endcase %}
-                </option>
-            {% endfor %}
-        </select>
-    </div>
-    <input type="hidden" name="locale_code" value="{{ form.current_locale.iso_code }}" id="localeCode" />
-    <input type="submit" value="Submit" style="display: none;">
-    {% endform %}
-</div>
-
-      
-        </div>
-        
-        </div>
-      </div>
-      {% endif %}
+          <div class="content-block">
+            <ul class="nav-footer-menu">
+              {% for link in linklists.main-menu.links %}
+                <li>
+                  <a href="{{ link.url }}" class="nav-link">{{ link.title | upcase }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="content-block">
+            <div class="container-text-block">
+              <p class="footer-text">Svolgiamo la nostra attività enoturistica nei seguenti giorni e orari:</p>
+            </div>
+            <div class="container-text-block">
+              <p class="footer-text">Lunedì 10:00-13:00 16:00-20:00</p>
+              <p class="footer-text">Giovedì 10:00-13:00 16:00-20:00</p>
+              <p class="footer-text">Venerdì 10:00-13:00 16:00-20:00</p>
+              <p class="footer-text">Sabato 10:00-13:00 16:00-20:00</p>
+              <p class="footer-text">Domenica 10:00-13:00 16:00-20:00</p>
+            </div>
+          </div>
+        {% elsif block.type == 'column-third-info' %}
+          <div class="content-block">
+            <div class="block">
+              <p class="footer-text">©2024</p>
+              <p class="footer-text">{{ block.settings.P_iva }}</p>
+            </div>
+            <div class="block">
+              <div class="content-switcher">
+                {% form 'localization', id: 'localization_form_tag', class: "dropup" %}
+                  <div>
+                    <select id="localeSelect" name="locale_code">
+                      {% for locale in shop.published_locales %}
+                        <option value="{{ locale.iso_code }}" {% if locale.iso_code == form.current_locale.iso_code %} selected {% endif %}>
+                          {% case locale.endonym_name %}
+                            {% when "Italiano" %}
+                              It
+                            {% when "English" %}
+                              En
+                            {% else %}
+                              {{ locale.endonym_name }}
+                          {% endcase %}
+                        </option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                  <input type="hidden" name="locale_code" value="{{ form.current_locale.iso_code }}" id="localeCode" />
+                  <input type="submit" value="Submit" style="display: none;">
+                {% endform %}
+              </div>
+            </div>
+          </div>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
 </footer>
+
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
