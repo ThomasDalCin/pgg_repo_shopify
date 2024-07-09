@@ -48,7 +48,12 @@
 
       </div>
       {% elsif block.type == 'column-third-info' %}
+
       <div class="content-block">
+        <div class="block">
+          <p class="footer-text">©2024</p>
+          <p class="footer-text">{{ block.settings.P_iva }}</p>
+        </div>
         <div class="block">
           <div class="content-switcher">
             {% form 'localization', id: 'localization_form_tag', class: "dropup" %}
@@ -79,13 +84,6 @@
             <input type="hidden" name="locale_code" value="{{ form.current_locale.iso_code }}" id="localeCode" />
             {% endform %}
           </div>
-        </div>
-      </div>
-
-      <div class="content-block">
-        <div class="block">
-          <p class="footer-text">©2024</p>
-          <p class="footer-text">{{ block.settings.P_iva }}</p>
         </div>
       </div>
       {% endif %}
