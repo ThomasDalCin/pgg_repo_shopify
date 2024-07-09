@@ -73,7 +73,8 @@ mm.add("(max-width: 426px)", () => {
         scrollTrigger: {
             trigger: myTranslateTrigger,
             start: "top bottom",
-            end: "bottom top"
+            end: "bottom top",
+            scrub: 1
         }
     });
 
@@ -85,7 +86,8 @@ mm.add("(max-width: 426px)", () => {
         scrollTrigger: {
             trigger: mySecondTranslateTrigger,
             start: "top bottom",
-            end: "bottom top"
+            end: "bottom top",
+            scrub: 1
         }
     });
 
@@ -99,7 +101,8 @@ mm.add("(max-width: 426px)", () => {
         scrollTrigger: {
             trigger: myTranslateAbsolute,
             start: "top bottom",
-            end: "bottom top"
+            end: "bottom top",
+            scrub: 1
         }
     });
 
@@ -111,7 +114,8 @@ mm.add("(max-width: 426px)", () => {
         scrollTrigger: {
             trigger: myAbsoluteTrigger,
             start: "center bottom",
-            end: "bottom top"
+            end: "bottom top",
+            scrub: 1
         }
     });
 
@@ -124,6 +128,7 @@ mm.add("(max-width: 426px)", () => {
                 trigger: sliderTrigger,
                 start: "top-=300px bottom",
                 end: "center center",
+                scrub: 1,
                 delay: index * 0.2,
                 once: true
             }
@@ -142,7 +147,8 @@ mm.add("(min-width: 768px)", () => {
         scrollTrigger: {
             trigger: myTranslateTrigger,
             start: "top bottom",
-            end: "bottom top"
+            end: "bottom top",
+            scrub: 1
         }
     });
 
@@ -154,7 +160,8 @@ mm.add("(min-width: 768px)", () => {
         scrollTrigger: {
             trigger: mySecondTranslateTrigger,
             start: "top bottom",
-            end: "bottom top"
+            end: "bottom top",
+            scrub: 1
         }
     });
 
@@ -168,7 +175,8 @@ mm.add("(min-width: 768px)", () => {
         scrollTrigger: {
             trigger: myTranslateAbsolute,
             start: "top bottom",
-            end: "bottom top"
+            end: "bottom top",
+            scrub: 1
         }
     });
 
@@ -180,7 +188,8 @@ mm.add("(min-width: 768px)", () => {
         scrollTrigger: {
             trigger: myAbsoluteTrigger,
             start: "top center",
-            end: "bottom top"
+            end: "bottom top",
+            scrub: 1
         }
     });
 
@@ -195,6 +204,7 @@ mm.add("(min-width: 768px)", () => {
                 trigger: sliderTrigger,
                 start: "top-=300px bottom",
                 end: "center center",
+                scrub: 1,
                 delay: index * 0.2,
                 once: true
             }
@@ -211,7 +221,8 @@ mm.add("(min-width: 427px) and (max-width: 435px)", () => {
         scrollTrigger: {
             trigger: myTranslateTrigger,
             start: "top bottom",
-            end: "bottom top"
+            end: "bottom top",
+            scrub: 1
         }
     });
 
@@ -223,7 +234,8 @@ mm.add("(min-width: 427px) and (max-width: 435px)", () => {
         scrollTrigger: {
             trigger: mySecondTranslateTrigger,
             start: "top bottom",
-            end: "bottom top"
+            end: "bottom top",
+            scrub: 1
         }
     });
 
@@ -236,7 +248,8 @@ mm.add("(min-width: 427px) and (max-width: 435px)", () => {
         scrollTrigger: {
             trigger: myTranslateAbsolute,
             start: "center center",
-            end: "bottom center"
+            end: "bottom center",
+            scrub: 1
         }
     });
 
@@ -248,7 +261,8 @@ mm.add("(min-width: 427px) and (max-width: 435px)", () => {
         scrollTrigger: {
             trigger: myAbsoluteTrigger,
             start: "center bottom",
-            end: "bottom top"
+            end: "bottom top",
+            scrub: 1
         }
     });
 });
