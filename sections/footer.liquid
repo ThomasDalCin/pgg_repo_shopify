@@ -60,7 +60,9 @@
         </div>
         <div class="block">
           <div class="content-switcher">
-    <form id="localization_form_tag" class="dropup">
+    {% form 'localization', id: 'localization_form_tag', class: "dropup" %}
+    <div>
+        <label for="localeSelect">Select Language:</label>
         <select id="localeSelect" name="locale_code">
             {% for locale in shop.published_locales %}
                 <option value="{{ locale.iso_code }}" {% if locale.iso_code == form.current_locale.iso_code %} selected {% endif %}>
@@ -75,9 +77,13 @@
                 </option>
             {% endfor %}
         </select>
-    </form>
+    </div>
+    <input type="hidden" name="locale_code" value="{{ form.current_locale.iso_code }}" id="localeCode" />
+    <input type="submit" value="Submit" style="display: none;">
+    {% endform %}
 </div>
 
+      
         </div>
         
         </div>
@@ -90,42 +96,19 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('localization_form_tag');
     const selectElement = document.getElementById('localeSelect');
-    
-    if (selectElement) {
-        // Gestione del cambio lingua quando si seleziona una nuova opzione nella select
+    const localeCodeInput = document.getElementById('localeCode');
+
+    if (form && selectElement && localeCodeInput) {
         selectElement.addEventListener('change', function () {
             const selectedOption = selectElement.options[selectElement.selectedIndex];
-            const localeCode = selectedOption.value;
-            const form = document.getElementById("localization_form_tag");
-
-            // Aggiornamento del valore del campo nascosto 'localeCode'
-            document.getElementById("localeCode").value = localeCode;
-
-            // Simulazione di reindirizzamento dopo la selezione (ad esempio, sostituisci con la tua logica di reindirizzamento)
-            setTimeout(() => {
-                form.submit();
-            }, 1000);
+            localeCodeInput.value = selectedOption.value;
+            form.submit();
         });
     }
-
-    // Script originale per il click sugli elementi 'a' (#localeItem)
-    document.querySelectorAll("#localeItem").forEach(item => {
-        item.addEventListener("click", event => {
-            event.preventDefault();
-            const localeCode = item.getAttribute('lang');
-            const form = document.getElementById("localization_form_tag");
-
-            // Aggiornamento del valore del campo nascosto 'localeCode'
-            document.getElementById("localeCode").value = localeCode;
-
-            // Simulazione di reindirizzamento dopo il click (ad esempio, sostituisci con la tua logica di reindirizzamento)
-            setTimeout(() => {
-                form.submit();
-            }, 1000);
-        });
-    });
 });
+
 
 </script>
 
