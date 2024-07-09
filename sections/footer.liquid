@@ -60,34 +60,24 @@
         </div>
         <div class="block">
           <div class="content-switcher">
-            {% form 'localization', id: 'localization_form_tag', class: "dropup" %}
-            <button class="localeBtn" disabled>
-              {% case form.current_locale.endonym_name %}
-              {% when "Italiano" %}
-              It
-              {% when "English" %}
-              En
-              {% else %}
-              {{ form.current_locale.endonym_name }}
-              {% endcase %}
-            </button>
-            <div class="dropup-content">
-              {% for locale in shop.published_locales %}
-              <a href="#" id="localeItem" lang="{{ locale.iso_code }}">
-                {% case locale.endonym_name %}
-                {% when "Italiano" %}
-                It
-                {% when "English" %}
-                En
-                {% else %}
-                {{ locale.endonym_name }}
-                {% endcase %}
-              </a>
-              {% endfor %}
-            </div>
-            <input type="hidden" name="locale_code" value="{{ form.current_locale.iso_code }}" id="localeCode" />
-            {% endform %}
-          </div>
+            <form id="localization_form_tag" class="dropup">
+                <select id="localeSelect" name="locale_code">
+                    {% for locale in shop.published_locales %}
+                        <option value="{{ locale.iso_code }}" {% if locale.iso_code == form.current_locale.iso_code %} selected {% endif %}>
+                            {% case locale.endonym_name %}
+                                {% when "Italiano" %}
+                                It
+                                {% when "English" %}
+                                En
+                                {% else %}
+                                {{ locale.endonym_name }}
+                            {% endcase %}
+                        </option>
+                    {% endfor %}
+                </select>
+            </form>
+        </div>
+        
         </div>
       </div>
       {% endif %}
@@ -97,13 +87,16 @@
 </footer>
 
 <script>
-  document.querySelectorAll("#localeItem").forEach(item => {
-    item.addEventListener("click", event => {
-      event.preventDefault();
-      document.getElementById("localeCode").value = item.getAttribute('lang');
-      document.getElementById("localization_form_tag").submit();
-    });
-  });
+document.addEventListener('DOMContentLoaded', function () {
+    const selectElement = document.getElementById('localeSelect');
+    
+    if (selectElement) {
+        selectElement.addEventListener('change', function () {
+            document.getElementById("localeCode").value = selectElement.value;
+            document.getElementById("localization_form_tag").submit();
+        });
+    }
+});
 </script>
 
 
