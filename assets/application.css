@@ -1174,7 +1174,7 @@ li {
     /*contact page*/
     .content-block.contact{
         flex-direction: column;
-        row-gap: 20px;
+        row-gap: 2rem;
     }
     
     .content-block.contact > * {
