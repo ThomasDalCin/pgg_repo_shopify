@@ -841,6 +841,9 @@ li {
 
 
 /*winetour page*/
+.wrapper-contents.winetour{
+    margin-top: 60px;
+}
 .container-img.row {
     justify-content: flex-start;
     overflow: scroll;
