@@ -131,6 +131,7 @@ body {
     column-gap: .5rem;
     font-size: 17px;
     line-height: 27px;
+    border-bottom: 1px solid #1a1a1a;
 }
 
 .content-button-icon{
