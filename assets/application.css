@@ -10,6 +10,18 @@
     overflow: hidden;
 }
 
+/* Per dispositivi iOS */
+a[href^="tel"] {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+/* Per dispositivi Android */
+a[href^="tel"] {
+    color: inherit;
+    text-decoration: none; 
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
