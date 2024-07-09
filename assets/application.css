@@ -581,7 +581,8 @@ li {
 /*section top page settings */
 .top-page-wrap {
     width: 100%;
-    height: auto;
+    min-height: auto;
+    height: 60vh;
     position: relative;
     overflow: hidden;
 }
@@ -1119,6 +1120,9 @@ li {
     }
 
     /*vini template*/
+    .top-page-wrap{
+        height: auto;
+    }
     .top-page-img.vini {
         display: none;
     }
@@ -1285,6 +1289,9 @@ li {
     }
 
     /*vini template*/
+    .top-page-wrap{
+        height: 50vh;
+    }
     .top-page-img.vini {
         display: none;
     }
