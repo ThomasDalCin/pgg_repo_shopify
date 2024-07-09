@@ -24,10 +24,13 @@ function handleMenu() {
     const closeIcon = document.querySelector('.menu-icon-mobile');
     const menu = document.querySelector('.nav-overlay-wrap');
     const navMenu = document.querySelectorAll('.nav-link-special-content');
+    const body = document.body;
 
     if (openIcon && closeIcon && menu) {
         openIcon.addEventListener('click', function () {
             menu.style.top = '0%';
+            body.classList.add('no-scroll'); // Aggiunge la classe per disabilitare lo scrolling
+
             setTimeout(() => {
                 navMenu.forEach((container) => {
                     container.style.transform = 'translateY(0%)';
@@ -35,22 +38,13 @@ function handleMenu() {
             }, 700);
         });
 
-        menu.addEventListener('transitionend', function (event) {
-            if (event.propertyName === 'top') {
-                const targetLink = event.target.getAttribute('href');
-                if (targetLink) {
-                    setTimeout(() => {
-                        window.location.href = targetLink;
-                    }, 3000);
-                }
-            }
-        });
-
         closeIcon.addEventListener('click', function () {
             menu.style.top = '-500%';
+            body.classList.remove('no-scroll'); // Rimuove la classe per riabilitare lo scrolling
         });
     }
 }
+
 
 
 
