@@ -1325,7 +1325,7 @@ li {
     }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1070px) {
+@media screen and (min-width: 1025px) and (max-width: 1168px) {
     .wrap-wine-content {
         row-gap: var(--base-latptoprow-gap);
         width: 100%;
