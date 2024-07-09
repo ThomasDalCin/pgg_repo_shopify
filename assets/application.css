@@ -959,7 +959,7 @@ li {
 /*contact page*/
 .content-block.contact{
     flex-direction: row;
-    column-gap: 20px;
+    column-gap: 2rem;
 }
 
 .content-block.contact > * {
@@ -1174,7 +1174,7 @@ li {
     /*contact page*/
     .content-block.contact{
         flex-direction: column;
-        row-gap: 2rem;
+        row-gap: 20px;
     }
     
     .content-block.contact > * {
