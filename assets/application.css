@@ -1289,6 +1289,12 @@ li {
         display: none;
     }
 
+    .content-text.absolute {
+        width: 100%;
+        min-width: 100%;
+        position: static;
+    }
+
 
 
     /*footer*/
