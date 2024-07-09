@@ -62,7 +62,6 @@
           <div class="content-switcher">
     {% form 'localization', id: 'localization_form_tag', class: "dropup" %}
     <div>
-        <label for="localeSelect">Select Language:</label>
         <select id="localeSelect" name="locale_code">
             {% for locale in shop.published_locales %}
                 <option value="{{ locale.iso_code }}" {% if locale.iso_code == form.current_locale.iso_code %} selected {% endif %}>
