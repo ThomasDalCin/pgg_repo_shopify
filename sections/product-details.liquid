@@ -19,20 +19,25 @@
             <p class="paragraph-wine">{{ section.settings.product-one-name-origin }}</p>
             <p class="paragraph-wine bold">{{ section.settings.product-one-composition }}</p>
             <p class="paragraph-wine">{{ section.settings.product-one-overview }}</p>
-            <div class="content-primary-button">
-              <div class="content-button-text">
-                <a class="button-link-text" id="button-text" href="{{ section.settings.product-one-sheet }}">Scarica la scheda tecnica</a>
-              </div>
-              <div class="content-button-icon">
-                <div class="container-icon"><img
-                    src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/free-left-arrow-437-1174845.png?v=1715325754"
-                    alt=""
-                    class="arrow-icon rotate"><img
-                    src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/free-left-arrow-437-1174845.png?v=1715325754"
-                    alt=""
-                    class="arrow-icon rotate"></div>
-              </div>
-            </div>
+            {% if block.settings.Visibility_button == true %}
+              <div class="content-primary-button">
+                <a class="button-link-text" href="/vini">
+                  <div class="content-button-text">
+                    {{ block.settings.Button_text }}
+                  </div>
+                  <div class="content-button-icon">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/arrow-right.png?v=1720508256"
+                      alt=""
+                      class="arrow-icon rotate">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/arrow-right.png?v=1720508256"
+                      alt=""
+                      class="arrow-icon rotate">
+                  </div>
+                </a>
+              </div> 
+            {% endif %}
           {% elsif productTitle == 'Nascimento' %}
             <p class="paragraph-wine">{{ section.settings.product-two-origin }}</p>
             <p class="paragraph-wine">{{ section.settings.product-two-name-origin }}</p>
@@ -57,20 +62,25 @@
             <p class="paragraph-wine">{{ section.settings.product-three-name-origin }}</p>
             <p class="paragraph-wine bold">{{ section.settings.product-three-composition }}</p>
             <p class="paragraph-wine">{{ section.settings.product-three-overview }}</p>
-            <div class="content-primary-button">
-              <div class="content-button-text">
-                <a class="button-link-text" id="button-text" href="{{ section.settings.product-three-sheet }}">Scarica la scheda tecnica</a>
-              </div>
-              <div class="content-button-icon">
-                <div class="container-icon"><img
-                    src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/free-left-arrow-437-1174845.png?v=1715325754"
-                    alt=""
-                    class="arrow-icon rotate"><img
-                    src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/free-left-arrow-437-1174845.png?v=1715325754"
-                    alt=""
-                    class="arrow-icon rotate"></div>
-              </div>
-            </div>
+            {% if block.settings.Visibility_button == true %}
+              <div class="content-primary-button">
+                <a class="button-link-text" href="/vini">
+                  <div class="content-button-text">
+                    {{ block.settings.Button_text }}
+                  </div>
+                  <div class="content-button-icon">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/arrow-right.png?v=1720508256"
+                      alt=""
+                      class="arrow-icon rotate">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/arrow-right.png?v=1720508256"
+                      alt=""
+                      class="arrow-icon rotate">
+                  </div>
+                </a>
+              </div> 
+            {% endif %}
           {% endif %}
         </div>
         <div class="block-content-text w-margin-top">
@@ -300,7 +310,18 @@
         "id": "product-alghe-description",
         "label": "product-three-description",
         "default": "Alghè è uno dei nomi con cui viene identificata la città di Alghero, luogo da raggiungere e da cui partire alla scoperta del mondo visto sugli atlanti – affascinati dai tratti, dai colori, dai nomi esotici di città e paesi lontani. Storie, lingue e viaggio si mescolano, in un infinito scambio tra racconto e ascolto. Tra le acque cristalline che accarezzano le coste di Alghero, si nasconde un tesoro."
-      }
+      },
+      {
+            "type": "text",
+            "id": "Button_text",
+            "label": "Button text",
+            "default": "Scopri i vini del podere"
+          }, {
+            "type": "checkbox",
+            "id": "Visibility_button",
+            "label": "Hide/Show Button",
+            "default": true
+          }
 
     ]
   }

@@ -59,23 +59,25 @@
                   alt=""
                   class="wine-simbol">
               {% endif %}
-              <div class="content-primary-button">
-                <div class="content-button-text">
-                  <a class="button-link-text" href="{{ product.url }}">Scopri i vini del podere</a>
+              {% if block.settings.Visibility_button == true %}
+                <div class="content-primary-button">
+                  <a class="button-link-text" href="{{ product.url }}">
+                    <div class="content-button-text">
+                      {{ block.settings.Button_text }}
+                    </div>
+                    <div class="content-button-icon">
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/arrow-right.png?v=1720508256"
+                        alt=""
+                        class="arrow-icon rotate">
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/arrow-right.png?v=1720508256"
+                        alt=""
+                        class="arrow-icon rotate">
+                    </div>
+                  </a>
                 </div>
-                <div class="content-button-icon">
-                  <div class="container-icon">
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/free-left-arrow-437-1174845.png?v=1715325754"
-                      alt=""
-                      class="arrow-icon rotate">
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/free-left-arrow-437-1174845.png?v=1715325754"
-                      alt=""
-                      class="arrow-icon rotate">
-                  </div>
-                </div>
-              </div>
+              {% endif %}
             </div>
           {% endfor %}
         {% endfor %}
@@ -93,7 +95,7 @@
         <div class="content">
           <div class="container-center-text">
             <h2 class="heading-h2 light" id="quote">
-              <i>{{ block.settings.quote_highlight}}</i>
+              <i>{{ block.settings.quote_highlight }}</i>
             </h2>
           </div>
         </div>
@@ -190,7 +192,8 @@
         "max": 100,
         "step": 1
 
-      }, {
+      },
+      {
 
         "type": "range",
         "id": "section_margin_tablet",
@@ -201,7 +204,8 @@
         "max": 100,
         "step": 1
 
-      }, {
+      },
+      {
 
         "type": "range",
         "id": "section_margin_mobile",
@@ -212,6 +216,17 @@
         "max": 100,
         "step": 1
 
+      },
+      {
+        "type": "text",
+        "id": "Button_text",
+        "label": "Button text",
+        "default": "Scopri i vini del podere"
+      }, {
+        "type": "checkbox",
+        "id": "Visibility_button",
+        "label": "Hide/Show Button",
+        "default": true
       }
     ]
   }

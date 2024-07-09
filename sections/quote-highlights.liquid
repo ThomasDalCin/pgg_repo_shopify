@@ -6,22 +6,22 @@
         <h2 class="heading-h2">{{ section.settings.Quote_text }}</h2>
         {% if section.settings.Visibility_button == true %}
           <div class="content-primary-button">
-            <div class="content-button-text">
-              <a class="button-link-text" href="/pages/vini">{{ section.settings.Button_text }}</a>
-            </div>
-            <div class="content-button-icon">
-              <div class="container-icon">
+            <a class="button-link-text" href="pages/vini">
+              <div class="content-button-text">
+                {{ block.settings.Button_text }}
+              </div>
+              <div class="content-button-icon">
                 <img
-                  src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/free-left-arrow-437-1174845.png?v=1715325754"
+                  src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/arrow-right.png?v=1720508256"
                   alt=""
                   class="arrow-icon rotate">
                 <img
-                  src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/free-left-arrow-437-1174845.png?v=1715325754./icons/free-left-arrow-437-1174845.png"
+                  src="https://cdn.shopify.com/s/files/1/0874/6015/1590/files/arrow-right.png?v=1720508256"
                   alt=""
                   class="arrow-icon rotate">
               </div>
-            </div>
-          </div>
+            </a>
+          </div> 
         {% endif %}
       </div>
     </div>
