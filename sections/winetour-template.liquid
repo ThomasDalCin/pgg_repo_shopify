@@ -13,11 +13,11 @@
             <h2 class="heading-h2">{{ block.settings.Heading_section }}</h2>
             <p class="paragraph">{{ block.settings.Paragraph_section_first }}</p>
             <p class="paragraph">{{ block.settings.Paragraph_section_second }}</p>
-            {% if section.settings.Visibility_button == true %}
+            {% if block.settings.Visibility_button == true %}
               <div class="content-primary-button">
                 <a class="button-link-text" href="pages/vini">
                   <div class="content-button-text">
-                    {{ section.settings.Button_text }}
+                    {{ block.settings.Button_text }}
                   </div>
                   <div class="content-button-icon">
                     <img
@@ -120,11 +120,11 @@
                 <p class="paragraph">{{ block.settings.Paragraph_two }}</p>
                 <h2 class="heading-h2-secondary">{{ block.settings.Heading_three }}</h2>
                 <p class="paragraph">{{ block.settings.Paragraph_three }}</p>
-                {% if section.settings.Visibility_button == true %}
+                {% if block.settings.Visibility_button == true %}
                   <div class="content-primary-button">
                     <a class="button-link-text" href="pages/vini">
                       <div class="content-button-text">
-                        {{ section.settings.Button_text }}
+                        {{ block.settings.Button_text }}
                       </div>
                       <div class="content-button-icon">
                         <img
