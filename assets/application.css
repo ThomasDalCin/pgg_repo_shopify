@@ -1170,6 +1170,16 @@ li {
         top: 0%;
         right: -20%;
     }
+
+    /*contact page*/
+    .content-block.contact{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    
+    .content-block.contact > * {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
