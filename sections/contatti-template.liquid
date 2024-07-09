@@ -1,22 +1,64 @@
-       <!--section top page wrap -->
-       <div class="wrapper-section no-padd">
-        <div class="wrapper-contents">
-            <div class="top-page-wrap-contact">
-                <img src="{{ section.settings.Banner_img |  img_url: 'master'  }}" alt="alberi" class="top-page-img-contact">
-            </div>
-        </div>
+<!-- section top page wrap -->
+<div class="wrapper-section no-padd">
+  <div class="wrapper-contents">
+    <div class="top-page-wrap-contact">
+      <img
+        src="{{ section.settings.Banner_img |  img_url: 'master'  }}"
+        alt="alberi"
+        class="top-page-img-contact">
     </div>
-    <!--section top page wrap -->
+  </div>
+</div>
+<!-- section top page wrap -->
+<div class="wrapper-section">
+  <div class="wrapper-contents">
+    <div class="content w-border">
+      <div class="content-block">
+        <div class="block">
+          <p class="footer-text">PODERE GUARDA GRANDE</p>
+          <p class="footer-text">{{ section.settings.address_info }}</p>
+          <p class="footer-text">{{ section.settings.second_address_info }}</p>
+        </div>
+        <div class="block">
+          <p class="footer-text">TELEFONO</p>
+          <p class="footer-text">{{ section.settings.tel }}</p>
+        </div>
+        <div class="block">
+          <p class="footer-text">PRESS KIT</p>
+          <a
+            class="footer-link"
+            href="https://cdn.shopify.com/s/files/1/0838/0281/6860/files/Podere_Guardia_Grande_04-2023-IT.pdf?v=1720510503"
+            target="_blank">Download PDF</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    {% schema %}
-    {
-        "name": "banner-top",
-        "settings": [
-            {
-                "type": "image_picker",
-                "id": "Banner_img",
-                "label": "Banner img"
-            }
-            ]
-    }
-    {% endschema %}
+{% schema %}
+  {
+    "name": "contatti-template",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "Banner_img",
+        "label": "Banner img"
+      }, {
+        "type": "text",
+        "id": "address_info",
+        "label": "info address here",
+        "default": "SASSARI (SS) SARDEGNA, ITALIA"
+      }, {
+        "type": "text",
+        "id": "second_address_info",
+        "label": "info address here",
+        "default": "St. Vicinale Baratz Monte-Pedrosu"
+      }, {
+        "type": "text",
+        "id": "tel",
+        "label": "Phone number here",
+        "default": "+39 342 999 1494"
+      }
+    ]
+  }
+{% endschema %}
