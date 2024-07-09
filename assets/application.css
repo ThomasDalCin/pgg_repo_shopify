@@ -818,8 +818,8 @@ li {
     display: none;
     position: absolute;
     left: auto;
-    top: 0;
-    right: 0;
+    top: 10%;
+    right: 10%;
     width: auto;
     height: auto;
     z-index: 1;
