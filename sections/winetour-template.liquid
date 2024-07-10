@@ -169,11 +169,10 @@
 <div class="wrapper-banner">
   <div class="banner-contents">
     <div class="banner-content">
-      {% assign image_ids = "img_banner_one, img_banner_two, img_banner_three, img_banner_four" | split: ', ' %}
-      {% for image_id in image_ids %}
-        {% capture image_url %}{{ section.settings[image_id] }}{% endcapture %}
-        <img src="{{ image_url }}" alt="">
-      {% endfor %}
+      <img src="{{ section.settings.img_banner_one |  img_url: 'master' }}" alt="">
+      <img src="{{ section.settings.img_banner_two |  img_url: 'master' }}" alt="">
+      <img src="{{ section.settings.img_banner_three |  img_url: 'master' }}" alt="">
+      <img src="{{ section.settings.img_banner_four |  img_url: 'master' }}" alt="">
     </div>
   </div>
 </div>
