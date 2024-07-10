@@ -979,6 +979,33 @@ li {
     flex: 1;
 }
 
+/*infinite banner*/
+.wrapper-banner{
+    width: 100vw;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
+
+.banner-contents{
+    width: 200%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.banner-content{
+    width: 50%;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
     /*nav settings*/
