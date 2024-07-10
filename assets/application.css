@@ -1009,6 +1009,7 @@ li {
 
 .banner-content > * {
     flex: 1;
+    min-width: 25%;
     height: 100%;
     object-fit: cover;
     object-position: center;
@@ -1241,6 +1242,10 @@ li {
     
     .content-block.contact > * {
         width: 100%;
+    }
+
+    .banner-content{
+        height: 100px;
     }
 }
 
