@@ -171,13 +171,14 @@
     <div class="banner-content">
       {% assign image_ids = "img_banner_one, img_banner_two, img_banner_three, img_banner_four" | split: ', ' %}
       {% for image_id in image_ids %}
-        {% assign image_url = section.settings[image_id] %}
-          <img src="{{ image_url }}" alt="">
+        {% capture image_url %}{{ settings[image_id] }}{% endcapture %}
+        <img src="{{ image_url }}" alt="">
       {% endfor %}
     </div>
   </div>
 </div>
 <!-- section infinite banner -->
+
 
 
 
