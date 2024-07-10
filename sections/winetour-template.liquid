@@ -169,16 +169,13 @@
 <div class="wrapper-banner">
   <div class="banner-contents">
     <div class="banner-content">
-      {% assign image_ids = "img_banner_one,img_banner_two,img_banner_three,img_banner_four" | split: "," %}
-      {% for image_id in image_ids %}
-        {% assign image_url = section.settings[image_id] %}
-        {% if image_url %}
-          <img src="{{ image_url | img_url: 'master' }}" alt="Image Banner">
-      {% endfor %}
+     {% assign image_ids = ["img_banner_one", "img_banner_two","img_banner_three","img_banner_four"] %}
+     {% for image_id in image_ids %}
+        <img src="{{ section.settings[image_id] | img_url: 'master'}}" alt="Image Banner">
+     {% endfor %}
     </div>
   </div>
 </div>
-
 <!-- section infinite banner -->
 
 <script>
