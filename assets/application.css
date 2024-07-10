@@ -1417,9 +1417,13 @@ li {
         height: 150px;
         bottom: 10%;
     }
+
+    .banner-content{
+        height: 1200px;
+    }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1168px) {
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
     .wrap-wine-content {
         row-gap: var(--base-latptoprow-gap);
         width: 100%;
