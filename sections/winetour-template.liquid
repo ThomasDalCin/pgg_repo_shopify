@@ -169,9 +169,9 @@
 <div class="wrapper-banner">
   <div class="banner-contents">
     <div class="banner-content">
-     {% assign image_ids = ["img_banner_one", "img_banner_two","img_banner_three","img_banner_four"] %}
+      {% assign image_ids = ["img_banner_one", "img_banner_two","img_banner_three","img_banner_four"] %}
      {% for image_id in image_ids %}
-        <img src="{{ section.settings[image_id] | img_url: 'master'}}" alt="Image Banner">
+      <img src="{{ settings[image_id] |  img_url: 'master' }}" alt="">
      {% endfor %}
     </div>
   </div>
