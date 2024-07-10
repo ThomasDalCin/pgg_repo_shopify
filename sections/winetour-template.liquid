@@ -147,6 +147,37 @@
     </div>
   {% endif %}
 {% endfor %}
+<!--quote section -->
+
+<!-- section wrapper center text -->
+<div class="wrapper-section section-center-text-margin">
+  <div class="wrapper-contents">
+    <div class="content">
+      <div class="container-center-text">
+        <h2 class="heading-h2 light"><i id="quote">
+          In un luogo così genuino, dove la bellezza è travolgente, ciascuno è immerso nel proprio tempo, nel tentativo di comprenderlo, di viverlo appieno, di non sprecarlo.
+        </i>
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- section wrapper center text -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let pathName = window.location.pathname;
+        let langCodeSplit = pathName.split("/");
+        let langCode = langCodeSplit[1];
+        let quote = document.getElementById('quote'); 
+        
+        
+            if (langCode === 'en') {
+              quote.innerText = 'In such a genuine place, where the beauty is overwhelming, everyone is immersed in their own time, trying to understand it, to live it to the fullest, not to waste it.';
+            } 
+        
+    });
+</script>
 
 
 {% style %}
