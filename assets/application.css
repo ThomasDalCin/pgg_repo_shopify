@@ -980,15 +980,15 @@ li {
 }
 
 /*infinite banner*/
-.wrapper-banner{
+.wrapper-banner {
     width: 100vw;
     height: auto;
     display: block;
     overflow: hidden;
 }
 
-.banner-contents{
-    width: 200%;
+.banner-contents {
+    width: 200%; /* Utilizzi il 200% per assicurare che ci sia spazio per scorrere */
     height: auto;
     overflow: hidden;
     display: flex;
@@ -997,17 +997,17 @@ li {
     flex-direction: row;
 }
 
-.banner-content{
+.banner-content {
     width: 50%;
     height: 270px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
-    transition: scrollBanner 10s linear infinite;
+    animation: scrollBanner 20s linear infinite; /* Ho aumentato la durata a 20s per vedere meglio l'animazione */
 }
 
-.banner-content > *{
+.banner-content > * {
     flex: 1;
     height: 100%;
     object-fit: cover;
