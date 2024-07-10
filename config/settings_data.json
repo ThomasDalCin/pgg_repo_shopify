@@ -23,8 +23,6 @@
             "settings": {
               "brand_name": "PODERE GUARDIA GRANDE",
               "brand_email": "info@podereguardiagrande.it",
-              "address_info": "SASSARI (SS) SARDEGNA, ITALIA",
-              "second_address_info": "St. Vicinale Baratz Monte-Pedrosu",
               "ig_img": "shopify:\/\/shop_images\/Platform_Instagram_Color_Original.svg",
               "fb_img": "shopify:\/\/shop_images\/c.png"
             }
@@ -76,10 +74,10 @@
               "Heading_section": "Ogni roccia su cui la macchia mediterranea attecchisce vigorosa ha una arcana schiettezza.",
               "First_paragraph": "È il mosaico di palme nane, asfodeli, ginestre, cisto a dare la misura della biodiversità del luogo.",
               "Second_paragraph": "Il paesaggio circostante è spettacolare e profuma delle piante aromatiche endemiche.La vigna è accarezzata dalle luci che invadono il promontorio. L’uva cresce ricca beneficiando delle peculiarità del suolo, asciutto e soleggiato.",
-              "Button_text": "Scopri i vini del podere",
-              "Visibility_button": true,
               "Main_img": "shopify:\/\/shop_images\/podere-cespuglio.jpg",
-              "Simbol_image": "shopify:\/\/shop_images\/podere-icone.png"
+              "Simbol_image": "shopify:\/\/shop_images\/podere-icone.png",
+              "Button_text": "Scopri i vini del podere",
+              "Visibility_button": true
             }
           }
         },
@@ -170,7 +168,11 @@
         "settings": {
           "section_margin": 100,
           "section_margin_tablet": 70,
-          "section_margin_mobile": 60
+          "section_margin_mobile": 60,
+          "img_banner_one": "shopify:\/\/shop_images\/banco.jpg",
+          "img_banner_two": "shopify:\/\/shop_images\/808A7888_WEB.jpg",
+          "img_banner_three": "shopify:\/\/shop_images\/808A7879_WEB.jpg",
+          "img_banner_four": "shopify:\/\/shop_images\/808A7869_WEB.jpg"
         }
       }
     },
