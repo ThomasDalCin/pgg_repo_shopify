@@ -30,7 +30,7 @@
                       class="arrow-icon rotate">
                   </div>
                 </a>
-              </div> 
+              </div>
             {% endif %}
           </div>
           <div class="container-img row">
@@ -137,7 +137,7 @@
                           class="arrow-icon rotate">
                       </div>
                     </a>
-                  </div> 
+                  </div>
                 {% endif %}
               </div>
             </div>
@@ -154,9 +154,10 @@
   <div class="wrapper-contents">
     <div class="content">
       <div class="container-center-text">
-        <h2 class="heading-h2 light"><i id="quote">
-          In un luogo così genuino, dove la bellezza è travolgente, ciascuno è immerso nel proprio tempo, nel tentativo di comprenderlo, di viverlo appieno, di non sprecarlo.
-        </i>
+        <h2 class="heading-h2 light">
+          <i id="quote">
+            In un luogo così genuino, dove la bellezza è travolgente, ciascuno è immerso nel proprio tempo, nel tentativo di comprenderlo, di viverlo appieno, di non sprecarlo.
+          </i>
         </h2>
       </div>
     </div>
@@ -164,14 +165,18 @@
 </div>
 <!-- section wrapper center text -->
 
-<!-- section infinite banner  -->
+<!-- section infinite banner -->
 <div class="wrapper-banner">
   <div class="banner-contents">
-    <div class="banner-content"></div>
-    <div class="banner-content"></div>
+    <div class="banner-content">
+      <img src="{{ section.settings.image_banner_one |  img_url: 'master' }}" alt="">
+      <img src="{{ section.settings.image_banner_two |  img_url: 'master' }}" alt="">
+      <img src="{{ section.settings.image_banner_three |  img_url: 'master' }}" alt="">
+      <img src="{{ section.settings.image_banner_four |  img_url: 'master' }}" alt="">
+    </div>
   </div>
 </div>
-<!-- section infinite banner  -->
+<!-- section infinite banner -->
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -313,8 +318,7 @@
             "type": "image_picker",
             "id": "img_content_three",
             "label": "Image"
-          },
-          {
+          }, {
             "type": "text",
             "id": "Button_text",
             "label": "Button text",
@@ -338,7 +342,8 @@
         "min": 0,
         "max": 100,
         "step": 1
-      }, {
+      },
+      {
         "type": "range",
         "id": "section_margin_tablet",
         "label": "margin bottom section tablet",
@@ -347,7 +352,8 @@
         "min": 0,
         "max": 100,
         "step": 1
-      }, {
+      },
+      {
         "type": "range",
         "id": "section_margin_mobile",
         "label": "margin bottom section mobile",
@@ -356,6 +362,23 @@
         "min": 0,
         "max": 100,
         "step": 1
+      },
+      {
+        "type": "image_picker",
+        "id": "img_banner_one",
+        "label": "Image banner"
+      }, {
+        "type": "image_picker",
+        "id": "img_banner_two",
+        "label": "Image banner"
+      }, {
+        "type": "image_picker",
+        "id": "img_banner_three",
+        "label": "Image banner"
+      }, {
+        "type": "image_picker",
+        "id": "img_banner_four",
+        "label": "Image banner"
       }
     ]
   }

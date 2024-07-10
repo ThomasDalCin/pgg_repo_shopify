@@ -1006,6 +1006,13 @@ li {
     flex-direction: row;
 }
 
+.banner-content > *{
+    flex: 1;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
     /*nav settings*/
