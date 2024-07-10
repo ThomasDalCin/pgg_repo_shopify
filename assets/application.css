@@ -1004,6 +1004,7 @@ li {
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
+    transition: scrollBanner 10s linear infinite;
 }
 
 .banner-content > *{
@@ -1011,6 +1012,16 @@ li {
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+@keyframes scrollBanner {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
