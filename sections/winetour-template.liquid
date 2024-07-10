@@ -171,10 +171,8 @@
     <div class="banner-content">
       {% assign image_ids = "img_banner_one, img_banner_two, img_banner_three, img_banner_four" | split: ', ' %}
       {% for image_id in image_ids %}
-        {% assign image_object = section.settings[image_id] %}
-        {% if image_object != blank %}
-          <img src="{{ image_object | img_url: 'master' }}" alt="">
-        {% endif %}
+        {% assign image_url = section.settings[image_id] %}
+          <img src="{{ image_url }}" alt="">
       {% endfor %}
     </div>
   </div>
