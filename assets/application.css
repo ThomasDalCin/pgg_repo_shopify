@@ -137,6 +137,10 @@ body {
     text-align: left;
 }
 
+.paragraph .center{
+    text-align: center;
+}
+
 .button-link-text{
     color: var(--primary-text-color);
     text-decoration: none;
@@ -1041,6 +1045,7 @@ height: 100dvh;
 }
 
 .container-404{
+    padding: 2rem;
     width: auto;
     height: auto;
     display: flex;
