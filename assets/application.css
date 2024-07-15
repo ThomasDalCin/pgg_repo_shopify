@@ -12,14 +12,14 @@
 
 /* Per dispositivi iOS */
 a[href^="tel"] {
-    color: inherit; 
-    text-decoration: none; 
+    color: inherit;
+    text-decoration: none;
 }
 
 /* Per dispositivi Android */
 a[href^="tel"] {
     color: inherit;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 ::-webkit-scrollbar {
@@ -137,11 +137,11 @@ body {
     text-align: left;
 }
 
-.center{
+.center {
     text-align: center;
 }
 
-.button-link-text{
+.button-link-text {
     color: var(--primary-text-color);
     text-decoration: none;
     display: flex;
@@ -154,7 +154,7 @@ body {
     border-bottom: 1px solid #1a1a1a;
 }
 
-.content-button-icon{
+.content-button-icon {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -165,7 +165,7 @@ body {
     height: auto;
 }
 
-.button-link-text:hover .content-button-icon > * {
+.button-link-text:hover .content-button-icon>* {
     transform: translateX(-19.5px);
 }
 
@@ -846,9 +846,10 @@ li {
 
 
 /*winetour page*/
-.wrapper-contents.winetour{
+.wrapper-contents.winetour {
     margin-top: 60px;
 }
+
 .container-img.row {
     justify-content: flex-start;
     overflow: scroll;
@@ -973,12 +974,12 @@ li {
 }
 
 /*contact page*/
-.content-block.contact{
+.content-block.contact {
     flex-direction: row;
     column-gap: 2rem;
 }
 
-.content-block.contact > * {
+.content-block.contact>* {
     flex: 1;
 }
 
@@ -991,7 +992,8 @@ li {
 }
 
 .banner-contents {
-    width: 200%; /* Utilizzi il 200% per assicurare che ci sia spazio per scorrere */
+    width: 200%;
+    /* Utilizzi il 200% per assicurare che ci sia spazio per scorrere */
     height: auto;
     overflow: hidden;
     display: flex;
@@ -1007,10 +1009,11 @@ li {
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
-    animation: scrollBanner 20s linear infinite; /* Ho aumentato la durata a 20s per vedere meglio l'animazione */
+    animation: scrollBanner 20s linear infinite;
+    /* Ho aumentato la durata a 20s per vedere meglio l'animazione */
 }
 
-.banner-content > * {
+.banner-content>* {
     flex: 1;
     min-width: 25%;
     height: 100%;
@@ -1029,14 +1032,14 @@ li {
 }
 
 /*404 page template*/
-.wrapper{
+.wrapper {
     display: block;
-width: 100vw;
-height: 100vh;
-height: 100dvh;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
 }
 
-.wrapper-container{
+.wrapper-container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -1044,7 +1047,10 @@ height: 100dvh;
     justify-content: center;
 }
 
-.container-404{
+.container-404 {
+
+    text-align: center;
+
     padding: 2rem;
     width: auto;
     height: auto;
@@ -1208,9 +1214,10 @@ height: 100dvh;
     }
 
     /*vini template*/
-    .top-page-wrap{
+    .top-page-wrap {
         height: auto;
     }
+
     .top-page-img.vini {
         display: none;
     }
@@ -1265,16 +1272,16 @@ height: 100dvh;
     }
 
     /*contact page*/
-    .content-block.contact{
+    .content-block.contact {
         flex-direction: column;
         row-gap: 20px;
     }
-    
-    .content-block.contact > * {
+
+    .content-block.contact>* {
         width: 100%;
     }
 
-    .banner-content{
+    .banner-content {
         height: 100px;
     }
 }
@@ -1381,9 +1388,10 @@ height: 100dvh;
     }
 
     /*vini template*/
-    .top-page-wrap{
+    .top-page-wrap {
         height: 50vh;
     }
+
     .top-page-img.vini {
         display: none;
     }
@@ -1393,7 +1401,7 @@ height: 100dvh;
         min-width: 100%;
         position: static;
     }
-    
+
     .section-bottom-margin {
         margin-top: 90px;
     }
@@ -1403,11 +1411,13 @@ height: 100dvh;
     .content.w-border {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px; /* Spazio tra i blocchi */
+        gap: 20px;
+        /* Spazio tra i blocchi */
     }
-    
+
     .content-block {
-        flex: 1 1 calc(50% - 10px); /* Ogni blocco occupa circa il 50% della larghezza meno il gap */
+        flex: 1 1 calc(50% - 10px);
+        /* Ogni blocco occupa circa il 50% della larghezza meno il gap */
         box-sizing: border-box;
     }
 
@@ -1448,7 +1458,7 @@ height: 100dvh;
         bottom: 10%;
     }
 
-    .banner-content{
+    .banner-content {
         height: 1200px;
     }
 }
