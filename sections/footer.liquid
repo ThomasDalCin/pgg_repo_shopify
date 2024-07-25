@@ -42,6 +42,13 @@
               <p class="footer-text">{{ block.settings.P_iva }}</p>
             </div>
             <div class="block">
+              {% for link in linklists.footer.links %}
+                  <li>
+                    <a href="{{ link.url }}" class="nav-link">{{ link.title | upcase }}</a>
+                  </li>
+              {% endfor %}
+            </div>
+            <div class="block">
               <div class="content-switcher">
                 {% form 'localization', id: 'localization_form_tag', class: "dropup" %}
                   <div>
