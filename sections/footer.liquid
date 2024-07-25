@@ -44,7 +44,7 @@
             <div class="block">
               {% for link in linklists.footer.links %}
                   <li>
-                    <a href="{{ link.url }}" class="footer-link-small">{{ link.title | upcase }}</a>
+                    <a href="{{ link.url }}" class="footer-link-small">{{ link.title }}</a>
                   </li>
               {% endfor %}
             </div>
@@ -80,12 +80,14 @@
 </footer>
 
 <style>
+
   .footer-link-small{
     font-size: 14px;
     line-height: 1.5;
-    text-decoration: none;
-    color: #1a1a1a;
+    text-decoration: none !important;
+    color: #1a1a1a !important;
   }
+
 </style>
 
 <script>
