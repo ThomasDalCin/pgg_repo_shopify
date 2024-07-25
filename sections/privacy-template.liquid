@@ -101,7 +101,7 @@
             .section-container {
                 margin: 100px 0px;
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
                 justify-content: flex-start;
                 flex-direction: column;
                 row-gap: 2rem;
@@ -144,6 +144,11 @@
             }
 
             @media screen and (min-width:640px) {
+                .section-container {
+                    display: flex;
+                justify-content: center;
+                align-items: center;
+            }
                 .wrapper-container{
                     padding: 1.5rem;
                 }
