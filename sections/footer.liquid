@@ -44,7 +44,7 @@
             <div class="block">
               {% for link in linklists.footer.links %}
                   <li>
-                    <a href="{{ link.url }}" class="nav-link">{{ link.title | upcase }}</a>
+                    <a href="{{ link.url }}" class="footer-link-small">{{ link.title | upcase }}</a>
                   </li>
               {% endfor %}
             </div>
@@ -79,6 +79,12 @@
   </div>
 </footer>
 
+<style>
+  .footer-link-small{
+    font-size: 14px;
+    line-height: 1.5;
+  }
+</style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -94,8 +100,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
-
-
 </script>
 
 
