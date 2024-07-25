@@ -1,3 +1,4 @@
+{% if shop.locale == 'it' %}
 <div class="wrapper-container">
     <div class="section-container">
         <div class="container-heading">
@@ -17,7 +18,8 @@
                     href="mailto:data.protection@calzedonia.com">data.protection@calzedonia.com</a>.
                 <strong>ATTENZIONE!</strong> In questo sito sono presenti social buttons (ovvero pulsanti con icone di
                 social network) come Instagram e Facebook. Questi pulsanti ti consentono di interagire con il social
-                network di tuo interesse, di cui ti invitiamo a consultare la relativa Privacy e Cookie Policy.</p>
+                network di tuo interesse, di cui ti invitiamo a consultare la relativa Privacy e Cookie Policy.
+            </p>
         </div>
 
         <div class="container-paragraph">
@@ -90,101 +92,210 @@
                 invitiamo a consultare regolarmente questa informativa in modo da rimanere sempre aggiornato.</p>
             <p class="paragraph-small"><em>Ultimo aggiornamento: Luglio 2024</em></p>
         </div>
-        <style>
-            .wrapper-container {
-                width: 100%;
-                height: auto;
-                display: block;
-                padding: 1rem;
-            }
+    </div>
+</div>
+{% elsif shop.locale == 'en' %}
+<div class="wrapper-container">
+    <div class="section-container">
+        <div class="container-heading">
+            <h1 class="policy-heading" style="line-height: 52px;">Privacy Policy</h1>
+        </div>
+        <div class="container-paragraph">
+            <p class="paragraph">When you visit this website, we collect some personal data about you. This policy
+                describes the types of data processed, the purposes and methods of processing activities, as well as
+                your rights as a “Data Subject.” Please read it carefully.</p>
+        </div>
 
-            .section-container {
-                margin: 100px 0px;
-                display: flex;
-                align-items: flex-start;
-                justify-content: flex-start;
-                flex-direction: column;
-                row-gap: 2rem;
-            }
+        <div class="container-paragraph">
+            <h2 class="heading-h2-secondary">DATA CONTROLLER</h2>
+            <p class="paragraph">The Data Controller is Agribel S.r.l., located in Avio (TN), Via del Lavoro n. 18. The
+                Controller can be contacted at <a class="a-link"
+                    href="mailto:data.protection@calzedonia.com">data.protection@calzedonia.com</a>.</p>
+            <p class="paragraph"><strong>ATTENTION!</strong> This site contains social buttons (icons of social
+                networks) such as Instagram and Facebook. These buttons allow you to interact with your chosen social
+                network, whose Privacy and Cookie Policy we invite you to read.</p>
+        </div>
 
-            .container-heading {
-                display: flex;
-                justify-content: center;
-                align-items: flex-start;
-                margin-bottom: 1rem;
-            }
+        <div class="container-paragraph">
+            <h2 class="heading-h2-secondary">PURPOSES, TYPES OF DATA PROCESSED, LEGAL BASIS, AND RETENTION PERIODS</h2>
+            <p class="paragraph"><strong>Website Navigation</strong></p>
+            <p class="paragraph">To ensure the proper functioning of this site, we collect IP addresses, domain names,
+                and URIs. These data are acquired by computer systems required for the operation of the webpage. The
+                legal basis for this processing is the necessity to provide the services required for site navigation
+                and our Legitimate Interest in ensuring the correct operation of IT systems. We will retain the data for
+                30 days, unless otherwise required by law or public authorities for the prosecution of cyber crimes.</p>
+            <p class="paragraph"><strong>Contact Requests</strong></p>
+            <p class="paragraph">If you wish to contact us, we will process the data contained in your request and your
+                contact details to provide feedback and send you the necessary information. The legal basis for this
+                processing is the execution of pre-contractual measures requested by you. We will process your data for
+                the time necessary to provide assistance or follow up on your request.</p>
+        </div>
 
-            .container-paragraph {
-                display: flex;
-                align-items: flex-start;
-                justify-content: flex-start;
-                flex-direction: column;
-                row-gap: 1rem;
-            }
+        <div class="container-paragraph">
+            <h2 class="heading-h2-secondary">DATA RECIPIENTS</h2>
+            <p class="paragraph">To achieve the above purposes, we need to communicate your data to these categories of
+                subjects:</p>
+            <ul>
+                <li>Agribel S.r.l. staff;</li>
+                <li>Suppliers of Agribel S.r.l. (e.g., IT services and platform providers, consultants) who access your
+                    data as Data Processors.</li>
+            </ul>
+        </div>
 
-            ul {
-                display: flex;
-                align-items: flex-start;
-                justify-content: flex-start;
-                flex-direction: column;
-                row-gap: 1rem;
-            }
+        <div class="container-paragraph">
+            <h2 class="heading-h2-secondary">DATA TRANSFER</h2>
+            <p class="paragraph">Collected personal data may be transferred outside the European Union. In such cases,
+                the transfer will comply with the provisions of EU Regulation 2016/679 (“GDPR”), and in particular with
+                the adequate guarantees required by law.</p>
+        </div>
 
-            .a-link {
-                color: var(--primary-text-color);
-                text-decoration: none;
-                font-size: 17px;
-                line-height: 27px;
-                border-bottom: 1px solid #1a1a1a;
-            }
+        <div class="container-paragraph">
+            <h2 class="heading-h2-secondary">PRIVACY RIGHTS</h2>
+            <p class="paragraph">You can exercise the rights granted by the GDPR regarding your personal data by writing
+                to <a class="a-link" href="mailto:data.protection@calzedonia.com">data.protection@calzedonia.com</a>. We
+                commit to responding to your request as soon as possible, and in any case, no later than 30 days from
+                receiving your report. In certain cases, we may ask for additional information if necessary to verify
+                your identity in relation to your request. Specifically, you can exercise the following rights:</p>
+            <ul>
+                <li><strong>Right of access:</strong> the right to know whether personal data processing concerning you
+                    is ongoing and, if confirmed, to obtain a copy of such data and be informed about the origin of the
+                    data, categories of processed personal data, data recipients, purposes of processing, existence of
+                    automated decision-making (including profiling), data retention period, rights provided by the GDPR.
+                </li>
+                <li><strong>Right to rectification or integration of your data:</strong> Remember that when you provide
+                    us with your data to use our services, you guarantee its truthfulness and accuracy. Help us ensure
+                    your data is always accurate by notifying us of updates at <a class="a-link"
+                        href="mailto:data.protection@calzedonia.com">data.protection@calzedonia.com</a>.</li>
+                <li><strong>Right to erasure of personal data:</strong> when such data is no longer necessary for the
+                    purposes they were collected for, or when we are no longer authorized to process them.</li>
+                <li><strong>Right to restrict processing:</strong> of personal data in the following cases:
+                    <ul>
+                        <li>i) you have contested the accuracy of the personal data. You may request a restriction on
+                            processing for the time necessary to verify the accuracy of the data;</li>
+                        <li>ii) we are no longer authorized to process the data, and instead of deleting them, you can
+                            request limiting their use;</li>
+                        <li>iii) when personal data in our possession, although no longer necessary for the purposes
+                            they were collected, are needed by you to establish, exercise, or defend a legal claim.</li>
+                    </ul>
+                </li>
+                <li><strong>Right to data portability:</strong> meaning the right to receive in a structured, commonly
+                    used, and machine-readable format the personal data concerning you, and the right to request that
+                    these data be transmitted to another controller.</li>
+                <li><strong>Right to withdraw consent:</strong> for processing based on consent.</li>
+                <li><strong>Right to object:</strong> at any time to the processing of your personal data based on our
+                    legitimate interest.</li>
+            </ul>
+            <p class="paragraph">You also have the right to lodge a complaint with the competent data protection
+                authority if you believe that the processing of your data is contrary to GDPR provisions. We
+                periodically reserve the right to review the content of this page. We invite you to regularly check this
+                notice to stay updated.</p>
+            <p class="paragraph-small"><em>Last update: July 2024</em></p>
+        </div>
+    </div>
+</div>
 
-            .paragraph-small {
-                font-size: 17px;
-                line-height: 27px;
-            }
+{% endif %}
 
-            @media screen and (min-width:640px) {
-                .section-container {
-                    display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-                .wrapper-container{
-                    padding: 1.5rem;
-                }
-                .section-container {
-                    margin: 90px 0px;
-                    padding: 0rem 1.5rem;
-                }
-                .container-heading {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
 
-            }
+<style>
+    .wrapper-container {
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 1rem;
+    }
 
-            @media screen and (min-width:1024px) {
-                .wrapper-container{
-                    padding: 2rem;
-                }
-                .section-container {
-                    margin: 80px 0px;
-                    padding: 0rem 4rem;
-                }
-            }
+    .section-container {
+        margin: 100px 0px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
 
-            @media screen and (min-width:1280px) {
-                .section-container {
-                    margin: 90px 0px;
-                    padding: 0rem 10rem;
-                }
-            }
+    .container-heading {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
 
-            @media screen and (min-width:1440px) {
-                .section-container {
-                    margin: 100px 0px;
-                    padding: 0rem 20rem;
-                }
-            }
-        </style>
+    .container-paragraph {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    ul {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .a-link {
+        color: var(--primary-text-color);
+        text-decoration: none;
+        font-size: 17px;
+        line-height: 27px;
+        border-bottom: 1px solid #1a1a1a;
+    }
+
+    .paragraph-small {
+        font-size: 17px;
+        line-height: 27px;
+    }
+
+    @media screen and (min-width:640px) {
+        .section-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper-container {
+            padding: 1.5rem;
+        }
+
+        .section-container {
+            margin: 90px 0px;
+            padding: 0rem 1.5rem;
+        }
+
+        .container-heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+    @media screen and (min-width:1024px) {
+        .wrapper-container {
+            padding: 2rem;
+        }
+
+        .section-container {
+            margin: 80px 0px;
+            padding: 0rem 4rem;
+        }
+    }
+
+    @media screen and (min-width:1280px) {
+        .section-container {
+            margin: 90px 0px;
+            padding: 0rem 10rem;
+        }
+    }
+
+    @media screen and (min-width:1440px) {
+        .section-container {
+            margin: 100px 0px;
+            padding: 0rem 20rem;
+        }
+    }
+</style>
