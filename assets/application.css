@@ -28,28 +28,28 @@ a[href^="tel"] {
 
 @font-face {
     font-family: 'Fulmar-Reg';
-    src: url('https://cdn.shopify.com/s/files/1/0874/6015/1590/files/Fulmar-Regular.woff?v=1714828190');
+    src: url('https://cdn.shopify.com/s/files/1/0838/0281/6860/files/Fulmar-Regular.woff?v=1722437748');
 }
 
 @font-face {
     font-family: 'Fulmar-Light';
-    src: url('https://cdn.shopify.com/s/files/1/0874/6015/1590/files/Fulmar-Light.woff?v=1714828190');
+    src: url('https://cdn.shopify.com/s/files/1/0838/0281/6860/files/Fulmar-Light.woff?v=1722437749');
 }
 
 @font-face {
     font-family: 'SempioneGrotesk-light';
-    src: url('https://cdn.shopify.com/s/files/1/0874/6015/1590/files/SempioneGrotesk-Light.woff?v=1714828190');
+    src: url('https://cdn.shopify.com/s/files/1/0838/0281/6860/files/SempioneGrotesk-Light.woff?v=1722438095');
 }
 
 @font-face {
     font-family: 'SempioneGrotesk-Reg';
-    src: url('https://cdn.shopify.com/s/files/1/0874/6015/1590/files/SempioneGrotesk-Medium.woff?v=1714828191');
+    src: url('https://cdn.shopify.com/s/files/1/0838/0281/6860/files/SempioneGrotesk-Medium.woff?v=1722438095');
 }
 
 
 @font-face {
     font-family: 'SempioneGrotesk-Medium';
-    src: url('https://cdn.shopify.com/s/files/1/0874/6015/1590/files/SempioneGrotesk-Medium.woff?v=1714828191');
+    src: url('https://cdn.shopify.com/s/files/1/0838/0281/6860/files/SempioneGrotesk-Medium.woff?v=1722438095');
 }
 
 :root {
