@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{% if shop_locale.iso_code == 'it' %}it{% else %}en{% endif %}">
+<html lang="{% if request.locale.iso_code == 'it' %}it{% else %}en{% endif %}">
 
 <head>
   <meta charset="utf-8">
