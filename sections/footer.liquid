@@ -54,20 +54,17 @@
                   <div>
                     <select id="localeSelect" name="locale_code">
                       {% for locale in shop.published_locales %}
-                        <option value="{{ locale.iso_code }}" {% if locale.iso_code == form.current_locale.iso_code %} selected {% endif %}>
+                        <option value="{{ locale.iso_code }}" {% if locale.iso_code == request.locale.iso_code %} selected {% endif %}>
                           {% case locale.endonym_name %}
-                            {% when "Italiano" %}
-                              IT
-                            {% when "English" %}
-                              EN
-                            {% else %}
-                              {{ locale.endonym_name }}
+                            {% when "Italiano" %}IT
+                            {% when "English" %}EN
+                            {% else %}{{ locale.endonym_name }}
                           {% endcase %}
                         </option>
                       {% endfor %}
                     </select>
                   </div>
-                  <input type="hidden" name="locale_code" value="{{ form.current_locale.iso_code }}" id="localeCode" />
+                  <input type="hidden" name="locale_code" value="{{ request.locale.iso_code }}" id="localeCode" />
                   <input type="submit" value="Submit" style="display: none;">
                 {% endform %}
               </div>
