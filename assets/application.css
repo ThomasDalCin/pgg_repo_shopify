@@ -122,6 +122,7 @@ body {
     font-size: var(--base-font-size);
     line-height: var(--base-line-height);
     font-weight: 500;
+    font-style: italic;
 }
 
 .heading-h4 {
