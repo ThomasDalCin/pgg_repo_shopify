@@ -118,6 +118,12 @@ body {
     font-weight: 300;
 }
 
+.heading-h3-medium{
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
+    font-weight: 500;
+}
+
 .heading-h4 {
     font-size: calc(var(--base-font-size) - 3);
     line-height: calc(var(--base-font-size) - 3);
