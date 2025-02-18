@@ -4,7 +4,7 @@
       "type": "hero",
       "settings": {
         "hero_heading": "Qui la bellezza è travolgente: ciascuno può immergersi nella natura incontaminata e nel proprio tempo",
-        "hero_background_img": "shopify:\/\/shop_images\/A0A6828.jpg"
+        "hero_background_img": "shopify:\/\/shop_images\/M1_9779.jpg"
       }
     },
     "columned-features": {
@@ -23,7 +23,9 @@
           "settings": {
             "Heading_column": "Nella vigna, l’attenzione, la cura e la capacità di riconoscere il bello e di mantenerlo, sono elementi di una qualità diffusa.",
             "Paragraph_column": "Il blu lucente del mare, in contrasto al rosso ferroso delle rocce basaltiche, si permea con il profumo intenso delle piante aromatiche che tappezzano il terreno. Qui è facile chiudere gli occhi e immaginare l'uva maturare mentre il tramonto invade di luce il Podere.",
-            "Image_column": "shopify:\/\/shop_images\/home-fiori.png"
+            "Image_column": "shopify:\/\/shop_images\/home-fiori.png",
+            "Button_text": "Scopri i vini del podere",
+            "Visibility_button": true
           }
         }
       },
@@ -31,8 +33,7 @@
         "columned_features_first_mWDCgC",
         "columned_features_second_cUHzR3"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "slider": {
       "type": "slider",
@@ -75,7 +76,7 @@
         "section_margin": 100,
         "section_margin_tablet": 70,
         "section_margin_mobile": 60,
-        "Main_img": "shopify:\/\/shop_images\/home-podere-etichetta.jpg",
+        "Main_img": "shopify:\/\/shop_images\/A0A1437_WEB.jpg",
         "Absolute_img": "shopify:\/\/shop_images\/home-simboli.png",
         "Heading_section": "La terra è madre",
         "First_paragraph": "La bontà del vino si lega saldamente alle qualità intrinseche del promontorio di Guardia Grande, alla natura del luogo, alla sua terra, alle sue pietre, alla particolarità climatica. Fertile e creativa, la terra racchiude in sé le caratteristiche del grembo materno che accoglie la vita e la nutre, con costanza, pazienza e forza. La terra è dotata di potenza magica, la stessa energia che serve nella produzione del vino.",

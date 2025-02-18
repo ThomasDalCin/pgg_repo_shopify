@@ -1,19 +1,9 @@
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
 {
   "current": {
     "sections": {
       "navbar": {
         "type": "navbar",
-        "settings": {
-        }
+        "settings": {}
       },
       "footer": {
         "type": "footer",
@@ -38,8 +28,7 @@
           "footer-0",
           "footer-1"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "podere-template": {
         "type": "podere-template",
@@ -49,7 +38,7 @@
             "settings": {
               "Heading_section": "Il rispetto della natura sarda è un atto dovuto verso un territorio la cui straordinaria autenticità emoziona",
               "Paragraph_section": "Salvaguardare l’integrità e la vitalità dei vigneti è importante non solo per la qualità dei vini che si producono o per l’interesse paesaggistico, bensì perché esse rappresentano un’importante riserva per la biodiversità.",
-              "img_content": "shopify:\/\/shop_images\/podere-vigna.jpg"
+              "img_content": "shopify:\/\/shop_images\/A0A1622_WEB.jpg"
             }
           },
           "column_image_text_c9wUTL": {
@@ -65,8 +54,7 @@
           },
           "slider_VDALYY": {
             "type": "slider",
-            "settings": {
-            }
+            "settings": {}
           },
           "scrolling_feature_column_HPirb3": {
             "type": "scrolling-feature-column",
@@ -96,7 +84,10 @@
       "contatti-template": {
         "type": "contatti-template",
         "settings": {
-          "Banner_img": "shopify:\/\/shop_images\/contatti-iniziale.jpg"
+          "Banner_img": "shopify:\/\/shop_images\/A0A0674_WEB.jpg",
+          "address_info": "Via Punta Cristallo",
+          "second_address_info": "07041 Alghero SS",
+          "tel": "+347 3457757"
         }
       },
       "vini-template": {
@@ -176,8 +167,6 @@
         }
       }
     },
-    "content_for_index": [
-
-    ]
+    "content_for_index": []
   }
 }
