@@ -22,19 +22,21 @@
           </div>
           <div class="content-block">
             <ul class="nav-footer-menu">
-              {% for link in linklists.main-menu.links %}
+              {% for link in linklists['main-menu'].links %}
                 <li>
                   <a href="{{ link.url }}" class="nav-link">{{ link.title | upcase }}</a>
                 </li>
               {% endfor %}
             </ul>
           </div>
-          <div class="content-block">
-            <div class="container-text-block">
-              <p class="footer-text">Visite a vigneto e cantina con degustazione:</p>
-              <p class="footer-text">dal giovedì al lunedì 10:00-13:00 ~ 16:00-20:00</p>
+          {% comment %}
+                  <div class="content-block">
+              <div class="container-text-block">
+                <p class="footer-text">Visite a vigneto e cantina con degustazione:</p>
+                <p class="footer-text">dal giovedì al lunedì 10:00-13:00 ~ 16:00-20:00</p>
+              </div>
             </div>
-          </div>
+          {% endcomment %}
         {% elsif block.type == 'column-third-info' %}
           <div class="content-block">
             <div class="block">
@@ -43,28 +45,36 @@
             </div>
             <div class="block">
               {% for link in linklists.footer.links %}
-                  <li>
-                    <a href="{{ link.url }}" class="footer-link-small">{{ link.title }}</a>
-                  </li>
+                <li>
+                  <a href="{{ link.url }}" class="footer-link-small">{{ link.title }}</a>
+                </li>
               {% endfor %}
             </div>
             <div class="block">
               <div class="content-switcher">
-                {% form 'localization', id: 'localization_form_tag', class: "dropup" %}
+                {% form 'localization', id: 'localization_form_tag', class: 'dropup' %}
                   <div>
                     <select id="localeSelect" name="locale_code">
                       {% for locale in shop.published_locales %}
-                        <option value="{{ locale.iso_code }}" {% if locale.iso_code == request.locale.iso_code %} selected {% endif %}>
+                        <option
+                          value="{{ locale.iso_code }}"
+                          {% if locale.iso_code == request.locale.iso_code %}
+                            selected
+                          {% endif %}
+                        >
                           {% case locale.endonym_name %}
-                            {% when "Italiano" %}IT
-                            {% when "English" %}EN
-                            {% else %}{{ locale.endonym_name }}
+                            {% when 'Italiano' -%}
+                              IT
+                            {% when 'English' -%}
+                              EN
+                            {% else -%}
+                              {{- locale.endonym_name }}
                           {% endcase %}
                         </option>
                       {% endfor %}
                     </select>
                   </div>
-                  <input type="hidden" name="locale_code" value="{{ request.locale.iso_code }}" id="localeCode" />
+                  <input type="hidden" name="locale_code" value="{{ request.locale.iso_code }}" id="localeCode">
                   <input type="submit" value="Submit" style="display: none;">
                 {% endform %}
               </div>
@@ -77,32 +87,29 @@
 </footer>
 
 <style>
-
   .footer-link-small{
     font-size: 14px;
     line-height: 1.5;
     text-decoration: none !important;
     color: #1a1a1a !important;
   }
-
 </style>
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('localization_form_tag');
-    const selectElement = document.getElementById('localeSelect');
-    const localeCodeInput = document.getElementById('localeCode');
+  document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('localization_form_tag');
+      const selectElement = document.getElementById('localeSelect');
+      const localeCodeInput = document.getElementById('localeCode');
 
-    if (form && selectElement && localeCodeInput) {
-        selectElement.addEventListener('change', function () {
-            const selectedOption = selectElement.options[selectElement.selectedIndex];
-            localeCodeInput.value = selectedOption.value;
-            form.submit();
-        });
-    }
-});
+      if (form && selectElement && localeCodeInput) {
+          selectElement.addEventListener('change', function () {
+              const selectedOption = selectElement.options[selectElement.selectedIndex];
+              localeCodeInput.value = selectedOption.value;
+              form.submit();
+          });
+      }
+  });
 </script>
-
 
 {% schema %}
 {
