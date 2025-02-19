@@ -393,7 +393,7 @@ li {
 
 .hero-wrapper-background {
     z-index: 0;
-    filter: brightness(60%);
+    filter: brightness(75%);
 }
 
 .hero-wrapper-background>img {
